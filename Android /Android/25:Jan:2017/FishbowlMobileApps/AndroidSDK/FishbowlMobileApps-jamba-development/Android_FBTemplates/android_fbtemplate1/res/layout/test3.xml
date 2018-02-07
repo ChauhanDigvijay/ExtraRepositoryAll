@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".RegistrationStart" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background" >
+
+        <LinearLayout
+            android:id="@+id/linear11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:gravity="top|center"
+            android:minHeight="250dp"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+            android:paddingTop="@dimen/feed_item_padding_top_bottom"
+            android:weightSum="100" >
+
+            <LinearLayout
+                android:id="@+id/linearregistration"
+                style="@style/nametext"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="80"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/registxt_name"
+                        style="@style/text.20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SELECT DATE AND TIME "
+                        android:textColor="@color/Red1"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                    <TextView
+                        android:id="@+id/text_locationname"
+                        style="@style/text.14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Locationname"
+                        android:textColor="@color/fbbrown"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_location"
+                        style="@style/text.12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Location"
+                        android:textColor="@color/fbbrown"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/changelocation_txt"
+                        style="@style/text.12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/feed_item_padding_top_bottom"
+                        android:text="Change location"
+                        android:textColor="@color/Red1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                    <TextView
+                        android:id="@+id/registration_start_xcountry_isd"
+                        style="@style/text.15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+                        android:paddingTop="@dimen/feed_item_padding_top_bottom"
+                        android:text="Please choose one of the following"
+                        android:textColor="@color/fbbrown"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/fbred"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <RadioButton
+                            android:id="@+id/radioButton1"
+                            style="@style/text.12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:buttonTint="@color/fbred"
+                            android:text="Delivery Order"
+                            android:textColor="@color/fbbrown" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            style="@style/text.12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:buttonTint="@color/fbred"
+                            android:text="Pick-Up Order "
+                            android:textColor="@color/fbbrown" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:id="@+id/registration_start_country_isd"
+                        style="@style/text.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+                        android:text="Date"
+                        android:textColor="@color/fbbrown"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/editText1"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight=".6"
+                        android:background="@drawable/two_side_round_corner_button"
+                        android:inputType="date"
+                        android:onClick="selectDate" >
+                    </TextView>
+
+                    <ImageButton
+                        android:id="@+id/imageButton1"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_weight=".2"
+                        android:background="@drawable/background"
+                        android:onClick="selectDate"
+                        android:src="@drawable/dater" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom"
+                    android:weightSum="1" >
+
+                    <TextView
+                        android:id="@+id/registration_starxt_country_isd"
+                        style="@style/text.15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+                        android:text="Time"
+                        android:textColor="@color/fbbrown"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/editText2"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight=".6"
+                        android:background="@drawable/two_side_round_corner_button"
+                        android:inputType="date"
+                        android:onClick="showTimePickerDialog" >
+                    </TextView>
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_weight=".2"
+                        android:background="@drawable/background"
+                        android:onClick="showTimePickerDialog"
+                        android:src="@drawable/dater" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="0dp" >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+                    android:paddingLeft="82dp"
+                    android:paddingRight="82dp"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                    <Button
+                        android:id="@+id/registration_start_okbutton"
+                        style="@style/nametext"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/Red1"
+                        android:gravity="center"
+                        android:onClick="contiue"
+                        android:text="CONTINUE"
+                        android:textColor="@color/White" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/secondaryFieldsLinearLayoutss"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <ImageView
+                        android:id="@+id/guest_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:background="@drawable/bannern"
+                        android:scaleType="fitCenter" />
+
+                    <TextView
+                        android:id="@+id/signup_btn"
+                        style="@style/text.14.prompt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:lines="2"
+                        android:maxLines="2"
+                        android:text="@string/registration_signup_info"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/fbbrown"
+                        android:visibility="gone" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

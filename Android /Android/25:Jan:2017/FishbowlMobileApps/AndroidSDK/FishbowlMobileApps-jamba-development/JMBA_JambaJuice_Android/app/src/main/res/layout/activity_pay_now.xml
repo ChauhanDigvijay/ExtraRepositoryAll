@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/payNowRootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.NonGeneric.GiftCardNonGeneric.AddExistingGFCard.PayNowActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/PNHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/imgBtnClosePN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:paddingLeft="10dp"
+            android:src="@drawable/close"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/PNFooter"
+        android:layout_below="@+id/PNHeader"
+        android:background="@android:color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_above="@+id/contentLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="Show Barcode to Pay at Counter "
+                    android:textAlignment="center"
+                    android:textSize="@dimen/text_size_xxlarge"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/contentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/pay_counter"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/tvCardNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_xlarge" />
+
+                <ImageView
+                    android:id="@+id/imgBarCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_below="@+id/tvCardNo"
+                    android:layout_above="@+id/tvBalanceTitle"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY" />
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/tvBalanceTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tvBalanceAmount"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:textSize="@dimen/text_size_large"
+                    android:text="BALANCE"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/tvBalanceAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="@dimen/text_size_xxlarge" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginBottom="@dimen/margin_20"
+                    android:layout_toEndOf="@+id/tvBalanceTitle"
+                    android:layout_toRightOf="@+id/tvBalanceTitle"
+                    android:src="@drawable/splash_jamba_juice_logo" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/PNFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/red_color">
+
+        <com.olo.jambajuice.Views.Generic.SemiBoldButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:text="Done"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_large" />
+    </RelativeLayout>
+    <include
+        android:id="@+id/screenDisableView"
+        layout="@layout/disable_view" />
+</RelativeLayout>

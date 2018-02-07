@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/relativefrag"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/deleteWallButton"
+        style="@style/text.14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/linear1"
+        android:clickable="true"
+        android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+        android:paddingTop="@dimen/feed_item_padding_top_bottom"
+        android:src="@drawable/right" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fitsSystemWindows="true"
+        android:gravity="top|start"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+        android:paddingTop="@dimen/feed_item_padding_top_bottom"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="20"
+            android:background="@drawable/background"
+            android:gravity="top|start"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/feed_item_padding_left_right"
+            android:paddingRight="@dimen/feed_item_padding_left_right" >
+
+            <TextView
+                android:id="@+id/orderheader_txt"
+                style="@style/text.20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ORDER CONFIRMED"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Red"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/follow_textview"
+                style="@style/text.17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="We &apos;ll make your food once arrive "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ordersubheader_txt"
+                style="@style/text.20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="NOW FOLLOW THESE STEPS :"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:gravity="top|start"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/feed_item_padding_left_right"
+            android:paddingRight="@dimen/feed_item_padding_left_right" >
+
+            <ImageButton
+                android:id="@+id/one_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/one" />
+
+            <TextView
+                android:id="@+id/one_textview"
+                  style="@style/text.15.prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Head to the store before it close"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:gravity="top|start"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/feed_item_padding_left_right"
+            android:paddingRight="@dimen/feed_item_padding_left_right" >
+
+            <ImageButton
+                android:id="@+id/two_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/two" />
+
+            <TextView
+                android:id="@+id/two_textview"
+                style="@style/text.15.prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="When you arrive,tap below to select pick up"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:background="@drawable/background"
+            android:gravity="top|start"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/feed_item_padding_left_right"
+            android:paddingRight="@dimen/feed_item_padding_left_right"
+            android:paddingTop="10dp" >
+
+            <Button
+                android:id="@+id/instore_btn"
+                style="@style/text.20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Red"
+                android:clickable="true"
+               
+                android:text="IN-STORE"
+                android:textColor="@color/White"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/drivethru_btn"
+                style="@style/text.20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/Red"
+                android:clickable="true"
+             
+                android:text="DRIVE-THRU "
+                android:textColor="@color/White"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/registration_start_countSr"
+        style="@style/text.14.prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+           android:layout_marginBottom="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="CANCEL"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/registration_start_countSrSS"
+        style="@style/text.14.prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:layout_toLeftOf="@+id/registration_start_countSrS"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/zplocation" />
+
+    <Button
+        android:id="@+id/registration_start_countSrS"
+        style="@style/text.14.prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+           android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="GET ME THERE"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/Red"
+        android:textStyle="bold" />
+
+</RelativeLayout>

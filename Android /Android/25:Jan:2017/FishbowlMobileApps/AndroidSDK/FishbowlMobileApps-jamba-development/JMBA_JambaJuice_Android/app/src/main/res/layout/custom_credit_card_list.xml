@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/creditCardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/imgCardView"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/visa" />
+
+        <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+            android:id="@+id/tvCreditCardNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4545 4545 4545 4545"
+            android:textSize="@dimen/text_size_large"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@+id/imgCardView"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageButton
+            android:id="@+id/notExpand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/not_expand"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/checkStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/check_orange"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

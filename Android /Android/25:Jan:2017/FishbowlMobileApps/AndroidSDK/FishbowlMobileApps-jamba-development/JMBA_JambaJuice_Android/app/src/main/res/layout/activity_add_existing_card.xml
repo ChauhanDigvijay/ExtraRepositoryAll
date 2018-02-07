@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dashboard_bg"
+    tools:context=".Activites.NonGeneric.GiftCardNonGeneric.AddExistingGFCard.AddExistingCardActivityGiftCard">
+
+    <RelativeLayout
+        android:id="@+id/AEHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contentArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/AEFooter"
+        android:layout_below="@+id/AEHeader"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/margin_20">
+
+        <RelativeLayout
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_40"
+            android:background="@android:color/transparent"
+            android:gravity="center">
+
+            <com.olo.jambajuice.Views.Generic.SemiBoldTextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="Please enter your existing gift card\n  information below."
+                android:textColor="@color/dark_green"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/desc"
+            android:background="@drawable/dotted"
+            android:padding="@dimen/margin_50">
+
+            <EditText
+                android:id="@+id/giftCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grey_border_white_bg"
+                android:gravity="center"
+                android:hint="Gift Card Number"
+                android:maxEms="15"
+                android:maxLength="20"
+                android:minEms="15"
+                android:padding="10dp"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/securityPin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/giftCardNumber"
+                android:layout_marginTop="@dimen/margin_20"
+                android:background="@drawable/grey_border_white_bg"
+                android:gravity="center"
+                android:hint="Security PIN"
+                android:inputType="number"
+                android:maxEms="15"
+                android:minEms="15"
+                android:padding="10dp"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/AEFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/red_color">
+
+        <com.olo.jambajuice.Views.Generic.SemiBoldButton
+            android:id="@+id/footerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:text="Add New Card"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_large" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/screenDisableView"
+        layout="@layout/disable_view" />
+</RelativeLayout>

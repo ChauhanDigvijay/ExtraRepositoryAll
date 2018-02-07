@@ -1,0 +1,32 @@
+{
+  "name": "SpendGoSDK",
+  "version": "0.0.3",
+  "summary": "A short description of SpendGo-iOS-SDK.",
+  "homepage": "https://github.com/hathway/SpendGo-iOS-SDK",
+  "license": "Copyright (c) 2015 Hathway, Inc.",
+  "authors": {
+    "eneko": "eneko@wearehathway.com"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "git@github.com:hathway/SpendGo-iOS-SDK.git",
+    "tag": "0.0.3"
+  },
+  "source_files": [
+    "SpendGoSDK",
+    "SpendGoSDK/**/*.swift"
+  ],
+  "dependencies": {
+    "SwiftyJSON": [
+
+    ],
+    "Alamofire": [
+
+    ],
+    "CryptoSwift": [
+
+    ]
+  }
+}

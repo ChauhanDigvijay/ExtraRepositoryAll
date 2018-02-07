@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.olo.jambajuice.Activites.NonGeneric.Home.HomeActivity">
+
+    <ImageView
+        android:id="@+id/splash_bg_layout"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.olo.jambajuice.Views.Generic.NexaRustSansBlackTextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:gravity="center_horizontal"
+                android:text="ORDER AHEAD\nIS EXPANDING"
+                android:textColor="@color/orange_color"
+                android:textSize="@dimen/text_size_xxxlarge" />
+
+            <TextView
+                android:id="@+id/cities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:text="Hawaii / Northern CA / Southern CA\nChicago / New York NY"
+                android:textColor="@color/darker_gray"
+                android:textSize="@dimen/text_size_medium" />
+
+            <ImageView
+                android:id="@+id/map_image"
+                android:layout_width="@dimen/order_ahead_map_width"
+                android:layout_height="@dimen/order_ahead_map_height"
+                android:layout_below="@+id/cities"
+                android:layout_margin="20dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerInside" />
+
+            <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/map_image"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Order Ahead now available\nin over 200 stores with\nmore coming soon!"
+                android:textColor="@color/dark_green"
+                android:textSize="@dimen/text_size_large" />
+
+            <com.olo.jambajuice.Views.Generic.SemiBoldButton
+                android:id="@+id/beginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/red_color"
+                android:text="Begin"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

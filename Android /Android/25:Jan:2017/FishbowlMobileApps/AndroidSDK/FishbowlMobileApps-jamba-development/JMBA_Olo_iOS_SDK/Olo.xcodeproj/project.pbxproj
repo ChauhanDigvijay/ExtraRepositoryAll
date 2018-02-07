@@ -1,0 +1,856 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F2575071AF224900040F6A2 /* vendorexport.zip in Resources */ = {isa = PBXBuildFile; fileRef = 0F2575061AF224900040F6A2 /* vendorexport.zip */; };
+		0F67100A1AFA201800FCEEAE /* OloFaveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6710091AFA201800FCEEAE /* OloFaveService.swift */; };
+		0F67100D1AFA208800FCEEAE /* OloFave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F67100C1AFA208800FCEEAE /* OloFave.swift */; };
+		0F6710101AFA23E200FCEEAE /* OloFaveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F67100F1AFA23E200FCEEAE /* OloFaveTests.swift */; };
+		0F6710121AFA263400FCEEAE /* OloFaveServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6710111AFA263400FCEEAE /* OloFaveServiceTests.swift */; };
+		0F68FE9E1AF8CA510095BCE8 /* OloNewBasketProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F68FE9D1AF8CA510095BCE8 /* OloNewBasketProduct.swift */; };
+		0F68FEA11AF8CB5A0095BCE8 /* OloBatchProductChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F68FEA01AF8CB5A0095BCE8 /* OloBatchProductChoice.swift */; };
+		0F68FEA41AF8CF8F0095BCE8 /* OloBasketProductBatchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F68FEA31AF8CF8F0095BCE8 /* OloBasketProductBatchError.swift */; };
+		0F68FEA71AF8D17B0095BCE8 /* OloBasketProductBatchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F68FEA61AF8D17B0095BCE8 /* OloBasketProductBatchResult.swift */; };
+		0F68FEAA1AF8DD470095BCE8 /* OloBasketValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F68FEA91AF8DD470095BCE8 /* OloBasketValidation.swift */; };
+		0F68FEAD1AF8E0520095BCE8 /* OloBasketSubmitBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F68FEAC1AF8E0520095BCE8 /* OloBasketSubmitBody.swift */; };
+		0F68FEB01AF8FCCB0095BCE8 /* OloNewBasketProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F68FEAF1AF8FCCB0095BCE8 /* OloNewBasketProductTests.swift */; };
+		0F98BF191AF90A190094E566 /* OloBasketProductBatchResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F98BF181AF90A190094E566 /* OloBasketProductBatchResultTests.swift */; };
+		0F98BF1B1AF9120A0094E566 /* OloBasketValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F98BF1A1AF9120A0094E566 /* OloBasketValidationTests.swift */; };
+		0F98BF1D1AF913AB0094E566 /* OloBasketSubmitBodyTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F98BF1C1AF913AB0094E566 /* OloBasketSubmitBodyTestCases.swift */; };
+		0FAABACF1B05EF6900BB4D1F /* OloSDKTestsConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAABACE1B05EF6900BB4D1F /* OloSDKTestsConfigurations.swift */; };
+		0FAABAD31B05FB5C00BB4D1F /* OloTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAABAD21B05FB5C00BB4D1F /* OloTestCase.swift */; };
+		0FF12D8C1B03331400942839 /* OloServiceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF12D8B1B03331400942839 /* OloServiceConfiguration.swift */; };
+		0FF4DBCF1B39555D00359808 /* OloBillingAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF4DBCD1B39555D00359808 /* OloBillingAccount.swift */; };
+		0FF4DBD11B39555D00359808 /* OloBillingScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF4DBCE1B39555D00359808 /* OloBillingScheme.swift */; };
+		0FF4DBD51B39557D00359808 /* OloBillingSchemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF4DBD31B39557D00359808 /* OloBillingSchemeTests.swift */; };
+		219A3BCDB1207D532F8F8D54 /* Pods_Olo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E41D99969D4A495B50BE93 /* Pods_Olo.framework */; };
+		23D46AB51DE42DA800E13CB9 /* OloProductWithChoiceQuantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D46AB41DE42DA800E13CB9 /* OloProductWithChoiceQuantity.swift */; };
+		23D46AB71DE42E6200E13CB9 /* OloProductChoiceQuantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D46AB61DE42E6200E13CB9 /* OloProductChoiceQuantity.swift */; };
+		2939D3948774ABECECD40C36 /* Pods_OloTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32733B068A65FC1BE9C1A929 /* Pods_OloTests.framework */; };
+		2E5E4C021B066228003CC876 /* OloRestaurantCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E4C011B066228003CC876 /* OloRestaurantCalendar.swift */; };
+		2E5E4C051B066236003CC876 /* OloTimeRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E4C041B066236003CC876 /* OloTimeRange.swift */; };
+		2E5E4C081B066C02003CC876 /* OloRestaurantCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E4C071B066C02003CC876 /* OloRestaurantCalendarTests.swift */; };
+		2E7324C81AF84EBA00B2F120 /* OloBasket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7324C71AF84EBA00B2F120 /* OloBasket.swift */; };
+		2E7324CB1AF84FBB00B2F120 /* OloBasketProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7324CA1AF84FBB00B2F120 /* OloBasketProduct.swift */; };
+		2E7324CE1AF8513000B2F120 /* OloBasketChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7324CD1AF8513000B2F120 /* OloBasketChoice.swift */; };
+		2E7324D11AF8534B00B2F120 /* OloChoiceCustomFieldValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7324D01AF8534B00B2F120 /* OloChoiceCustomFieldValue.swift */; };
+		2E7324D41AF85B5E00B2F120 /* OloBasketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7324D31AF85B5E00B2F120 /* OloBasketTests.swift */; };
+		2EB6934C1AF8818200D95D8E /* OloBasketServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB6934B1AF8818200D95D8E /* OloBasketServiceTests.swift */; };
+		2EC9CCC11AEEBF9800E54F17 /* OloSessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC9CCC01AEEBF9800E54F17 /* OloSessionService.swift */; };
+		2EC9CCC51AEEC0AA00E54F17 /* OloSessionServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC9CCC31AEEC0AA00E54F17 /* OloSessionServiceTests.swift */; };
+		2EC9CCC81AEEC45800E54F17 /* OloUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC9CCC71AEEC45800E54F17 /* OloUtils.swift */; };
+		2ED684511AEF2D1F00438742 /* OloOrderStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED684501AEF2D1F00438742 /* OloOrderStatus.swift */; };
+		2ED684541AEF2D3300438742 /* OloOrderStatusProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED684531AEF2D3300438742 /* OloOrderStatusProduct.swift */; };
+		2ED684581AEF308300438742 /* OloOrderStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED684561AEF308300438742 /* OloOrderStatusTests.swift */; };
+		33B3ABC41D897C1000E97573 /* OloBillingField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B3ABC31D897C1000E97573 /* OloBillingField.swift */; };
+		33B3ABC61D89848700E97573 /* OloBasketTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B3ABC51D89848700E97573 /* OloBasketTransfer.swift */; };
+		9511788E1B424D70005E6AE6 /* OloLoyaltyScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9511788D1B424D70005E6AE6 /* OloLoyaltyScheme.swift */; };
+		951178911B424E28005E6AE6 /* OloLoyaltyMembership.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951178901B424E28005E6AE6 /* OloLoyaltyMembership.swift */; };
+		95C97C071AEB062C0010A882 /* Olo.h in Headers */ = {isa = PBXBuildFile; fileRef = 95C97C061AEB062C0010A882 /* Olo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95C97C0D1AEB062C0010A882 /* Olo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C97C011AEB062C0010A882 /* Olo.framework */; };
+		95C97C2E1AEB06EB0010A882 /* OloBasketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C97C1D1AEB06EB0010A882 /* OloBasketService.swift */; };
+		95C97C301AEB06EB0010A882 /* OloCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C97C1E1AEB06EB0010A882 /* OloCategory.swift */; };
+		95C97C321AEB06EB0010A882 /* OloCustomField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C97C1F1AEB06EB0010A882 /* OloCustomField.swift */; };
+		95C97C361AEB06EB0010A882 /* OloFeedbackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C97C211AEB06EB0010A882 /* OloFeedbackService.swift */; };
+		95C97C381AEB06EB0010A882 /* OloMenuService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C97C221AEB06EB0010A882 /* OloMenuService.swift */; };
+		95C97C3A1AEB06EB0010A882 /* OloModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C97C231AEB06EB0010A882 /* OloModifier.swift */; };
+		95C97C3C1AEB06EB0010A882 /* OloOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C97C241AEB06EB0010A882 /* OloOption.swift */; };
+		95C97C3E1AEB06EB0010A882 /* OloOrderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C97C251AEB06EB0010A882 /* OloOrderService.swift */; };
+		95C97C401AEB06EB0010A882 /* OloProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C97C261AEB06EB0010A882 /* OloProduct.swift */; };
+		95C97C421AEB06EB0010A882 /* OloReportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C97C271AEB06EB0010A882 /* OloReportService.swift */; };
+		95C97C441AEB06EB0010A882 /* OloRestaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C97C281AEB06EB0010A882 /* OloRestaurant.swift */; };
+		95C97C461AEB06EB0010A882 /* OloRestaurantCustomField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C97C291AEB06EB0010A882 /* OloRestaurantCustomField.swift */; };
+		95C97C481AEB06EB0010A882 /* OloRestaurantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C97C2A1AEB06EB0010A882 /* OloRestaurantService.swift */; };
+		95C97C4A1AEB06EB0010A882 /* OloService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C97C2B1AEB06EB0010A882 /* OloService.swift */; };
+		95C97C4C1AEB06EB0010A882 /* OloUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C97C2C1AEB06EB0010A882 /* OloUser.swift */; };
+		95C97C4E1AEB06EB0010A882 /* OloUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C97C2D1AEB06EB0010A882 /* OloUserService.swift */; };
+		95C97C5A1AEB07310010A882 /* OloModifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C97C521AEB07310010A882 /* OloModifierTests.swift */; };
+		95C97C5C1AEB07310010A882 /* OloRestaurantCustomFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C97C531AEB07310010A882 /* OloRestaurantCustomFieldTests.swift */; };
+		95C97C5E1AEB07310010A882 /* OloUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C97C541AEB07310010A882 /* OloUserTests.swift */; };
+		95C97C601AEB07310010A882 /* OloMenuServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C97C551AEB07310010A882 /* OloMenuServiceTests.swift */; };
+		95C97C621AEB07310010A882 /* OloRestaurantServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C97C561AEB07310010A882 /* OloRestaurantServiceTests.swift */; };
+		95C97C641AEB07310010A882 /* OloServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C97C571AEB07310010A882 /* OloServiceTests.swift */; };
+		95C97C661AEB07310010A882 /* OloUserServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C97C581AEB07310010A882 /* OloUserServiceTests.swift */; };
+		95F6AF451B43486F001C156E /* OloLoyaltyReward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F6AF441B43486F001C156E /* OloLoyaltyReward.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95C97C0E1AEB062C0010A882 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95C97BF81AEB062C0010A882 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95C97C001AEB062C0010A882;
+			remoteInfo = Olo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F2575061AF224900040F6A2 /* vendorexport.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = vendorexport.zip; sourceTree = "<group>"; };
+		0F6710091AFA201800FCEEAE /* OloFaveService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloFaveService.swift; sourceTree = "<group>"; };
+		0F67100C1AFA208800FCEEAE /* OloFave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloFave.swift; sourceTree = "<group>"; };
+		0F67100F1AFA23E200FCEEAE /* OloFaveTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloFaveTests.swift; sourceTree = "<group>"; };
+		0F6710111AFA263400FCEEAE /* OloFaveServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloFaveServiceTests.swift; sourceTree = "<group>"; };
+		0F68FE9D1AF8CA510095BCE8 /* OloNewBasketProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloNewBasketProduct.swift; sourceTree = "<group>"; };
+		0F68FEA01AF8CB5A0095BCE8 /* OloBatchProductChoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloBatchProductChoice.swift; sourceTree = "<group>"; };
+		0F68FEA31AF8CF8F0095BCE8 /* OloBasketProductBatchError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloBasketProductBatchError.swift; sourceTree = "<group>"; };
+		0F68FEA61AF8D17B0095BCE8 /* OloBasketProductBatchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloBasketProductBatchResult.swift; sourceTree = "<group>"; };
+		0F68FEA91AF8DD470095BCE8 /* OloBasketValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloBasketValidation.swift; sourceTree = "<group>"; };
+		0F68FEAC1AF8E0520095BCE8 /* OloBasketSubmitBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloBasketSubmitBody.swift; sourceTree = "<group>"; };
+		0F68FEAF1AF8FCCB0095BCE8 /* OloNewBasketProductTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloNewBasketProductTests.swift; sourceTree = "<group>"; };
+		0F98BF181AF90A190094E566 /* OloBasketProductBatchResultTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloBasketProductBatchResultTests.swift; sourceTree = "<group>"; };
+		0F98BF1A1AF9120A0094E566 /* OloBasketValidationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloBasketValidationTests.swift; sourceTree = "<group>"; };
+		0F98BF1C1AF913AB0094E566 /* OloBasketSubmitBodyTestCases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloBasketSubmitBodyTestCases.swift; sourceTree = "<group>"; };
+		0FAABACE1B05EF6900BB4D1F /* OloSDKTestsConfigurations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloSDKTestsConfigurations.swift; sourceTree = "<group>"; };
+		0FAABAD21B05FB5C00BB4D1F /* OloTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloTestCase.swift; sourceTree = "<group>"; };
+		0FF12D8B1B03331400942839 /* OloServiceConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloServiceConfiguration.swift; sourceTree = "<group>"; };
+		0FF4DBCD1B39555D00359808 /* OloBillingAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloBillingAccount.swift; sourceTree = "<group>"; };
+		0FF4DBCE1B39555D00359808 /* OloBillingScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloBillingScheme.swift; sourceTree = "<group>"; };
+		0FF4DBD31B39557D00359808 /* OloBillingSchemeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloBillingSchemeTests.swift; sourceTree = "<group>"; };
+		23D46AB41DE42DA800E13CB9 /* OloProductWithChoiceQuantity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloProductWithChoiceQuantity.swift; sourceTree = "<group>"; };
+		23D46AB61DE42E6200E13CB9 /* OloProductChoiceQuantity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloProductChoiceQuantity.swift; sourceTree = "<group>"; };
+		2E5E4C011B066228003CC876 /* OloRestaurantCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloRestaurantCalendar.swift; sourceTree = "<group>"; };
+		2E5E4C041B066236003CC876 /* OloTimeRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloTimeRange.swift; sourceTree = "<group>"; };
+		2E5E4C071B066C02003CC876 /* OloRestaurantCalendarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloRestaurantCalendarTests.swift; sourceTree = "<group>"; };
+		2E7324C71AF84EBA00B2F120 /* OloBasket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloBasket.swift; sourceTree = "<group>"; };
+		2E7324CA1AF84FBB00B2F120 /* OloBasketProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloBasketProduct.swift; sourceTree = "<group>"; };
+		2E7324CD1AF8513000B2F120 /* OloBasketChoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloBasketChoice.swift; sourceTree = "<group>"; };
+		2E7324D01AF8534B00B2F120 /* OloChoiceCustomFieldValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloChoiceCustomFieldValue.swift; sourceTree = "<group>"; };
+		2E7324D31AF85B5E00B2F120 /* OloBasketTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloBasketTests.swift; sourceTree = "<group>"; };
+		2EB6934B1AF8818200D95D8E /* OloBasketServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloBasketServiceTests.swift; sourceTree = "<group>"; };
+		2EC9CCC01AEEBF9800E54F17 /* OloSessionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloSessionService.swift; sourceTree = "<group>"; };
+		2EC9CCC31AEEC0AA00E54F17 /* OloSessionServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloSessionServiceTests.swift; sourceTree = "<group>"; };
+		2EC9CCC71AEEC45800E54F17 /* OloUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloUtils.swift; sourceTree = "<group>"; };
+		2ED684501AEF2D1F00438742 /* OloOrderStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloOrderStatus.swift; sourceTree = "<group>"; };
+		2ED684531AEF2D3300438742 /* OloOrderStatusProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloOrderStatusProduct.swift; sourceTree = "<group>"; };
+		2ED684561AEF308300438742 /* OloOrderStatusTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloOrderStatusTests.swift; sourceTree = "<group>"; };
+		32733B068A65FC1BE9C1A929 /* Pods_OloTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OloTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33B3ABC31D897C1000E97573 /* OloBillingField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloBillingField.swift; sourceTree = "<group>"; };
+		33B3ABC51D89848700E97573 /* OloBasketTransfer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloBasketTransfer.swift; sourceTree = "<group>"; };
+		51E41D99969D4A495B50BE93 /* Pods_Olo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Olo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C200888800C12A09E10310B /* Pods-Olo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Olo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Olo/Pods-Olo.debug.xcconfig"; sourceTree = "<group>"; };
+		837698C2ACD9D0AEDF215603 /* Pods-OloTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OloTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OloTests/Pods-OloTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8920811398FE97A64650A96A /* Pods-OloTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OloTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OloTests/Pods-OloTests.release.xcconfig"; sourceTree = "<group>"; };
+		9511788D1B424D70005E6AE6 /* OloLoyaltyScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloLoyaltyScheme.swift; sourceTree = "<group>"; };
+		951178901B424E28005E6AE6 /* OloLoyaltyMembership.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloLoyaltyMembership.swift; sourceTree = "<group>"; };
+		955774891AEB1E1C00863DEA /* OloSDK.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = OloSDK.podspec; sourceTree = "<group>"; };
+		95C97C011AEB062C0010A882 /* Olo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Olo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C97C051AEB062C0010A882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95C97C061AEB062C0010A882 /* Olo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Olo.h; sourceTree = "<group>"; };
+		95C97C0C1AEB062C0010A882 /* OloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C97C121AEB062C0010A882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95C97C1D1AEB06EB0010A882 /* OloBasketService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloBasketService.swift; sourceTree = "<group>"; };
+		95C97C1E1AEB06EB0010A882 /* OloCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloCategory.swift; sourceTree = "<group>"; };
+		95C97C1F1AEB06EB0010A882 /* OloCustomField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloCustomField.swift; sourceTree = "<group>"; };
+		95C97C211AEB06EB0010A882 /* OloFeedbackService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloFeedbackService.swift; sourceTree = "<group>"; };
+		95C97C221AEB06EB0010A882 /* OloMenuService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloMenuService.swift; sourceTree = "<group>"; };
+		95C97C231AEB06EB0010A882 /* OloModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloModifier.swift; sourceTree = "<group>"; };
+		95C97C241AEB06EB0010A882 /* OloOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloOption.swift; sourceTree = "<group>"; };
+		95C97C251AEB06EB0010A882 /* OloOrderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloOrderService.swift; sourceTree = "<group>"; };
+		95C97C261AEB06EB0010A882 /* OloProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloProduct.swift; sourceTree = "<group>"; };
+		95C97C271AEB06EB0010A882 /* OloReportService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloReportService.swift; sourceTree = "<group>"; };
+		95C97C281AEB06EB0010A882 /* OloRestaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloRestaurant.swift; sourceTree = "<group>"; };
+		95C97C291AEB06EB0010A882 /* OloRestaurantCustomField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloRestaurantCustomField.swift; sourceTree = "<group>"; };
+		95C97C2A1AEB06EB0010A882 /* OloRestaurantService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloRestaurantService.swift; sourceTree = "<group>"; };
+		95C97C2B1AEB06EB0010A882 /* OloService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloService.swift; sourceTree = "<group>"; };
+		95C97C2C1AEB06EB0010A882 /* OloUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloUser.swift; sourceTree = "<group>"; };
+		95C97C2D1AEB06EB0010A882 /* OloUserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloUserService.swift; sourceTree = "<group>"; };
+		95C97C521AEB07310010A882 /* OloModifierTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloModifierTests.swift; sourceTree = "<group>"; };
+		95C97C531AEB07310010A882 /* OloRestaurantCustomFieldTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloRestaurantCustomFieldTests.swift; sourceTree = "<group>"; };
+		95C97C541AEB07310010A882 /* OloUserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloUserTests.swift; sourceTree = "<group>"; };
+		95C97C551AEB07310010A882 /* OloMenuServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloMenuServiceTests.swift; sourceTree = "<group>"; };
+		95C97C561AEB07310010A882 /* OloRestaurantServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloRestaurantServiceTests.swift; sourceTree = "<group>"; };
+		95C97C571AEB07310010A882 /* OloServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloServiceTests.swift; sourceTree = "<group>"; };
+		95C97C581AEB07310010A882 /* OloUserServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloUserServiceTests.swift; sourceTree = "<group>"; };
+		95C97C6D1AEB0A490010A882 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95D3E8B91BDFF1D1003FC28C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		95F6AF441B43486F001C156E /* OloLoyaltyReward.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OloLoyaltyReward.swift; sourceTree = "<group>"; };
+		A62429819276E4F515D63D2C /* Pods-Olo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Olo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Olo/Pods-Olo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95C97BFD1AEB062C0010A882 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				219A3BCDB1207D532F8F8D54 /* Pods_Olo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C97C091AEB062C0010A882 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C97C0D1AEB062C0010A882 /* Olo.framework in Frameworks */,
+				2939D3948774ABECECD40C36 /* Pods_OloTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F2575051AF224900040F6A2 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				0F2575061AF224900040F6A2 /* vendorexport.zip */,
+				0FAABACE1B05EF6900BB4D1F /* OloSDKTestsConfigurations.swift */,
+				0FAABAD21B05FB5C00BB4D1F /* OloTestCase.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		2EC9CCC61AEEC44400E54F17 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				0FF12D8B1B03331400942839 /* OloServiceConfiguration.swift */,
+				2EC9CCC71AEEC45800E54F17 /* OloUtils.swift */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
+		506D63426C628A84F76BC4C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51E41D99969D4A495B50BE93 /* Pods_Olo.framework */,
+				32733B068A65FC1BE9C1A929 /* Pods_OloTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		868BDE8E64475F64043BDCF8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C200888800C12A09E10310B /* Pods-Olo.debug.xcconfig */,
+				A62429819276E4F515D63D2C /* Pods-Olo.release.xcconfig */,
+				837698C2ACD9D0AEDF215603 /* Pods-OloTests.debug.xcconfig */,
+				8920811398FE97A64650A96A /* Pods-OloTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		95C97BF71AEB062C0010A882 = {
+			isa = PBXGroup;
+			children = (
+				95D3E8B91BDFF1D1003FC28C /* README.md */,
+				955774891AEB1E1C00863DEA /* OloSDK.podspec */,
+				95C97C6D1AEB0A490010A882 /* Podfile */,
+				95C97C031AEB062C0010A882 /* Olo */,
+				95C97C101AEB062C0010A882 /* OloTests */,
+				95C97C021AEB062C0010A882 /* Products */,
+				868BDE8E64475F64043BDCF8 /* Pods */,
+				506D63426C628A84F76BC4C9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		95C97C021AEB062C0010A882 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95C97C011AEB062C0010A882 /* Olo.framework */,
+				95C97C0C1AEB062C0010A882 /* OloTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95C97C031AEB062C0010A882 /* Olo */ = {
+			isa = PBXGroup;
+			children = (
+				2EC9CCC61AEEC44400E54F17 /* Misc */,
+				95C97C511AEB06F80010A882 /* Models */,
+				95C97C501AEB06F10010A882 /* Services */,
+				95C97C061AEB062C0010A882 /* Olo.h */,
+				95C97C041AEB062C0010A882 /* Supporting Files */,
+			);
+			path = Olo;
+			sourceTree = "<group>";
+		};
+		95C97C041AEB062C0010A882 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95C97C051AEB062C0010A882 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95C97C101AEB062C0010A882 /* OloTests */ = {
+			isa = PBXGroup;
+			children = (
+				0F2575051AF224900040F6A2 /* Misc */,
+				95C97C671AEB07360010A882 /* Models */,
+				95C97C681AEB073D0010A882 /* Services */,
+				95C97C111AEB062C0010A882 /* Supporting Files */,
+			);
+			path = OloTests;
+			sourceTree = "<group>";
+		};
+		95C97C111AEB062C0010A882 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95C97C121AEB062C0010A882 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95C97C501AEB06F10010A882 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				95C97C1D1AEB06EB0010A882 /* OloBasketService.swift */,
+				95C97C211AEB06EB0010A882 /* OloFeedbackService.swift */,
+				95C97C221AEB06EB0010A882 /* OloMenuService.swift */,
+				95C97C251AEB06EB0010A882 /* OloOrderService.swift */,
+				95C97C271AEB06EB0010A882 /* OloReportService.swift */,
+				95C97C2A1AEB06EB0010A882 /* OloRestaurantService.swift */,
+				95C97C2B1AEB06EB0010A882 /* OloService.swift */,
+				95C97C2D1AEB06EB0010A882 /* OloUserService.swift */,
+				2EC9CCC01AEEBF9800E54F17 /* OloSessionService.swift */,
+				0F6710091AFA201800FCEEAE /* OloFaveService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		95C97C511AEB06F80010A882 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				33B3ABC51D89848700E97573 /* OloBasketTransfer.swift */,
+				2E7324C71AF84EBA00B2F120 /* OloBasket.swift */,
+				2E7324CD1AF8513000B2F120 /* OloBasketChoice.swift */,
+				2E7324CA1AF84FBB00B2F120 /* OloBasketProduct.swift */,
+				0F68FEA31AF8CF8F0095BCE8 /* OloBasketProductBatchError.swift */,
+				0F68FEA61AF8D17B0095BCE8 /* OloBasketProductBatchResult.swift */,
+				0F68FEAC1AF8E0520095BCE8 /* OloBasketSubmitBody.swift */,
+				0F68FEA91AF8DD470095BCE8 /* OloBasketValidation.swift */,
+				0F68FEA01AF8CB5A0095BCE8 /* OloBatchProductChoice.swift */,
+				0FF4DBCD1B39555D00359808 /* OloBillingAccount.swift */,
+				0FF4DBCE1B39555D00359808 /* OloBillingScheme.swift */,
+				95C97C1E1AEB06EB0010A882 /* OloCategory.swift */,
+				2E7324D01AF8534B00B2F120 /* OloChoiceCustomFieldValue.swift */,
+				95C97C1F1AEB06EB0010A882 /* OloCustomField.swift */,
+				0F67100C1AFA208800FCEEAE /* OloFave.swift */,
+				951178901B424E28005E6AE6 /* OloLoyaltyMembership.swift */,
+				95F6AF441B43486F001C156E /* OloLoyaltyReward.swift */,
+				9511788D1B424D70005E6AE6 /* OloLoyaltyScheme.swift */,
+				95C97C231AEB06EB0010A882 /* OloModifier.swift */,
+				0F68FE9D1AF8CA510095BCE8 /* OloNewBasketProduct.swift */,
+				95C97C241AEB06EB0010A882 /* OloOption.swift */,
+				2ED684501AEF2D1F00438742 /* OloOrderStatus.swift */,
+				2ED684531AEF2D3300438742 /* OloOrderStatusProduct.swift */,
+				95C97C261AEB06EB0010A882 /* OloProduct.swift */,
+				95C97C281AEB06EB0010A882 /* OloRestaurant.swift */,
+				2E5E4C011B066228003CC876 /* OloRestaurantCalendar.swift */,
+				95C97C291AEB06EB0010A882 /* OloRestaurantCustomField.swift */,
+				2E5E4C041B066236003CC876 /* OloTimeRange.swift */,
+				95C97C2C1AEB06EB0010A882 /* OloUser.swift */,
+				33B3ABC31D897C1000E97573 /* OloBillingField.swift */,
+				23D46AB41DE42DA800E13CB9 /* OloProductWithChoiceQuantity.swift */,
+				23D46AB61DE42E6200E13CB9 /* OloProductChoiceQuantity.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		95C97C671AEB07360010A882 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0F98BF181AF90A190094E566 /* OloBasketProductBatchResultTests.swift */,
+				0F98BF1C1AF913AB0094E566 /* OloBasketSubmitBodyTestCases.swift */,
+				2E7324D31AF85B5E00B2F120 /* OloBasketTests.swift */,
+				0F98BF1A1AF9120A0094E566 /* OloBasketValidationTests.swift */,
+				0F67100F1AFA23E200FCEEAE /* OloFaveTests.swift */,
+				95C97C521AEB07310010A882 /* OloModifierTests.swift */,
+				0F68FEAF1AF8FCCB0095BCE8 /* OloNewBasketProductTests.swift */,
+				2ED684561AEF308300438742 /* OloOrderStatusTests.swift */,
+				2E5E4C071B066C02003CC876 /* OloRestaurantCalendarTests.swift */,
+				95C97C531AEB07310010A882 /* OloRestaurantCustomFieldTests.swift */,
+				95C97C541AEB07310010A882 /* OloUserTests.swift */,
+				0FF4DBD31B39557D00359808 /* OloBillingSchemeTests.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		95C97C681AEB073D0010A882 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2EB6934B1AF8818200D95D8E /* OloBasketServiceTests.swift */,
+				0F6710111AFA263400FCEEAE /* OloFaveServiceTests.swift */,
+				95C97C551AEB07310010A882 /* OloMenuServiceTests.swift */,
+				95C97C561AEB07310010A882 /* OloRestaurantServiceTests.swift */,
+				95C97C571AEB07310010A882 /* OloServiceTests.swift */,
+				2EC9CCC31AEEC0AA00E54F17 /* OloSessionServiceTests.swift */,
+				95C97C581AEB07310010A882 /* OloUserServiceTests.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		95C97BFE1AEB062C0010A882 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C97C071AEB062C0010A882 /* Olo.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		95C97C001AEB062C0010A882 /* Olo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95C97C171AEB062C0010A882 /* Build configuration list for PBXNativeTarget "Olo" */;
+			buildPhases = (
+				C0073B339E86E3E323A19E6E /* Check Pods Manifest.lock */,
+				95C97BFC1AEB062C0010A882 /* Sources */,
+				95C97BFD1AEB062C0010A882 /* Frameworks */,
+				95C97BFE1AEB062C0010A882 /* Headers */,
+				95C97BFF1AEB062C0010A882 /* Resources */,
+				D1EB508C88DCAAF6922C9D41 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Olo;
+			productName = Olo;
+			productReference = 95C97C011AEB062C0010A882 /* Olo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		95C97C0B1AEB062C0010A882 /* OloTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95C97C1A1AEB062C0010A882 /* Build configuration list for PBXNativeTarget "OloTests" */;
+			buildPhases = (
+				CA7121C51840BCDA6801AFB4 /* Check Pods Manifest.lock */,
+				95C97C081AEB062C0010A882 /* Sources */,
+				95C97C091AEB062C0010A882 /* Frameworks */,
+				95C97C0A1AEB062C0010A882 /* Resources */,
+				270F5B50847C7BC73084A4D9 /* Embed Pods Frameworks */,
+				3DC586AE66B2A7865CC2D9EC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95C97C0F1AEB062C0010A882 /* PBXTargetDependency */,
+			);
+			name = OloTests;
+			productName = OloTests;
+			productReference = 95C97C0C1AEB062C0010A882 /* OloTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95C97BF81AEB062C0010A882 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Hathway, Inc.";
+				TargetAttributes = {
+					95C97C001AEB062C0010A882 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					95C97C0B1AEB062C0010A882 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = 95C97BFB1AEB062C0010A882 /* Build configuration list for PBXProject "Olo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 95C97BF71AEB062C0010A882;
+			productRefGroup = 95C97C021AEB062C0010A882 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95C97C001AEB062C0010A882 /* Olo */,
+				95C97C0B1AEB062C0010A882 /* OloTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95C97BFF1AEB062C0010A882 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C97C0A1AEB062C0010A882 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F2575071AF224900040F6A2 /* vendorexport.zip in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		270F5B50847C7BC73084A4D9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OloTests/Pods-OloTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DC586AE66B2A7865CC2D9EC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OloTests/Pods-OloTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0073B339E86E3E323A19E6E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CA7121C51840BCDA6801AFB4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D1EB508C88DCAAF6922C9D41 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Olo/Pods-Olo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95C97BFC1AEB062C0010A882 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E7324C81AF84EBA00B2F120 /* OloBasket.swift in Sources */,
+				951178911B424E28005E6AE6 /* OloLoyaltyMembership.swift in Sources */,
+				33B3ABC41D897C1000E97573 /* OloBillingField.swift in Sources */,
+				2E5E4C021B066228003CC876 /* OloRestaurantCalendar.swift in Sources */,
+				0FF4DBCF1B39555D00359808 /* OloBillingAccount.swift in Sources */,
+				2ED684511AEF2D1F00438742 /* OloOrderStatus.swift in Sources */,
+				0FF4DBD11B39555D00359808 /* OloBillingScheme.swift in Sources */,
+				95C97C401AEB06EB0010A882 /* OloProduct.swift in Sources */,
+				23D46AB51DE42DA800E13CB9 /* OloProductWithChoiceQuantity.swift in Sources */,
+				95C97C4C1AEB06EB0010A882 /* OloUser.swift in Sources */,
+				95C97C361AEB06EB0010A882 /* OloFeedbackService.swift in Sources */,
+				0F67100D1AFA208800FCEEAE /* OloFave.swift in Sources */,
+				95C97C301AEB06EB0010A882 /* OloCategory.swift in Sources */,
+				2EC9CCC81AEEC45800E54F17 /* OloUtils.swift in Sources */,
+				0F68FE9E1AF8CA510095BCE8 /* OloNewBasketProduct.swift in Sources */,
+				2EC9CCC11AEEBF9800E54F17 /* OloSessionService.swift in Sources */,
+				0F67100A1AFA201800FCEEAE /* OloFaveService.swift in Sources */,
+				95C97C4A1AEB06EB0010A882 /* OloService.swift in Sources */,
+				95C97C2E1AEB06EB0010A882 /* OloBasketService.swift in Sources */,
+				95C97C461AEB06EB0010A882 /* OloRestaurantCustomField.swift in Sources */,
+				0F68FEA71AF8D17B0095BCE8 /* OloBasketProductBatchResult.swift in Sources */,
+				0FF12D8C1B03331400942839 /* OloServiceConfiguration.swift in Sources */,
+				2E7324D11AF8534B00B2F120 /* OloChoiceCustomFieldValue.swift in Sources */,
+				95C97C481AEB06EB0010A882 /* OloRestaurantService.swift in Sources */,
+				95F6AF451B43486F001C156E /* OloLoyaltyReward.swift in Sources */,
+				0F68FEA11AF8CB5A0095BCE8 /* OloBatchProductChoice.swift in Sources */,
+				23D46AB71DE42E6200E13CB9 /* OloProductChoiceQuantity.swift in Sources */,
+				95C97C3A1AEB06EB0010A882 /* OloModifier.swift in Sources */,
+				0F68FEAA1AF8DD470095BCE8 /* OloBasketValidation.swift in Sources */,
+				95C97C441AEB06EB0010A882 /* OloRestaurant.swift in Sources */,
+				2E7324CE1AF8513000B2F120 /* OloBasketChoice.swift in Sources */,
+				9511788E1B424D70005E6AE6 /* OloLoyaltyScheme.swift in Sources */,
+				2E7324CB1AF84FBB00B2F120 /* OloBasketProduct.swift in Sources */,
+				95C97C4E1AEB06EB0010A882 /* OloUserService.swift in Sources */,
+				95C97C3E1AEB06EB0010A882 /* OloOrderService.swift in Sources */,
+				2E5E4C051B066236003CC876 /* OloTimeRange.swift in Sources */,
+				0F68FEA41AF8CF8F0095BCE8 /* OloBasketProductBatchError.swift in Sources */,
+				95C97C421AEB06EB0010A882 /* OloReportService.swift in Sources */,
+				0F68FEAD1AF8E0520095BCE8 /* OloBasketSubmitBody.swift in Sources */,
+				33B3ABC61D89848700E97573 /* OloBasketTransfer.swift in Sources */,
+				95C97C3C1AEB06EB0010A882 /* OloOption.swift in Sources */,
+				95C97C321AEB06EB0010A882 /* OloCustomField.swift in Sources */,
+				95C97C381AEB06EB0010A882 /* OloMenuService.swift in Sources */,
+				2ED684541AEF2D3300438742 /* OloOrderStatusProduct.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C97C081AEB062C0010A882 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F6710101AFA23E200FCEEAE /* OloFaveTests.swift in Sources */,
+				0F68FEB01AF8FCCB0095BCE8 /* OloNewBasketProductTests.swift in Sources */,
+				0F98BF191AF90A190094E566 /* OloBasketProductBatchResultTests.swift in Sources */,
+				95C97C5A1AEB07310010A882 /* OloModifierTests.swift in Sources */,
+				95C97C621AEB07310010A882 /* OloRestaurantServiceTests.swift in Sources */,
+				2E7324D41AF85B5E00B2F120 /* OloBasketTests.swift in Sources */,
+				0FAABACF1B05EF6900BB4D1F /* OloSDKTestsConfigurations.swift in Sources */,
+				2E5E4C081B066C02003CC876 /* OloRestaurantCalendarTests.swift in Sources */,
+				0FAABAD31B05FB5C00BB4D1F /* OloTestCase.swift in Sources */,
+				0FF4DBD51B39557D00359808 /* OloBillingSchemeTests.swift in Sources */,
+				0F6710121AFA263400FCEEAE /* OloFaveServiceTests.swift in Sources */,
+				95C97C601AEB07310010A882 /* OloMenuServiceTests.swift in Sources */,
+				0F98BF1B1AF9120A0094E566 /* OloBasketValidationTests.swift in Sources */,
+				2ED684581AEF308300438742 /* OloOrderStatusTests.swift in Sources */,
+				2EC9CCC51AEEC0AA00E54F17 /* OloSessionServiceTests.swift in Sources */,
+				95C97C661AEB07310010A882 /* OloUserServiceTests.swift in Sources */,
+				0F98BF1D1AF913AB0094E566 /* OloBasketSubmitBodyTestCases.swift in Sources */,
+				95C97C5E1AEB07310010A882 /* OloUserTests.swift in Sources */,
+				95C97C5C1AEB07310010A882 /* OloRestaurantCustomFieldTests.swift in Sources */,
+				2EB6934C1AF8818200D95D8E /* OloBasketServiceTests.swift in Sources */,
+				95C97C641AEB07310010A882 /* OloServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95C97C0F1AEB062C0010A882 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95C97C001AEB062C0010A882 /* Olo */;
+			targetProxy = 95C97C0E1AEB062C0010A882 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		95C97C151AEB062C0010A882 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		95C97C161AEB062C0010A882 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		95C97C181AEB062C0010A882 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C200888800C12A09E10310B /* Pods-Olo.debug.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Olo/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wearehathway.apps.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		95C97C191AEB062C0010A882 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A62429819276E4F515D63D2C /* Pods-Olo.release.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Olo/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wearehathway.apps.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		95C97C1B1AEB062C0010A882 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 837698C2ACD9D0AEDF215603 /* Pods-OloTests.debug.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OloTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wearehathway.apps.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		95C97C1C1AEB062C0010A882 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8920811398FE97A64650A96A /* Pods-OloTests.release.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OloTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wearehathway.apps.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95C97BFB1AEB062C0010A882 /* Build configuration list for PBXProject "Olo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95C97C151AEB062C0010A882 /* Debug */,
+				95C97C161AEB062C0010A882 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95C97C171AEB062C0010A882 /* Build configuration list for PBXNativeTarget "Olo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95C97C181AEB062C0010A882 /* Debug */,
+				95C97C191AEB062C0010A882 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95C97C1A1AEB062C0010A882 /* Build configuration list for PBXNativeTarget "OloTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95C97C1B1AEB062C0010A882 /* Debug */,
+				95C97C1C1AEB062C0010A882 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95C97BF81AEB062C0010A882 /* Project object */;
+}

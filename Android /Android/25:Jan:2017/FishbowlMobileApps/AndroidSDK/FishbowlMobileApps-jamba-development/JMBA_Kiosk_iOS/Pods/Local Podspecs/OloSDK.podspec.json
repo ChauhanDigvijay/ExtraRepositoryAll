@@ -1,0 +1,32 @@
+{
+  "name": "OloSDK",
+  "version": "0.0.5",
+  "summary": "A short description of Olo-iOS-SDK.",
+  "homepage": "https://github.com/hathway/Olo-iOS-SDK",
+  "license": "Copyright (c) 2015 Hathway, Inc.",
+  "authors": {
+    "eneko": "eneko@wearehathway.com"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://github.com/hathway/Olo-iOS-SDK",
+    "tag": "0.0.5"
+  },
+  "source_files": [
+    "Olo",
+    "Olo/**/*.swift"
+  ],
+  "dependencies": {
+    "SwiftyJSON": [
+
+    ],
+    "Alamofire": [
+
+    ],
+    "XCGLogger": [
+
+    ]
+  }
+}

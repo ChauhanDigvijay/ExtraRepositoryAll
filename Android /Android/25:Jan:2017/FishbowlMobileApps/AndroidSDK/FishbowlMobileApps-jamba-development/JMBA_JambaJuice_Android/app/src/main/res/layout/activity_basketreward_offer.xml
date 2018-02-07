@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/toolbar2"
+                    android:visibility="gone"
+                    layout="@layout/row_redeem_instruction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/sectionTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/setting_header"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="3dp"
+                    android:text="Rewards"
+                    android:textColor="@color/brown_color"
+                    android:textSize="@dimen/text_size_large"
+                    android:textStyle="bold" />
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="You have no rewards "
+                    android:textColor="@color/darker_gray"
+                    android:textSize="@dimen/text_size_large"
+                    android:visibility="gone" />
+
+                <com.olo.jambajuice.Activites.NonGeneric.OrderAhead.RewardsAndPromotions.Offer.NestedListView
+                    android:id="@+id/rewardsList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dip"></com.olo.jambajuice.Activites.NonGeneric.OrderAhead.RewardsAndPromotions.Offer.NestedListView>
+
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/sectionTitle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/setting_header"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="3dp"
+                    android:text="Offers"
+                    android:textColor="@color/brown_color"
+                    android:textSize="@dimen/text_size_large"
+                    android:textStyle="bold" />
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/empty1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="You have no offers "
+                    android:textColor="@color/darker_gray"
+                    android:textSize="@dimen/text_size_large"
+                    android:visibility="gone" />
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/offerCantCombined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Offers cannot be combined"
+                    android:textColor="@color/brown_color"
+                    android:textSize="@dimen/text_size_medium"
+                    android:visibility="gone" />
+
+                <com.olo.jambajuice.Activites.NonGeneric.OrderAhead.RewardsAndPromotions.Offer.NestedListView
+                    android:id="@+id/listView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dip"
+                    android:scrollbars="none"></com.olo.jambajuice.Activites.NonGeneric.OrderAhead.RewardsAndPromotions.Offer.NestedListView>
+
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/sectionTitle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/setting_header"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="3dp"
+                    android:text="Promotion Code"
+                    android:textColor="@color/brown_color"
+                    android:textSize="@dimen/text_size_large"
+                    android:textStyle="bold" />
+
+                <include
+                    android:id="@+id/toolbar1"
+                    layout="@layout/row_enter_promotion_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="@dimen/progress_bar"
+                    android:layout_height="@dimen/progress_bar"
+                    android:layout_centerInParent="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include
+        android:id="@+id/screenDisableView"
+        layout="@layout/disable_view" />
+</RelativeLayout>

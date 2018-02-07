@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="NiceButtonStartColor">#cd3428</color>
+    <color name="NiceButtonEndColor">#b9342a</color>
+    <color name="NiceButtonDisabledStartColor">#cd3428</color>
+    <color name="NiceButtonDisabledEndColor">#b9342a</color>
+    <color name="NiceButtonBorderColor">#254117</color>
+    <color name="RaleysBackgroundColour">#E6BD83</color>
+    <color name="TextColour">#000000</color>
+    <color name="TextBackgroundColour">#FFFFFF</color>
+    <color name="LightGray">#D3D3D3</color>
+    <color name="DarkGray">#c8c7cc</color>
+    <color name="Shop_Active">#3e9c5c</color>
+    <color name="Shop_SetActive">#FFFFFF</color>
+    <color name="RaleyThemeColor">#BB0000</color>
+</resources>

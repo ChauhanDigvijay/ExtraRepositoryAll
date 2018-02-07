@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/customize_root"
+    tools:context="com.olo.jambajuice.Activites.NonGeneric.Menu.ProductDetail.ProductCustomiseActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/substitutionContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footerToolbar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/scrollView"
+            android:background="@color/orange_color"
+            android:navigationIcon="@null">
+
+            <RelativeLayout
+                android:id="@+id/customiseMainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/orange_color">
+
+                <ImageButton
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/exp_up_white"/>
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/headerModifierTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="Customize"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_size_xlarge" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <ScrollView
+            android:id="@+id/expScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/toolbar"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/subTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="#F2F2F2"
+                    android:visibility="gone">
+
+                    <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                        android:id="@+id/subModifierTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="I'd like to substitute..."
+                        android:textColor="@color/brown_color"
+                        android:textSize="@dimen/text_size_large" />
+                </RelativeLayout>
+
+                <ExpandableListView
+                    android:id="@+id/lvExp"
+                    android:background="@color/text_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:groupIndicator="@null" />
+
+                <RelativeLayout
+                    android:id="@+id/removeTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F2F2F2"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:visibility="gone">
+
+                    <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                        android:id="@+id/removeModifierTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="Can you remove..."
+                        android:textColor="@color/brown_color"
+                        android:textSize="@dimen/text_size_large" />
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/listView_modifier_remove"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></ListView>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/footerToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:navigationIcon="@null">
+
+        <com.olo.jambajuice.Views.Generic.SemiBoldButton
+            android:id="@+id/tvModifierApply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red_color_1"
+            android:text="Perfected!"
+            android:textAllCaps="false"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_large"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</RelativeLayout>

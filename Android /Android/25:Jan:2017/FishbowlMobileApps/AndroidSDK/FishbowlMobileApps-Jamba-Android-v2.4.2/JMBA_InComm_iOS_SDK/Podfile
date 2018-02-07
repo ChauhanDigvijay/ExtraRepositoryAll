@@ -1,0 +1,14 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'InCommSDK' do
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
+  pod 'CryptoSwift'
+end
+
+target 'InCommSDKTests' do
+    pod 'Alamofire'
+    pod 'SwiftyJSON'
+    pod 'CryptoSwift'
+end

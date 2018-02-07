@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fishbowl="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/menu_offer"
+        android:icon="@drawable/searchiconred"
+        android:orderInCategory="1"
+        android:showAsAction="always"
+        android:title=""
+        fishbowl:actionViewClass="android.support.v7.widget.SearchView"
+        fishbowl:icon="@drawable/searchiconred"
+        fishbowl:showAsAction="always"/>
+    <item
+        android:id="@+id/contacts_menu_new_group"
+        android:actionLayout="@layout/customedit"
+        android:icon="@drawable/orderwhite"
+        android:orderInCategory="2"
+        android:title="0"
+        fishbowl:showAsAction="always"/>
+    <!--
+        		<item android:id="@+id/menu_chat_add_mobile"
+        android:title="@string/chat_enter_mobile"
+        android:icon="@drawable/iconpublicchat"
+         android:showAsAction="always"
+          android:orderInCategory="2"
+           oyemessenger:showAsAction="always"
+         />
+    -->
+
+</menu>

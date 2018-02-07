@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Text Sizes-->
+    <dimen name="text_size_small">8sp</dimen>
+    <dimen name="text_size_xsmall">10sp</dimen>
+    <dimen name="text_size_medium">12sp</dimen>
+    <dimen name="text_size_large">15sp</dimen>
+    <dimen name="text_size_xlarge">18sp</dimen>
+    <dimen name="text_size_xxlarge">20sp</dimen>
+    <dimen name="text_size_xxxlarge">25sp</dimen>
+    <dimen name="text_size_welcome_font">35sp</dimen>
+    <dimen name="text_size_xxxxlarge">50sp</dimen>
+    <dimen name="text_size_xxxxxlarge">60sp</dimen>
+    <dimen name="text_size_xxxxxxlarge">80sp</dimen>
+
+    <!--Common Dimensions-->
+    <dimen name="progress_bar">30dp</dimen>
+
+    <!--Map, MenuViewPager-->
+    <dimen name="top_container_height">200dp</dimen>
+
+    <!--Feature Product-->
+    <dimen name="product_text">@dimen/text_size_large</dimen>
+
+    <!--Header and Footer Text-->
+    <dimen name="text_size_header">18sp</dimen>
+    <dimen name="text_size_footer">18sp</dimen>
+
+</resources>

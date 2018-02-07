@@ -1,0 +1,88 @@
+PODS:
+  - Alamofire (3.5.0)
+  - AppsFlyerFramework (4.5.3)
+  - Bolts/Tasks (1.8.4)
+  - CardIO (5.4.1)
+  - CryptoSwift (0.5.2)
+  - HanekeSwift (0.10.1)
+  - HDK (0.0.8)
+  - InCommSDK (0.0.1):
+    - Alamofire
+    - CryptoSwift
+    - SwiftyJSON
+  - Instabug (4.1.7)
+  - MGSwipeTableCell (1.5.3)
+  - OloSDK (0.0.5):
+    - Alamofire
+    - SwiftyJSON
+    - XCGLogger
+  - Parse (1.13.0):
+    - Bolts/Tasks (~> 1.6)
+  - SpendGoSDK (0.0.3):
+    - Alamofire
+    - CryptoSwift
+    - SwiftyJSON
+    - XCGLogger
+  - Spring (1.0.3)
+  - SVProgressHUD (1.1.3)
+  - SwiftyJSON (2.3.1)
+  - XCGLogger (3.1.1)
+
+DEPENDENCIES:
+  - Alamofire (= 3.5.0)
+  - AppsFlyerFramework (= 4.5.3)
+  - CardIO (= 5.4.1)
+  - CryptoSwift (= 0.5.2)
+  - HanekeSwift (= 0.10.1)
+  - HDK (from `../HWAY_HDK_iOS`)
+  - InCommSDK (from `../JMBA_InComm_iOS_SDK`)
+  - Instabug (= 4.1.7)
+  - MGSwipeTableCell (= 1.5.3)
+  - OloSDK (from `../JMBA_Olo_iOS_SDK`)
+  - Parse (= 1.13.0)
+  - SpendGoSDK (from `../JMBA_SpendGo_iOS_SDK`)
+  - Spring (from `git@github.com:MengTo/Spring.git`, branch `swift2`)
+  - SVProgressHUD (= 1.1.3)
+  - SwiftyJSON (= 2.3.1)
+  - XCGLogger (= 3.1.1)
+
+EXTERNAL SOURCES:
+  HDK:
+    :path: ../HWAY_HDK_iOS
+  InCommSDK:
+    :path: ../JMBA_InComm_iOS_SDK
+  OloSDK:
+    :path: ../JMBA_Olo_iOS_SDK
+  SpendGoSDK:
+    :path: ../JMBA_SpendGo_iOS_SDK
+  Spring:
+    :branch: swift2
+    :git: git@github.com:MengTo/Spring.git
+
+CHECKOUT OPTIONS:
+  Spring:
+    :commit: 18d5c7b74489de8044e34767f856d1e574f0820e
+    :git: git@github.com:MengTo/Spring.git
+
+SPEC CHECKSUMS:
+  Alamofire: b70a7352335f8ea5babd0a923eb7e8eacc67b877
+  AppsFlyerFramework: 978df69f6570d02115af1dc8ba205e62c0573b16
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
+  CryptoSwift: c1ef79f901b86099a6fe8b3c7524cf9f3f3c8c40
+  HanekeSwift: 08e47d3d0f2899ec58e5d257beba0de619aca9e8
+  HDK: d382b22b389e7f8a113f534f507fd24b830758cd
+  InCommSDK: 8d27f7eeb4fc7baacee4d02865bcbc334beefae1
+  Instabug: 58f773fcefe0dec9b1bd3fcf09c6e46560353f5d
+  MGSwipeTableCell: 5ae3b9a15efda26b201adc8676b24040febe6ff6
+  OloSDK: 302ac011222e79cafeb754ac241cd6006d67d273
+  Parse: f51c24d2feb412e4b2d6cc73d37cb24e8d0089bc
+  SpendGoSDK: 88d14decffc7c6f5b5bd688753531647741637af
+  Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
+  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
+  SwiftyJSON: 592b53bee5ef3dd9b3bebc6b9cb7ee35426ae8c3
+  XCGLogger: e111a313f609432394c3ae378d99511634fd2e3c
+
+PODFILE CHECKSUM: 5ddfdf08e5314aaa894f1796f6d05d2eab95422e
+
+COCOAPODS: 1.1.1

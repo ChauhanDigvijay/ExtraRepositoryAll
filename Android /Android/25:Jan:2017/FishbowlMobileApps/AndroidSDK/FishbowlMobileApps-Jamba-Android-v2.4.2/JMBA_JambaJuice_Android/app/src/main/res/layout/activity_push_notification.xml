@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    tools:context="com.olo.jambajuice.Activites.NonGeneric.Settings.PushNotificationActivity">
+
+    <RelativeLayout
+        android:id="@+id/pushNotificationMainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:id="@+id/pushNotiLayout"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/round_corner_white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/jambaLogoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/jambaLogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="20dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/jamba_header_logo" />
+
+                <ImageButton
+                    android:id="@+id/imgHeaderMapIcon1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:padding="20dp"
+                    android:src="@drawable/close_red" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/newOfferTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.olo.jambajuice.Views.Generic.BoldTextView
+                    android:id="@+id/newOfferText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:color/transparent"
+                    android:text="Attention"
+                    android:textAllCaps="false"
+                    android:textColor="@color/red_color"
+                    android:textSize="@dimen/text_size_large" />
+            </RelativeLayout>
+
+            <ScrollView
+                android:id="@+id/scrollViewLayout"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <com.olo.jambajuice.Views.Generic.SanSerifTextView
+                    android:id="@+id/headerOfferTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:text="John - Let Jamba carter your next events Customer should able to view the offer via push notification from Fishbowl 3.0 Platform."
+                    android:textColor="@color/DimGray"
+                    android:textSize="@dimen/text_size_xlarge" />
+            </ScrollView>
+
+
+            <RelativeLayout
+                android:id="@+id/horLineLayout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/GrayHot"></View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/infoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <WebView
+                    android:id="@+id/infoText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bottomLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.olo.jambajuice.Views.Generic.SemiBoldButton
+                    android:id="@+id/viewOfferBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/bottom_rounded_cornor_red"
+                    android:text="View Offer"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_large" />
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldButton
+                    android:id="@+id/dismissBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/bottom_rounded_cornor_red"
+                    android:text="OK"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_large" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

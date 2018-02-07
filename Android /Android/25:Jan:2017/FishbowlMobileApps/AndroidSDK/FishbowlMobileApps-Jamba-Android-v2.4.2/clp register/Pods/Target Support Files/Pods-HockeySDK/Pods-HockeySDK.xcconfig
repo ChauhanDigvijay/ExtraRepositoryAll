@@ -1,0 +1,2 @@
+PODS_HOCKEYSDK_FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/HockeySDK/HockeySDK-iOS/HockeySDK.embeddedframework"
+PODS_HOCKEYSDK_OTHER_LDFLAGS = -l"c++" -framework "AssetsLibrary" -framework "CoreGraphics" -framework "CoreText" -framework "HockeySDK" -framework "MobileCoreServices" -framework "QuartzCore" -framework "QuickLook" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.olo.jambajuice.Activites.NonGeneric.OrderAhead.PaymentInfo.AddCardActivity">
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_place_order"
+        android:layout_below="@+id/toolbar"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/setting_header"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:text="Add New Card"
+                android:id="@+id/addNewCardView"
+                android:textColor="@color/brown_color"
+                android:textSize="@dimen/text_size_large" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/cardNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="Card Number"
+                    android:inputType="number"
+                    android:maxLength="19"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <ImageButton
+                    android:id="@+id/card_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/scan_credit_card"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    android:layout_toLeftOf="@+id/scan_credit_card"
+                    android:background="@color/transparent" />
+
+                <ImageButton
+                    android:id="@+id/scan_credit_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="-75dp"
+                    android:layout_toRightOf="@+id/cardNumber"
+                    android:background="@color/transparent"
+                    android:src="@drawable/scan_credit" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/securityCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Security Code"
+                android:inputType="number"
+                android:maxLength="4"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:textSize="@dimen/text_size_medium" />
+
+            <EditText
+                android:id="@+id/et_expiryDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:editable="false"
+                android:hint="Expiration Date (mm/yyyy)"
+                android:inputType="number"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:textSize="@dimen/text_size_medium" />
+
+            <EditText
+                android:id="@+id/zip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="ZIP"
+                android:inputType="number"
+                android:maxLength="5"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:textSize="@dimen/text_size_medium" />
+
+            <LinearLayout
+                android:id="@+id/saveInformationView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="20dp">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/saveInformationSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:paddingLeft="20dp"
+                    android:text="Save Payment Information"
+                    android:textColor="@color/darker_gray"
+                    android:textSize="@dimen/text_size_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/payInfoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="20dp">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/secured" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical"
+                    android:text="Payment information is saved securely for future purchases"
+                    android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/giftCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/payUsingGiftCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/setting_header"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="5dp"
+                        android:text="(OR) Pay with Jamba Card"
+                        android:textColor="@color/brown_color"
+                        android:textSize="@dimen/text_size_large" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/chooseEGiftCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp">
+
+
+                    <TextView
+                        android:id="@+id/tveGiftCardTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawableRight="@drawable/forward_arrow_gray"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="25dp"
+                        android:text="Choose Jamba Card"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_size_medium" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/darker_gray" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <com.olo.jambajuice.Views.Generic.SemiBoldButton
+        android:id="@+id/tv_place_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="2"
+        android:background="@color/red_color_1"
+        android:gravity="center"
+        android:text="Place Order"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_large" />
+
+    <include
+        android:id="@+id/screenDisableView"
+        layout="@layout/disable_view" />
+
+</RelativeLayout>

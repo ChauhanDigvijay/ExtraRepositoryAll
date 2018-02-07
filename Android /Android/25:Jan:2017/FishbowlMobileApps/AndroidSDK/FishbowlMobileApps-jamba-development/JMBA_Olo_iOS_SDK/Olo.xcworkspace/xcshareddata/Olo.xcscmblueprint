@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C5839AD0F58FB58BCE4FAF4DD6F0E494196A8C15",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C5839AD0F58FB58BCE4FAF4DD6F0E494196A8C15" : 9223372036854775807,
+    "8F1A4648A954F82EBFB946EF28234A20A289CF1D" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AC41E28F-399E-4499-BE56-439536752D25",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C5839AD0F58FB58BCE4FAF4DD6F0E494196A8C15" : "JMBA_Olo_iOS_SDK\/",
+    "8F1A4648A954F82EBFB946EF28234A20A289CF1D" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Olo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Olo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:vtKumaresan\/FishbowlMobileApps.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8F1A4648A954F82EBFB946EF28234A20A289CF1D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "vthinkgit:JMBA_Olo_iOS_SDK.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C5839AD0F58FB58BCE4FAF4DD6F0E494196A8C15"
+    }
+  ]
+}

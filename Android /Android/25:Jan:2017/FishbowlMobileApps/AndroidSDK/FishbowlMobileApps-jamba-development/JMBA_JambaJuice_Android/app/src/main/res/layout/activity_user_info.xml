@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.olo.jambajuice.Activites.NonGeneric.OrderAhead.PaymentInfo.UserInfoActivity">
+
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/continueBtn"
+        android:layout_below="@+id/toolbar"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/firstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="First Name"
+                android:maxLength="36"
+                android:inputType="textPersonName"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:textSize="@dimen/text_size_medium"/>
+
+            <EditText
+                android:id="@+id/lastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Last Name"
+                android:maxLength="36"
+                android:inputType="textPersonName"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:textSize="@dimen/text_size_medium"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="20dp"
+                android:maxLength="64"
+                android:paddingTop="20dp"
+                android:textSize="@dimen/text_size_medium"/>
+
+
+            <EditText
+                android:id="@+id/contactNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Contact Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:textSize="@dimen/text_size_medium"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <com.olo.jambajuice.Views.Generic.SemiBoldButton
+        android:id="@+id/continueBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="2"
+        android:background="@color/red_color_1"
+        android:gravity="center"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_large"/>
+
+</RelativeLayout>

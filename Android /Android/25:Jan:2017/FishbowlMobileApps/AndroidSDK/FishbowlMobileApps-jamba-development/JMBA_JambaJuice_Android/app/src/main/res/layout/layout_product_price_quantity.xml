@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_product_price_quantity"
+                android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/layoutPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_10"
+        android:paddingBottom="@dimen/margin_10"
+        android:gravity="center">
+
+        <com.olo.jambajuice.Views.Generic.BoldTextView
+            android:id="@+id/tv_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="bottom|center_horizontal"
+            android:text="16 oz"
+            android:singleLine="true"
+            android:textColor="@color/brown_color"
+            android:textSize="@dimen/text_size_xlarge"/>
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_weight"
+            android:background="@null"
+            android:gravity="center_horizontal"
+            android:textColor="@color/brown_color"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_small"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/margin"
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/layoutPrice"
+        android:layout_alignBottom="@+id/layoutPrice"
+        android:background="@color/toolbar_bg"></View>
+</RelativeLayout>

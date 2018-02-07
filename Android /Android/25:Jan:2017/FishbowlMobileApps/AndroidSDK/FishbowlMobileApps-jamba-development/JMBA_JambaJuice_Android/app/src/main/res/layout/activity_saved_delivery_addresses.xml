@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_saved_delivery_addresses"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.olo.jambajuice.Activites.NonGeneric.OrderAhead.OrderType.SavedDeliveryAddressesActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/NoAddressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="No Saved Addresses"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_size_large" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/savedAddressListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/addNew"
+        android:layout_below="@+id/toolbar"></ListView>
+
+    <com.olo.jambajuice.Views.Generic.SemiBoldButton
+        android:id="@+id/addNew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="2"
+        android:background="@color/red_color"
+        android:gravity="center"
+        android:text="Add New"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_large" />
+
+    <include
+        android:id="@+id/screenDisableView"
+        layout="@layout/disable_view" />
+</RelativeLayout>

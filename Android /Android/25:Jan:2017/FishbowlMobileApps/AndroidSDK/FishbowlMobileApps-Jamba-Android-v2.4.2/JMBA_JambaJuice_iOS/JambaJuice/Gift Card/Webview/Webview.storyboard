@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9aQ-tq-I6P">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Archer-Bold-Pro.otf">
+            <string>Archer-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Gift Card Webview-->
+        <scene sceneID="Rvo-oQ-CQv">
+            <objects>
+                <viewController id="9aQ-tq-I6P" customClass="GiftCardWebview" customModule="JambaJuice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cwf-ah-e2e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8yh-ki-GnV">
+                                <rect key="frame" x="0.0" y="44" width="375" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WM6-4C-PbF">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="2Rq-cY-c6g"/>
+                                            <constraint firstAttribute="height" constant="60" id="z8i-Zy-Uf0"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" image="back-button"/>
+                                        <connections>
+                                            <action selector="closeScreen:" destination="9aQ-tq-I6P" eventType="touchUpInside" id="NNU-9I-SfQ"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms &amp; Condition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zje-hm-CAk">
+                                        <rect key="frame" x="80" y="0.0" width="215" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="4HP-MY-uDw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Archer-Bold" family="Archer" pointSize="18"/>
+                                        <color key="textColor" red="0.61176470589999998" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CJI-OF-jXq">
+                                        <rect key="frame" x="0.0" y="59" width="375" height="1"/>
+                                        <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="f6u-ye-THM"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="WM6-4C-PbF" firstAttribute="leading" secondItem="8yh-ki-GnV" secondAttribute="leading" id="1m4-Uu-fib"/>
+                                    <constraint firstAttribute="bottom" secondItem="CJI-OF-jXq" secondAttribute="bottom" id="721-L4-sw9"/>
+                                    <constraint firstItem="WM6-4C-PbF" firstAttribute="top" secondItem="8yh-ki-GnV" secondAttribute="top" id="9Ww-ku-bvN"/>
+                                    <constraint firstAttribute="trailing" secondItem="CJI-OF-jXq" secondAttribute="trailing" id="AKB-qY-4LJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="zje-hm-CAk" secondAttribute="trailing" constant="80" id="FPc-H2-fza"/>
+                                    <constraint firstItem="zje-hm-CAk" firstAttribute="leading" secondItem="WM6-4C-PbF" secondAttribute="trailing" id="Mr2-bu-eVn"/>
+                                    <constraint firstAttribute="height" constant="60" id="dK4-Nm-lA4"/>
+                                    <constraint firstItem="CJI-OF-jXq" firstAttribute="leading" secondItem="8yh-ki-GnV" secondAttribute="leading" id="h7h-cV-J5G"/>
+                                    <constraint firstItem="zje-hm-CAk" firstAttribute="top" secondItem="8yh-ki-GnV" secondAttribute="top" id="mgX-RI-MAf"/>
+                                </constraints>
+                            </view>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YNq-1N-VlC">
+                                <rect key="frame" x="0.0" y="104" width="375" height="674"/>
+                                <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GwX-IU-7eO" firstAttribute="trailing" secondItem="YNq-1N-VlC" secondAttribute="trailing" id="0KN-6P-3GV"/>
+                            <constraint firstItem="8yh-ki-GnV" firstAttribute="top" secondItem="GwX-IU-7eO" secondAttribute="top" id="6KT-xr-tzA"/>
+                            <constraint firstItem="8yh-ki-GnV" firstAttribute="leading" secondItem="GwX-IU-7eO" secondAttribute="leading" id="9TS-jp-FIk"/>
+                            <constraint firstItem="YNq-1N-VlC" firstAttribute="top" secondItem="8yh-ki-GnV" secondAttribute="bottom" id="IN8-sl-aEX"/>
+                            <constraint firstItem="GwX-IU-7eO" firstAttribute="bottom" secondItem="YNq-1N-VlC" secondAttribute="bottom" id="gWA-QO-hsf"/>
+                            <constraint firstItem="YNq-1N-VlC" firstAttribute="leading" secondItem="GwX-IU-7eO" secondAttribute="leading" id="pQR-Cv-Vuq"/>
+                            <constraint firstItem="GwX-IU-7eO" firstAttribute="trailing" secondItem="8yh-ki-GnV" secondAttribute="trailing" id="wva-yP-sg2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GwX-IU-7eO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0eH-fF-p3I"/>
+                    <connections>
+                        <outlet property="headerLabel" destination="zje-hm-CAk" id="eeA-5e-1yB"/>
+                        <outlet property="webview" destination="YNq-1N-VlC" id="zIV-iX-fi3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b48-6D-UCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2410" y="-1534"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back-button" width="40" height="40"/>
+    </resources>
+</document>

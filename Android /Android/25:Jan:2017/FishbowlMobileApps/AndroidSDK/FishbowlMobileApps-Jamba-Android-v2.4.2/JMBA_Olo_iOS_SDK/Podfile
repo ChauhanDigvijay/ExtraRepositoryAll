@@ -1,0 +1,17 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '8.0'
+use_frameworks!
+
+def pods()
+	pod 'Alamofire'
+    pod 'SwiftyJSON'
+    pod 'XCGLogger'
+end
+
+target 'Olo' do
+    pods()
+end
+
+target 'OloTests' do
+    pods()
+end

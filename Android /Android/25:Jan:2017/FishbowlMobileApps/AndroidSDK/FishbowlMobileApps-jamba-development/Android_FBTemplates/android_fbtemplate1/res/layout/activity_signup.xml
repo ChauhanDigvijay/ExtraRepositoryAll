@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".RegistrationStart" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background" >
+
+        <LinearLayout
+            android:id="@+id/signup_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical"
+            android:weightSum="100" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="35"
+                android:background="@drawable/background"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/zlogo_imgview"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:src="@drawable/zlogo" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/button_container"
+                style="@style/nametext"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="15"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:weightSum="100" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    
+                   
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/facebook_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:onClick="facebooklogin"
+                                          android:paddingLeft="@dimen/feed_item_padding_left_right"
+                        android:paddingRight="@dimen/feed_item_padding_left_right"
+                        android:src="@drawable/fb" />
+
+                    <TextView
+                        android:id="@+id/facebook_textview"
+                        style="@style/text.13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                      
+                        android:text="CONNECT"
+                        android:textColor="@color/fbbrown"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/feed_item_padding_left_right"
+                    android:paddingRight="@dimen/feed_item_padding_left_right" >
+
+                    <ImageView
+                        android:id="@+id/message_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:onClick="register"
+                         android:paddingLeft="@dimen/feed_item_padding_left_right"
+                        android:paddingRight="@dimen/feed_item_padding_left_right"
+                        android:src="@drawable/register" />
+
+                    <TextView
+                        android:id="@+id/message_textview"
+                        style="@style/text.13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       
+                        android:text="REGISTER"
+                        android:textColor="@color/fbbrown"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/liner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/feed_item_padding_left_right"
+                    android:paddingRight="@dimen/feed_item_padding_left_right" >
+
+                    <ImageView
+                        android:id="@+id/guest_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:onClick="signin"
+                        android:src="@drawable/guest" />
+
+                    <TextView
+                        android:id="@+id/guest_textview"
+                        style="@style/text.13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/guest_img"
+                        android:text="LOGIN"
+                        android:textColor="@color/fbbrown"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="15"
+                android:background="@drawable/background"
+                android:gravity="top|center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/skip_txt"
+                    style="@style/text.13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:onClick="guest"
+                    android:text="Skip Login"
+                    android:textColor="@color/Red1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="25"
+                android:background="@drawable/background"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/zbanner_img"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bannern"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="10"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/feed_item_padding_left_right"
+                android:paddingRight="@dimen/feed_item_padding_left_right" >
+
+                <TextView
+                    android:id="@+id/signupbottom_textview"
+                    style="@style/text.13.prompt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/registration_signup_info"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/fbbrown" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

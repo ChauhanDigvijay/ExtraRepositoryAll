@@ -1,0 +1,111 @@
+//
+//  OloExportService.swift
+//  JambaJuice
+//
+//  Created by Eneko Alonso on 4/16/15.
+//  Copyright (c) 2015 Jamba Juice. All rights reserved.
+//
+
+import UIKit
+import zipzap
+
+public typealias OloExportCallback = (downloadedFileDestionationURL: NSURL?, error: NSError?) -> Void
+public typealias OloExportProgressCallback = (totalBytesTransferred: Int64, totalBytesExpectedToBeTransferred: Int64) -> Void
+
+public class OloExportService: NSObject {
+    
+    public class func vendorExport(downloadFileDestinationURL: NSURL? = nil, progressCallback: OloExportProgressCallback? = nil, completionCallback: OloExportCallback) {
+        if downloadFileDestinationURL != nil && (!downloadFileDestinationURL!.fileURL || !downloadFileDestinationURL!.path!.hasSuffix(".zip")){
+            //println(!downloadFileDestinationURL!.fileURL)
+            //println(!downloadFileDestinationURL!.path!.hasSuffix(".zip"))
+            let error = OloUtils.error("Provided path is not proper path for saving zip file.", code: 0)
+            completionCallback(downloadedFileDestionationURL: nil, error: error)
+        }
+        OloService.download("/vendorexport/xml", progressCallback: progressCallback, completionCallback: completionCallback)
+    }
+    
+    public class  func unzipVendorExportZipAtPathURL(zipFilePathURL:NSURL, toDestinationDirectoryURL destinationDirectoryURL:NSURL, error: NSErrorPointer) -> Bool{
+
+        let fileManager = NSFileManager.defaultManager()
+        //Check zip file path to ensure its proper path
+        //Pass Case: Uses file scheme && has zip suffix && file exists && is not a directory
+        var isDir: ObjCBool = false
+        var err: NSError? = nil
+        if !zipFilePathURL.fileURL || !zipFilePathURL.path!.hasSuffix(".zip") || !fileManager.fileExistsAtPath(zipFilePathURL.path!, isDirectory: &isDir) || isDir {
+            err = OloUtils.error("Provided Zip File URL is invalid.", code: 0)
+            if error != nil {
+                error.memory = err
+            }
+            return false
+        }
+        //Check destination directory path to ensure its proper path
+        //Error Case: Does not use file scheme || file exists && is not a directory
+        if !destinationDirectoryURL.fileURL {
+            err = OloUtils.error("Provided destination directory path is not a file system URL.", code: 0)
+        }
+        else if fileManager.fileExistsAtPath(destinationDirectoryURL.path!, isDirectory: &isDir) && !isDir {
+            err = OloUtils.error("Provided destination directory path is not a directory.", code: 0)
+        }
+        else if !fileManager.fileExistsAtPath(destinationDirectoryURL.path!) {
+            fileManager.createDirectoryAtPath(destinationDirectoryURL.path!, withIntermediateDirectories: true, attributes: nil, error: &err)
+        }
+        //Check if any error occured and assign if if did.
+        if self.assignErrorToErrorPointer(err, errorPointer: error) {
+            return false
+        }
+        let archive = ZZArchive(URL: zipFilePathURL, error: &err)
+        //Check if any error occured and assign if if did.
+        if self.assignErrorToErrorPointer(err, errorPointer: error) {
+            return false
+        }
+        for object in archive.entries {
+            if let entry = object as? ZZArchiveEntry {
+                let fileName = entry.fileName
+                let targetURL = destinationDirectoryURL.URLByAppendingPathComponent(fileName)
+                if (entry.fileMode & S_IFDIR) != 0 {
+                    fileManager.createDirectoryAtPath(targetURL.path!, withIntermediateDirectories: true, attributes: nil, error: &err)
+                    //Check if any error occured and assign if if did.
+                    if self.assignErrorToErrorPointer(err, errorPointer: error) {
+                        return false
+                    }
+                }
+                else {
+                    // Some archives don't have a separate entry for each directory
+                    // and just include the directory's name in the filename.
+                    // Make sure that directory exists before writing a file into it.
+                    let fileParentDirectoryPath = targetURL.URLByDeletingLastPathComponent!.path!
+                    if !fileManager.fileExistsAtPath(fileParentDirectoryPath) {
+                        fileManager.createDirectoryAtPath(fileParentDirectoryPath, withIntermediateDirectories: true, attributes: nil, error: &err)
+                        //Check if any error occured and assign if if did.
+                        if self.assignErrorToErrorPointer(err, errorPointer: error) {
+                            return false
+                        }
+                    }
+                    let data = entry.newDataWithError(&err)
+                    //Check if any error occured and assign if if did.
+                    if self.assignErrorToErrorPointer(err, errorPointer: error) {
+                        return false
+                    }
+                    if !data.writeToFile(targetURL.path!, atomically: false) {
+                        err = OloUtils.error("Error while writing file.", code: 0)
+                        if error != nil {
+                            error.memory = err
+                        }
+                        return false
+                    }
+                }
+            }
+        }
+        return true
+    }
+        
+    class func assignErrorToErrorPointer(error: NSError?, errorPointer: NSErrorPointer) -> Bool {
+        if error != nil {
+            if errorPointer != nil {
+                errorPointer.memory = error
+            }
+            return true
+        }
+        return false
+    }
+}

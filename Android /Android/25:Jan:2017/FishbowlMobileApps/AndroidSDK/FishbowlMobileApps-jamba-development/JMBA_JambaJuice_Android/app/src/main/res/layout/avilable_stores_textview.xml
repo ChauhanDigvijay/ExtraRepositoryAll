@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <!--<TextView-->
+    <!--android:id="@+id/txtview_storeName"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingTop="15dp"-->
+    <!--android:paddingBottom="2dp"-->
+    <!--android:paddingLeft="15dp"-->
+    <!--android:gravity="left"-->
+    <!--android:maxLines="1"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:text="Fort Union"-->
+    <!--android:textColor="@color/brown_color"-->
+    <!--android:textSize="@dimen/text_size_large"-->
+    <!--android:textStyle="normal" />-->
+    <!--<TextView-->
+    <!--android:id="@+id/txtview_storeAddress"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/txtview_storeName"-->
+    <!--android:paddingLeft="15dp"-->
+    <!--android:paddingTop="2dp"-->
+    <!--android:paddingBottom="15dp"-->
+    <!--android:gravity="left"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:maxLines="1"-->
+    <!--android:text="MidVale UT"-->
+    <!--android:textSize="@dimen/text_size_small"-->
+    <!--android:textColor="@color/darker_gray" />-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/txtview_storeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="20dp"
+            android:text="Orange C-Booster"
+            android:textColor="@color/brown_color"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/txtview_storeAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtview_storeName"
+            android:paddingLeft="20dp"
+            android:text="MEDIUM, DAILY VITAMIN"
+            android:textColor="@color/darker_gray"
+            android:textSize="@dimen/text_size_medium" />
+    </RelativeLayout>
+</RelativeLayout>

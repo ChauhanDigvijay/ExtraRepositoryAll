@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE8E86EE1C5735ED00505BA4 /* ServiceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8E86EA1C5735ED00505BA4 /* ServiceClient.m */; };
+		DE8E86EF1C5735ED00505BA4 /* XmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8E86EC1C5735ED00505BA4 /* XmlParser.m */; };
+		DE8E86F21C57364900505BA4 /* ItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8E86F11C57364900505BA4 /* ItemModel.m */; };
+		DE8E87531C57421200505BA4 /* ItemsData.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8E87521C57421200505BA4 /* ItemsData.m */; };
+		DE8E87551C57431E00505BA4 /* ItemsData.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DE8E87511C57421200505BA4 /* ItemsData.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DE8E86DB1C57355900505BA4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				DE8E87551C57431E00505BA4 /* ItemsData.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DE8E86DD1C57355900505BA4 /* libFBBrinkPosLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFBBrinkPosLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE8E86E91C5735ED00505BA4 /* ServiceClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceClient.h; sourceTree = "<group>"; };
+		DE8E86EA1C5735ED00505BA4 /* ServiceClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceClient.m; sourceTree = "<group>"; };
+		DE8E86EB1C5735ED00505BA4 /* XmlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmlParser.h; sourceTree = "<group>"; };
+		DE8E86EC1C5735ED00505BA4 /* XmlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmlParser.m; sourceTree = "<group>"; };
+		DE8E86ED1C5735ED00505BA4 /* SYXmlParserTags.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SYXmlParserTags.plist; sourceTree = "<group>"; };
+		DE8E86F01C57364900505BA4 /* ItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemModel.h; sourceTree = "<group>"; };
+		DE8E86F11C57364900505BA4 /* ItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemModel.m; sourceTree = "<group>"; };
+		DE8E87511C57421200505BA4 /* ItemsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsData.h; sourceTree = "<group>"; };
+		DE8E87521C57421200505BA4 /* ItemsData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsData.m; sourceTree = "<group>"; };
+		DE8E875D1C57C3B300505BA4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE8E86DA1C57355900505BA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE8E86D41C57355800505BA4 = {
+			isa = PBXGroup;
+			children = (
+				DE8E86E91C5735ED00505BA4 /* ServiceClient.h */,
+				DE8E86EA1C5735ED00505BA4 /* ServiceClient.m */,
+				DE8E86EB1C5735ED00505BA4 /* XmlParser.h */,
+				DE8E86EC1C5735ED00505BA4 /* XmlParser.m */,
+				DE8E86ED1C5735ED00505BA4 /* SYXmlParserTags.plist */,
+				DE8E86DF1C57355900505BA4 /* FBBrinkPosLibrary */,
+				DE8E86DE1C57355900505BA4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE8E86DE1C57355900505BA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE8E86DD1C57355900505BA4 /* libFBBrinkPosLibrary.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE8E86DF1C57355900505BA4 /* FBBrinkPosLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				DE8E86F01C57364900505BA4 /* ItemModel.h */,
+				DE8E86F11C57364900505BA4 /* ItemModel.m */,
+				DE8E87511C57421200505BA4 /* ItemsData.h */,
+				DE8E87521C57421200505BA4 /* ItemsData.m */,
+				DE8E875D1C57C3B300505BA4 /* PrefixHeader.pch */,
+			);
+			path = FBBrinkPosLibrary;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE8E86DC1C57355900505BA4 /* FBBrinkPosLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE8E86E61C57355900505BA4 /* Build configuration list for PBXNativeTarget "FBBrinkPosLibrary" */;
+			buildPhases = (
+				DE8E86D91C57355900505BA4 /* Sources */,
+				DE8E86DA1C57355900505BA4 /* Frameworks */,
+				DE8E86DB1C57355900505BA4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBBrinkPosLibrary;
+			productName = FBBrinkPosLibrary;
+			productReference = DE8E86DD1C57355900505BA4 /* libFBBrinkPosLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE8E86D51C57355800505BA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Fishbowl;
+				TargetAttributes = {
+					DE8E86DC1C57355900505BA4 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = DE8E86D81C57355800505BA4 /* Build configuration list for PBXProject "FBBrinkPosLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DE8E86D41C57355800505BA4;
+			productRefGroup = DE8E86DE1C57355900505BA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE8E86DC1C57355900505BA4 /* FBBrinkPosLibrary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE8E86D91C57355900505BA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE8E87531C57421200505BA4 /* ItemsData.m in Sources */,
+				DE8E86EF1C5735ED00505BA4 /* XmlParser.m in Sources */,
+				DE8E86EE1C5735ED00505BA4 /* ServiceClient.m in Sources */,
+				DE8E86F21C57364900505BA4 /* ItemModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DE8E86E41C57355900505BA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DE8E86E51C57355900505BA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE8E86E71C57355900505BA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FBBrinkPosLibrary/PrefixHeader.pch";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DE8E86E81C57355900505BA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FBBrinkPosLibrary/PrefixHeader.pch";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE8E86D81C57355800505BA4 /* Build configuration list for PBXProject "FBBrinkPosLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE8E86E41C57355900505BA4 /* Debug */,
+				DE8E86E51C57355900505BA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE8E86E61C57355900505BA4 /* Build configuration list for PBXNativeTarget "FBBrinkPosLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE8E86E71C57355900505BA4 /* Debug */,
+				DE8E86E81C57355900505BA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE8E86D51C57355800505BA4 /* Project object */;
+}

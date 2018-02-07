@@ -1,0 +1,59 @@
+/*
+ Localizable.strings
+ clp register
+ 
+ Created by VT02 on 2/24/15.
+ Copyright (c) 2015 clyptech. All rights reserved.
+ */
+
+//UI Labels
+"Name" = "Nombre";
+"Mobile Phone" = "Teléfono Móvil";
+"E-Mail" = "E-Mail";
+"Address" = "Dirección";
+
+//Title
+"CUSTOMER REGISTRATION" = "REGISTRO DE CLIENTES";
+
+//Footer Text
+"15% off on your next purchase and free membership when you enroll in our Familia Milagros Program. Only valid once." = "15% de descuento en su compra total y membresia gratis de Familia Milagros cuando usted se inscribe al programa. Solamente valida por la primera vez.";
+
+
+
+//Placeholders
+//"Your name"="Su nombre";
+//"Mobile number"="Número de teléfono móvil";
+//"Your E-Mail"="Su E-Mail";
+//"Your address"="Su dirección"
+
+//Placeholders
+"Enter Id"="Escriba Id";
+"Enter your name"="Ingrese su nombre";
+"Enter your mobile number"="Introduce tu número de móvil";
+"Enter your Email address"="Introduzca su dirección de correo electrónico";
+"Enter your address"="Ingrese su dirección";
+//"Your address"="Your address"
+
+
+//UI Buttton
+"Register" = "Registrarse";
+
+//Error Messages
+"Message"="Mensaje";
+"Invalid Email ID" = "Inválido Email ID";
+"Invalid Mobile Phone"="Inválido Teléfono Móvil";
+"Invalid Name"="Inválido Nombre";
+"Invalid Address"="Inválido dirección";
+"Email Already Exists"="Correo electrónico ya existe";
+"Phone Number Already Exists"="Número de teléfono ya existe";
+"Mobile Phone Is Required"="Teléfono móvil es necesario";
+"Email Is Required"="Correo electrónico es necesario";
+
+//Alert Informations
+"Thank you for your registration!"="Gracias por su inscripción! ";
+"There is a problem in registration server. Please try again later."="Hay un problema en el servidor de registro . Por favor, inténtelo de nuevo más tarde";
+"Registration failed"="Falló el registro";
+
+//Scanner View
+"Please Scan..."="Por favor, Escanear...";
+"Barcode Scanned Successfully.\nTap Close to continue with registration."="Explorada con éxito.\nToque cerca conitinue.";

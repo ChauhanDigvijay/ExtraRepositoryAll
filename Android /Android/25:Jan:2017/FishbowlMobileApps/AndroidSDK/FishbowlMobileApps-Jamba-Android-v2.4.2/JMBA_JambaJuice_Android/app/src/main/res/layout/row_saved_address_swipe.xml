@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout
+    android:id="@+id/swipelayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null">
+    <LinearLayout
+        android:id="@+id/addressDeleteLayout"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:background="@color/red_color_1"
+        android:gravity="center"
+        android:tag="Bottom2">
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Remove"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/savedAddressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+        <RelativeLayout
+            android:id="@+id/addressLayout"
+            android:layout_toLeftOf="@+id/viewText"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/selectAddressIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:background="@android:color/transparent"
+                android:padding="10dp"
+                android:src="@drawable/option_empty" />
+            <TextView
+                android:id="@+id/selectAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/selectAddressIcon"
+                android:gravity="left"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="25 marple garden \nemeryvilli newyork 40001"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/viewText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="View"
+            android:textColor="@color/red_color"
+            android:textSize="@dimen/text_size_medium" />
+
+    </RelativeLayout>
+
+</com.daimajia.swipe.SwipeLayout>

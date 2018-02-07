@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:layout_weight="0.6"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+            android:id="@+id/tv_name"
+            style="@style/text.16.prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:focusable="false"
+            android:text="You have no offers "
+            android:textColor="@color/dark_green" />
+
+        <TextView
+            android:id="@+id/tv_expiry"
+            style="@style/text.12.prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:focusable="false"
+            android:text="You have no offers "
+            android:textColor="@color/darker_gray" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:layout_weight="1.4"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:focusable="false"
+            android:gravity="left"
+            android:text="Never expires "
+            android:textColor="@color/red_color"
+            android:textSize="10sp" />
+
+
+        <Button
+            android:id="@+id/btn_apply"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@drawable/round_yellow_corner"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="Apply"
+            android:textAllCaps="false"
+            android:textColor="@color/instabug_annotation_color_yellow"
+            android:textSize="10sp"
+
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btn_remove"
+            android:layout_width="65dp"
+            android:layout_height="25dp"
+            android:background="@drawable/round_yellow_corner"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="Remove"
+            android:textAllCaps="false"
+            android:textColor="@color/instabug_annotation_color_yellow"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

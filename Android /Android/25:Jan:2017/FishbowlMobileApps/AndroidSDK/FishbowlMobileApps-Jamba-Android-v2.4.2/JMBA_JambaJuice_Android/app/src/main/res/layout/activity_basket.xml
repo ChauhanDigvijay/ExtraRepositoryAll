@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.olo.jambajuice.Activites.NonGeneric.OrderAhead.Basket.BasketActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="15dp"
+            android:src="@drawable/trash" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/checkout_layout"
+        android:layout_below="@+id/toolbarLayout"
+        android:background="@null"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/setting_header"
+                android:gravity="center_vertical"
+                android:paddingBottom="3dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="3dp"
+                android:text="Items"
+                android:textColor="@color/brown_color"
+                android:textSize="@dimen/text_size_large" />
+
+            <LinearLayout
+                android:id="@+id/basketProductContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/setting_header"
+                android:dividerHeight="1dp"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/darker_gray" />
+
+            <Button
+                android:id="@+id/addAnotherItem"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/basket_item_height"
+                android:background="@null"
+                android:drawableRight="@drawable/plus_orange"
+                android:gravity="left|center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Add Another Item"
+                android:textAllCaps="false"
+                android:textColor="@color/orange_color"
+                android:textSize="@dimen/text_size_large" />
+
+            <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/setting_header"
+                android:gravity="center_vertical"
+                android:paddingBottom="3dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="3dp"
+                android:text="Store"
+                android:textColor="@color/brown_color"
+                android:textSize="@dimen/text_size_large" />
+
+            <RelativeLayout
+                android:id="@+id/store_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/store_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/tv_amount"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:paddingLeft="20dp"
+                    android:text="Store Name"
+                    android:textColor="@color/darker_gray"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/store_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/store_title"
+                    android:layout_toLeftOf="@+id/tv_amount"
+                    android:paddingLeft="20dp"
+                    android:text="StoreAddress"
+                    android:textColor="@color/darker_gray"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <TextView
+                    android:id="@+id/tv_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/forward_arrow_gray"
+                    android:gravity="center"
+                    android:paddingRight="15dp"
+                    android:textColor="@color/darker_gray"
+                    android:textSize="@dimen/text_size_medium" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/orderTypeMainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/setting_header"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="3dp"
+                    android:text="Order Type"
+                    android:textColor="@color/brown_color"
+                    android:textSize="@dimen/text_size_large" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null">
+
+                    <LinearLayout
+                        android:id="@+id/deliveryTypeLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="@dimen/margin_20"
+                        android:paddingRight="@dimen/margin_20"
+                        android:paddingTop="10dp">
+
+                        <Button
+                            android:id="@+id/pickUpBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/margin_5"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_btn_basket_time"
+                            android:minHeight="0dp"
+                            android:paddingBottom="7dp"
+                            android:paddingTop="7dp"
+                            android:text="PICK UP"
+                            android:textAllCaps="false"
+                            android:textColor="@drawable/selector_txt_basket_time"
+                            android:textSize="@dimen/text_size_medium" />
+
+                        <Button
+                            android:id="@+id/deliveryBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_btn_basket_time"
+                            android:minHeight="0dp"
+                            android:paddingBottom="7dp"
+                            android:paddingTop="7dp"
+                            android:text="DELIVERY"
+                            android:textAllCaps="false"
+                            android:textColor="@drawable/selector_txt_basket_time"
+                            android:textSize="@dimen/text_size_medium" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/deliveryMainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/setting_header"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="3dp"
+                    android:text="Delivery Address"
+                    android:textColor="@color/brown_color"
+                    android:textSize="@dimen/text_size_large" />
+
+                <RelativeLayout
+                    android:id="@+id/dALayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp">
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/sAddress1"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:paddingLeft="20dp"-->
+                    <!--android:text="Select/Enter your delivery address"-->
+                    <!--android:textColor="@color/darker_gray"-->
+                    <!--android:textSize="@dimen/text_size_medium" />-->
+                    <RelativeLayout
+                        android:id="@+id/addressLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/navigateIcon">
+
+                        <TextView
+                            android:id="@+id/sAddress1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="left"
+                            android:maxLines="2"
+                            android:paddingLeft="20dp"
+                            android:text="Select/Enter your delivery address"
+                            android:textColor="@color/darker_gray"
+                            android:textSize="@dimen/text_size_medium" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/navigateIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/forward_arrow_gray"
+                        android:gravity="center"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/darker_gray"
+                        android:textSize="@dimen/text_size_medium" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/delivery_time_of_day"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:layout_marginRight="@dimen/margin_20">
+
+                        <SeekBar
+                            android:id="@+id/delivery_seekbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/delivery_selected_time"
+                            android:indeterminateDrawable="@color/darker_gray"
+                            android:thumb="@drawable/circle_basket_progress_time" />
+
+                        <TextView
+                            android:id="@+id/delivery_tv_store_not_available"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/delivery_selected_time"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/margin_10"
+                            android:text="Store is currently closed"
+                            android:textColor="@color/darker_gray"
+                            android:textSize="@dimen/text_size_medium"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/delivery_selected_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/darker_gray"
+                            android:textSize="@dimen/text_size_medium" />
+
+                        <TextView
+                            android:id="@+id/delivery_open_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/delivery_seekbar"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/darker_gray"
+                            android:textSize="@dimen/text_size_medium" />
+
+                        <TextView
+                            android:id="@+id/delivery_close_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/delivery_seekbar"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:paddingRight="20dp"
+                            android:textColor="@color/darker_gray"
+                            android:textSize="@dimen/text_size_medium" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/delivery_time_of_day"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="@dimen/margin_20"
+                        android:paddingRight="@dimen/margin_20"
+                        android:paddingTop="10dp"
+                        android:visibility="gone">
+
+
+                        <RelativeLayout
+                            android:id="@+id/delivery_btn_asap"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/margin_5"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_btn_basket_time"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true">
+
+                                <TextView
+                                    android:id="@+id/delivery_asap"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="ASAP"
+                                    android:textAllCaps="false"
+                                    android:textColor="@drawable/selector_txt_basket_time"
+                                    android:textSize="@dimen/text_size_medium" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/delivery_asap"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="in 40 Mins"
+                                    android:textAllCaps="false"
+                                    android:textColor="@drawable/selector_txt_basket_time"
+                                    android:textSize="10dp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/delivery_btn_today"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/margin_5"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_btn_basket_time"
+                            android:minHeight="0dp"
+                            android:paddingBottom="7dp"
+                            android:paddingTop="7dp"
+                            android:text="Today"
+                            android:textAllCaps="false"
+                            android:textColor="@drawable/selector_txt_basket_time"
+                            android:textSize="@dimen/text_size_medium" />
+
+                        <Button
+                            android:id="@+id/delivery_btn_later"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_btn_basket_time"
+                            android:minHeight="0dp"
+                            android:paddingBottom="7dp"
+                            android:paddingTop="7dp"
+                            android:text="Later"
+                            android:textAllCaps="false"
+                            android:textColor="@drawable/selector_txt_basket_time"
+                            android:textSize="@dimen/text_size_medium" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pickUpMainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/pickText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/setting_header"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="3dp"
+                    android:text="Pickup Date &amp; Time"
+                    android:textColor="@color/brown_color"
+                    android:textSize="@dimen/text_size_large" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null">
+
+                    <LinearLayout
+                        android:id="@+id/time_of_day"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="@dimen/margin_20"
+                        android:paddingRight="@dimen/margin_20"
+                        android:paddingTop="10dp">
+
+
+                        <RelativeLayout
+                            android:id="@+id/btn_asap"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/margin_5"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_btn_basket_time"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true">
+
+                                <TextView
+                                    android:id="@+id/asap"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="ASAP"
+                                    android:textAllCaps="false"
+                                    android:textColor="@drawable/selector_txt_basket_time"
+                                    android:textSize="@dimen/text_size_medium" />
+
+                                <TextView
+                                    android:id="@+id/asapBelowtext"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/asap"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="in 15 Mins"
+                                    android:textAllCaps="false"
+                                    android:textColor="@drawable/selector_txt_basket_time"
+                                    android:textSize="10dp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/btn_today"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/margin_5"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_btn_basket_time"
+                            android:minHeight="0dp"
+                            android:paddingBottom="7dp"
+                            android:paddingTop="7dp"
+                            android:text="TODAY"
+                            android:textAllCaps="false"
+                            android:textColor="@drawable/selector_txt_basket_time"
+                            android:textSize="@dimen/text_size_medium" />
+
+                        <Button
+                            android:id="@+id/btn_tomorrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_btn_basket_time"
+                            android:minHeight="0dp"
+                            android:paddingBottom="7dp"
+                            android:paddingTop="7dp"
+                            android:text="FUTURE"
+                            android:textAllCaps="false"
+                            android:textColor="@drawable/selector_txt_basket_time"
+                            android:textSize="@dimen/text_size_medium" />
+
+                        <Button
+                            android:id="@+id/btn_later"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_btn_basket_time"
+                            android:minHeight="0dp"
+                            android:paddingBottom="7dp"
+                            android:paddingTop="7dp"
+                            android:text="FUTURE"
+                            android:textAllCaps="false"
+                            android:textColor="@drawable/selector_txt_basket_time"
+                            android:textSize="@dimen/text_size_medium"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/time_of_day"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:layout_marginRight="@dimen/margin_20">
+
+                        <SeekBar
+                            android:id="@+id/seekbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/selected_time"
+                            android:indeterminateDrawable="@color/darker_gray"
+                            android:thumb="@drawable/circle_basket_progress_time" />
+
+                        <TextView
+                            android:id="@+id/tv_store_not_available"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/selected_time"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/margin_10"
+                            android:text="Store is currently closed"
+                            android:textColor="@color/darker_gray"
+                            android:textSize="@dimen/text_size_medium"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/selected_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/darker_gray"
+                            android:textSize="@dimen/text_size_medium" />
+
+                        <TextView
+                            android:id="@+id/open_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/seekbar"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="20dp"
+                            android:textColor="@color/darker_gray"
+                            android:textSize="@dimen/text_size_medium" />
+
+                        <TextView
+                            android:id="@+id/close_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/seekbar"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:paddingRight="20dp"
+                            android:textColor="@color/darker_gray"
+                            android:textSize="@dimen/text_size_medium" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                android:id="@+id/rewardPromotionHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/setting_header"
+                android:gravity="center_vertical"
+                android:paddingBottom="3dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="3dp"
+                android:text="Rewards &amp; Promotions"
+                android:textColor="@color/brown_color"
+                android:textSize="@dimen/text_size_large" />
+
+            <include
+                android:id="@+id/promotions"
+                layout="@layout/row_basket_promotions"></include>
+
+            <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/setting_header"
+                android:gravity="center_vertical"
+                android:paddingBottom="3dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="3dp"
+                android:text="Total"
+                android:textColor="@color/brown_color"
+                android:textSize="@dimen/text_size_large" />
+
+            <include
+                android:id="@+id/total"
+                layout="@layout/row_basket_total"></include>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/checkout_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.olo.jambajuice.Views.Generic.SemiBoldButton
+            android:id="@+id/tv_total_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/red_color"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="$0.0"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_large" />
+
+        <com.olo.jambajuice.Views.Generic.SemiBoldButton
+            android:id="@+id/tv_checkout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/red_color_1"
+            android:gravity="center"
+            android:text="Check Out"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_large" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/screenDisableView"
+        layout="@layout/disable_view" />
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuRightTableViewCell" id="KGk-i7-Jjw" userLabel="MenuRightTableViewCell" customClass="MenuRightTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="178" height="41"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="178" height="40.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1l-VP-psH">
+                        <rect key="frame" x="10" y="10" width="143" height="20"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                        <color key="textColor" red="0.62745098039215685" green="0.51372549019607838" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MenuArrow" translatesAutoresizingMaskIntoConstraints="NO" id="FPT-rV-TqU">
+                        <rect key="frame" x="158" y="10" width="11" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="abw-s5-i0Y"/>
+                            <constraint firstAttribute="width" constant="11" id="qUp-hn-NlI"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="FPT-rV-TqU" firstAttribute="centerY" secondItem="V1l-VP-psH" secondAttribute="centerY" id="3OA-0r-0KW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="FPT-rV-TqU" secondAttribute="trailing" constant="9" id="Lam-Xs-26F"/>
+                <constraint firstItem="V1l-VP-psH" firstAttribute="width" secondItem="KGk-i7-Jjw" secondAttribute="width" multiplier="143:178" id="Tsz-ED-5bm"/>
+                <constraint firstItem="V1l-VP-psH" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" constant="10" id="aMc-UW-V4W"/>
+                <constraint firstItem="V1l-VP-psH" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="10" id="gzJ-8Y-V8t"/>
+                <constraint firstAttribute="bottom" secondItem="V1l-VP-psH" secondAttribute="bottom" constant="11" id="y6A-mZ-wug"/>
+            </constraints>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="nemeRight" destination="V1l-VP-psH" id="tEh-3e-buE"/>
+            </connections>
+            <point key="canvasLocation" x="213" y="147.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="MenuArrow" width="5" height="10"/>
+    </resources>
+</document>

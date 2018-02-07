@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54369A611E27F20300AF30C5 /* ApiClasses.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369A5B1E27F20300AF30C5 /* ApiClasses.m */; };
+		54369A621E27F20300AF30C5 /* ModelClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369A5E1E27F20300AF30C5 /* ModelClass.m */; };
+		54369A631E27F20300AF30C5 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369A601E27F20300AF30C5 /* Reachability.m */; };
+		54369A701E27F23300AF30C5 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369A651E27F23300AF30C5 /* Database.m */; };
+		54369A711E27F23300AF30C5 /* FishBowlBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369A671E27F23300AF30C5 /* FishBowlBeacon.m */; };
+		54369A721E27F23300AF30C5 /* FishBowlCustomer.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369A691E27F23300AF30C5 /* FishBowlCustomer.m */; };
+		54369A731E27F23300AF30C5 /* FishBowlMobileEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369A6B1E27F23300AF30C5 /* FishBowlMobileEvent.m */; };
+		54369A741E27F23300AF30C5 /* FishBowlMobileSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369A6D1E27F23300AF30C5 /* FishBowlMobileSetting.m */; };
+		54369A751E27F23300AF30C5 /* FishBowlStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369A6F1E27F23300AF30C5 /* FishBowlStore.m */; };
+		54369A781E27F24D00AF30C5 /* FBGuest.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369A771E27F24D00AF30C5 /* FBGuest.m */; };
+		54369A7B1E27F26900AF30C5 /* FishBowlsdk.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369A7A1E27F26900AF30C5 /* FishBowlsdk.m */; };
+		54369A961E27F2F700AF30C5 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369A7F1E27F2F700AF30C5 /* JSONModel.m */; };
+		54369A971E27F2F700AF30C5 /* JSONModelArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369A811E27F2F700AF30C5 /* JSONModelArray.m */; };
+		54369A981E27F2F700AF30C5 /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369A831E27F2F700AF30C5 /* JSONModelClassProperty.m */; };
+		54369A991E27F2F700AF30C5 /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369A851E27F2F700AF30C5 /* JSONModelError.m */; };
+		54369A9A1E27F2F700AF30C5 /* NSArray+JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369A881E27F2F700AF30C5 /* NSArray+JSONModel.m */; };
+		54369A9B1E27F2F700AF30C5 /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369A8C1E27F2F700AF30C5 /* JSONAPI.m */; };
+		54369A9C1E27F2F700AF30C5 /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369A8E1E27F2F700AF30C5 /* JSONHTTPClient.m */; };
+		54369A9D1E27F2F700AF30C5 /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369A901E27F2F700AF30C5 /* JSONModel+networking.m */; };
+		54369A9E1E27F2F700AF30C5 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369A931E27F2F700AF30C5 /* JSONKeyMapper.m */; };
+		54369A9F1E27F2F700AF30C5 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369A951E27F2F700AF30C5 /* JSONValueTransformer.m */; };
+		54369AB31E27F39C00AF30C5 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369AA11E27F39C00AF30C5 /* AFHTTPRequestOperation.m */; };
+		54369AB41E27F39C00AF30C5 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369AA31E27F39C00AF30C5 /* AFHTTPRequestOperationManager.m */; };
+		54369AB51E27F39C00AF30C5 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369AA51E27F39C00AF30C5 /* AFHTTPSessionManager.m */; };
+		54369AB61E27F39C00AF30C5 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369AA81E27F39C00AF30C5 /* AFNetworkReachabilityManager.m */; };
+		54369AB71E27F39C00AF30C5 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369AAA1E27F39C00AF30C5 /* AFSecurityPolicy.m */; };
+		54369AB81E27F39C00AF30C5 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369AAC1E27F39C00AF30C5 /* AFURLConnectionOperation.m */; };
+		54369AB91E27F39C00AF30C5 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369AAE1E27F39C00AF30C5 /* AFURLRequestSerialization.m */; };
+		54369ABA1E27F39C00AF30C5 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369AB01E27F39C00AF30C5 /* AFURLResponseSerialization.m */; };
+		54369ABB1E27F39C00AF30C5 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369AB21E27F39C00AF30C5 /* AFURLSessionManager.m */; };
+		54369ACD1E27F3D200AF30C5 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369ABD1E27F3D200AF30C5 /* AFNetworkActivityIndicatorManager.m */; };
+		54369ACE1E27F3D200AF30C5 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369ABF1E27F3D200AF30C5 /* UIActivityIndicatorView+AFNetworking.m */; };
+		54369ACF1E27F3D200AF30C5 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369AC11E27F3D200AF30C5 /* UIAlertView+AFNetworking.m */; };
+		54369AD01E27F3D200AF30C5 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369AC31E27F3D200AF30C5 /* UIButton+AFNetworking.m */; };
+		54369AD11E27F3D200AF30C5 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369AC51E27F3D200AF30C5 /* UIImageView+AFNetworking.m */; };
+		54369AD21E27F3D200AF30C5 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369AC81E27F3D200AF30C5 /* UIProgressView+AFNetworking.m */; };
+		54369AD31E27F3D200AF30C5 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369ACA1E27F3D200AF30C5 /* UIRefreshControl+AFNetworking.m */; };
+		54369AD41E27F3D200AF30C5 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 54369ACC1E27F3D200AF30C5 /* UIWebView+AFNetworking.m */; };
+		54369AD51E27F42300AF30C5 /* ApiClasses.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 54369A5A1E27F20300AF30C5 /* ApiClasses.h */; };
+		54369AD61E27F42300AF30C5 /* Constant.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 54369A5C1E27F20300AF30C5 /* Constant.h */; };
+		54369AD71E27F42300AF30C5 /* ModelClass.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 54369A5D1E27F20300AF30C5 /* ModelClass.h */; };
+		54369AD81E27F42300AF30C5 /* Reachability.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 54369A5F1E27F20300AF30C5 /* Reachability.h */; };
+		54369AD91E27F43A00AF30C5 /* FishBowlsdk.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 54369A791E27F26900AF30C5 /* FishBowlsdk.h */; };
+		54369ADA1E27F43A00AF30C5 /* FBGuest.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 54369A761E27F24D00AF30C5 /* FBGuest.h */; };
+		54369ADB1E27F43A00AF30C5 /* Database.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 54369A641E27F23300AF30C5 /* Database.h */; };
+		54369ADC1E27F43A00AF30C5 /* FishBowlBeacon.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 54369A661E27F23300AF30C5 /* FishBowlBeacon.h */; };
+		54369ADD1E27F43A00AF30C5 /* FishBowlCustomer.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 54369A681E27F23300AF30C5 /* FishBowlCustomer.h */; };
+		54369ADE1E27F43A00AF30C5 /* FishBowlMobileEvent.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 54369A6A1E27F23300AF30C5 /* FishBowlMobileEvent.h */; };
+		54369ADF1E27F43A00AF30C5 /* FishBowlMobileSetting.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 54369A6C1E27F23300AF30C5 /* FishBowlMobileSetting.h */; };
+		54369AE01E27F43A00AF30C5 /* FishBowlStore.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 54369A6E1E27F23300AF30C5 /* FishBowlStore.h */; };
+		54369AE11E27F4A500AF30C5 /* JSONModel.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 54369A7E1E27F2F700AF30C5 /* JSONModel.h */; };
+		54369AE21E27F4A500AF30C5 /* JSONModelArray.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 54369A801E27F2F700AF30C5 /* JSONModelArray.h */; };
+		54369AE31E27F4A500AF30C5 /* JSONModelClassProperty.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 54369A821E27F2F700AF30C5 /* JSONModelClassProperty.h */; };
+		54369AE41E27F4A500AF30C5 /* JSONModelError.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 54369A841E27F2F700AF30C5 /* JSONModelError.h */; };
+		54369AE51E27F4A500AF30C5 /* NSArray+JSONModel.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 54369A871E27F2F700AF30C5 /* NSArray+JSONModel.h */; };
+		54369AE61E27F4A500AF30C5 /* JSONModelLib.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 54369A891E27F2F700AF30C5 /* JSONModelLib.h */; };
+		54369AE71E27F4A500AF30C5 /* JSONAPI.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 54369A8B1E27F2F700AF30C5 /* JSONAPI.h */; };
+		54369AE81E27F4A500AF30C5 /* JSONHTTPClient.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 54369A8D1E27F2F700AF30C5 /* JSONHTTPClient.h */; };
+		54369AE91E27F4A500AF30C5 /* JSONModel+networking.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 54369A8F1E27F2F700AF30C5 /* JSONModel+networking.h */; };
+		54369AEA1E27F4A500AF30C5 /* JSONKeyMapper.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 54369A921E27F2F700AF30C5 /* JSONKeyMapper.h */; };
+		54369AEB1E27F4A500AF30C5 /* JSONValueTransformer.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 54369A941E27F2F700AF30C5 /* JSONValueTransformer.h */; };
+		92CA439B1AA0A3D500D4C7D4 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92CA439A1AA0A3D500D4C7D4 /* CoreBluetooth.framework */; };
+		92CA439D1AA0A3DF00D4C7D4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92CA439C1AA0A3DF00D4C7D4 /* SystemConfiguration.framework */; };
+		92CA439F1AA0A3E900D4C7D4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92CA439E1AA0A3E900D4C7D4 /* MapKit.framework */; };
+		92CA43A11AA0A3EE00D4C7D4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92CA43A01AA0A3EE00D4C7D4 /* CoreLocation.framework */; };
+		92CA43A31AA0A3F300D4C7D4 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92CA43A21AA0A3F300D4C7D4 /* PassKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		92CA437E1AA0A37A00D4C7D4 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				54369AE11E27F4A500AF30C5 /* JSONModel.h in Copy Files */,
+				54369AE21E27F4A500AF30C5 /* JSONModelArray.h in Copy Files */,
+				54369AE31E27F4A500AF30C5 /* JSONModelClassProperty.h in Copy Files */,
+				54369AE41E27F4A500AF30C5 /* JSONModelError.h in Copy Files */,
+				54369AE51E27F4A500AF30C5 /* NSArray+JSONModel.h in Copy Files */,
+				54369AE61E27F4A500AF30C5 /* JSONModelLib.h in Copy Files */,
+				54369AE71E27F4A500AF30C5 /* JSONAPI.h in Copy Files */,
+				54369AE81E27F4A500AF30C5 /* JSONHTTPClient.h in Copy Files */,
+				54369AE91E27F4A500AF30C5 /* JSONModel+networking.h in Copy Files */,
+				54369AEA1E27F4A500AF30C5 /* JSONKeyMapper.h in Copy Files */,
+				54369AEB1E27F4A500AF30C5 /* JSONValueTransformer.h in Copy Files */,
+				54369AD91E27F43A00AF30C5 /* FishBowlsdk.h in Copy Files */,
+				54369ADA1E27F43A00AF30C5 /* FBGuest.h in Copy Files */,
+				54369ADB1E27F43A00AF30C5 /* Database.h in Copy Files */,
+				54369ADC1E27F43A00AF30C5 /* FishBowlBeacon.h in Copy Files */,
+				54369ADD1E27F43A00AF30C5 /* FishBowlCustomer.h in Copy Files */,
+				54369ADE1E27F43A00AF30C5 /* FishBowlMobileEvent.h in Copy Files */,
+				54369ADF1E27F43A00AF30C5 /* FishBowlMobileSetting.h in Copy Files */,
+				54369AE01E27F43A00AF30C5 /* FishBowlStore.h in Copy Files */,
+				54369AD51E27F42300AF30C5 /* ApiClasses.h in Copy Files */,
+				54369AD61E27F42300AF30C5 /* Constant.h in Copy Files */,
+				54369AD71E27F42300AF30C5 /* ModelClass.h in Copy Files */,
+				54369AD81E27F42300AF30C5 /* Reachability.h in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		54369A5A1E27F20300AF30C5 /* ApiClasses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApiClasses.h; path = FishBowlsdk/FishBowlLibrary/LibraryDemo/ApiClasses.h; sourceTree = SOURCE_ROOT; };
+		54369A5B1E27F20300AF30C5 /* ApiClasses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApiClasses.m; path = FishBowlsdk/FishBowlLibrary/LibraryDemo/ApiClasses.m; sourceTree = SOURCE_ROOT; };
+		54369A5C1E27F20300AF30C5 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constant.h; path = FishBowlsdk/FishBowlLibrary/LibraryDemo/Constant.h; sourceTree = SOURCE_ROOT; };
+		54369A5D1E27F20300AF30C5 /* ModelClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModelClass.h; path = FishBowlsdk/FishBowlLibrary/LibraryDemo/ModelClass.h; sourceTree = SOURCE_ROOT; };
+		54369A5E1E27F20300AF30C5 /* ModelClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModelClass.m; path = FishBowlsdk/FishBowlLibrary/LibraryDemo/ModelClass.m; sourceTree = SOURCE_ROOT; };
+		54369A5F1E27F20300AF30C5 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = FishBowlsdk/FishBowlLibrary/LibraryDemo/Reachability.h; sourceTree = SOURCE_ROOT; };
+		54369A601E27F20300AF30C5 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = FishBowlsdk/FishBowlLibrary/LibraryDemo/Reachability.m; sourceTree = SOURCE_ROOT; };
+		54369A641E27F23300AF30C5 /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Database.h; path = FishBowlsdk/model/Database.h; sourceTree = SOURCE_ROOT; };
+		54369A651E27F23300AF30C5 /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Database.m; path = FishBowlsdk/model/Database.m; sourceTree = SOURCE_ROOT; };
+		54369A661E27F23300AF30C5 /* FishBowlBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FishBowlBeacon.h; path = FishBowlsdk/model/FishBowlBeacon.h; sourceTree = SOURCE_ROOT; };
+		54369A671E27F23300AF30C5 /* FishBowlBeacon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FishBowlBeacon.m; path = FishBowlsdk/model/FishBowlBeacon.m; sourceTree = SOURCE_ROOT; };
+		54369A681E27F23300AF30C5 /* FishBowlCustomer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FishBowlCustomer.h; path = FishBowlsdk/model/FishBowlCustomer.h; sourceTree = SOURCE_ROOT; };
+		54369A691E27F23300AF30C5 /* FishBowlCustomer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FishBowlCustomer.m; path = FishBowlsdk/model/FishBowlCustomer.m; sourceTree = SOURCE_ROOT; };
+		54369A6A1E27F23300AF30C5 /* FishBowlMobileEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FishBowlMobileEvent.h; path = FishBowlsdk/model/FishBowlMobileEvent.h; sourceTree = SOURCE_ROOT; };
+		54369A6B1E27F23300AF30C5 /* FishBowlMobileEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FishBowlMobileEvent.m; path = FishBowlsdk/model/FishBowlMobileEvent.m; sourceTree = SOURCE_ROOT; };
+		54369A6C1E27F23300AF30C5 /* FishBowlMobileSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FishBowlMobileSetting.h; path = FishBowlsdk/model/FishBowlMobileSetting.h; sourceTree = SOURCE_ROOT; };
+		54369A6D1E27F23300AF30C5 /* FishBowlMobileSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FishBowlMobileSetting.m; path = FishBowlsdk/model/FishBowlMobileSetting.m; sourceTree = SOURCE_ROOT; };
+		54369A6E1E27F23300AF30C5 /* FishBowlStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FishBowlStore.h; path = FishBowlsdk/model/FishBowlStore.h; sourceTree = SOURCE_ROOT; };
+		54369A6F1E27F23300AF30C5 /* FishBowlStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FishBowlStore.m; path = FishBowlsdk/model/FishBowlStore.m; sourceTree = SOURCE_ROOT; };
+		54369A761E27F24D00AF30C5 /* FBGuest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBGuest.h; path = FishBowlsdk/FBGuest.h; sourceTree = SOURCE_ROOT; };
+		54369A771E27F24D00AF30C5 /* FBGuest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBGuest.m; path = FishBowlsdk/FBGuest.m; sourceTree = SOURCE_ROOT; };
+		54369A791E27F26900AF30C5 /* FishBowlsdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FishBowlsdk.h; path = FishBowlsdk/FishBowlsdk.h; sourceTree = SOURCE_ROOT; };
+		54369A7A1E27F26900AF30C5 /* FishBowlsdk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FishBowlsdk.m; path = FishBowlsdk/FishBowlsdk.m; sourceTree = SOURCE_ROOT; };
+		54369A7C1E27F29800AF30C5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FishBowlsdkTests/Info.plist; sourceTree = SOURCE_ROOT; };
+		54369A7E1E27F2F700AF30C5 /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
+		54369A7F1E27F2F700AF30C5 /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
+		54369A801E27F2F700AF30C5 /* JSONModelArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelArray.h; sourceTree = "<group>"; };
+		54369A811E27F2F700AF30C5 /* JSONModelArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelArray.m; sourceTree = "<group>"; };
+		54369A821E27F2F700AF30C5 /* JSONModelClassProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelClassProperty.h; sourceTree = "<group>"; };
+		54369A831E27F2F700AF30C5 /* JSONModelClassProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelClassProperty.m; sourceTree = "<group>"; };
+		54369A841E27F2F700AF30C5 /* JSONModelError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelError.h; sourceTree = "<group>"; };
+		54369A851E27F2F700AF30C5 /* JSONModelError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelError.m; sourceTree = "<group>"; };
+		54369A871E27F2F700AF30C5 /* NSArray+JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+JSONModel.h"; sourceTree = "<group>"; };
+		54369A881E27F2F700AF30C5 /* NSArray+JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JSONModel.m"; sourceTree = "<group>"; };
+		54369A891E27F2F700AF30C5 /* JSONModelLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONModelLib.h; path = FishBowlsdk/JSONModel/JSONModelLib.h; sourceTree = "<group>"; };
+		54369A8B1E27F2F700AF30C5 /* JSONAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONAPI.h; sourceTree = "<group>"; };
+		54369A8C1E27F2F700AF30C5 /* JSONAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONAPI.m; sourceTree = "<group>"; };
+		54369A8D1E27F2F700AF30C5 /* JSONHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONHTTPClient.h; sourceTree = "<group>"; };
+		54369A8E1E27F2F700AF30C5 /* JSONHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONHTTPClient.m; sourceTree = "<group>"; };
+		54369A8F1E27F2F700AF30C5 /* JSONModel+networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONModel+networking.h"; sourceTree = "<group>"; };
+		54369A901E27F2F700AF30C5 /* JSONModel+networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONModel+networking.m"; sourceTree = "<group>"; };
+		54369A921E27F2F700AF30C5 /* JSONKeyMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKeyMapper.h; sourceTree = "<group>"; };
+		54369A931E27F2F700AF30C5 /* JSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKeyMapper.m; sourceTree = "<group>"; };
+		54369A941E27F2F700AF30C5 /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
+		54369A951E27F2F700AF30C5 /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
+		54369AA01E27F39C00AF30C5 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = FishBowlsdk/AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		54369AA11E27F39C00AF30C5 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = FishBowlsdk/AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		54369AA21E27F39C00AF30C5 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = FishBowlsdk/AFNetworking/AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		54369AA31E27F39C00AF30C5 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = FishBowlsdk/AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		54369AA41E27F39C00AF30C5 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = FishBowlsdk/AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		54369AA51E27F39C00AF30C5 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = FishBowlsdk/AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		54369AA61E27F39C00AF30C5 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = FishBowlsdk/AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		54369AA71E27F39C00AF30C5 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = FishBowlsdk/AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		54369AA81E27F39C00AF30C5 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = FishBowlsdk/AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		54369AA91E27F39C00AF30C5 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = FishBowlsdk/AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		54369AAA1E27F39C00AF30C5 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = FishBowlsdk/AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		54369AAB1E27F39C00AF30C5 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = FishBowlsdk/AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		54369AAC1E27F39C00AF30C5 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = FishBowlsdk/AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		54369AAD1E27F39C00AF30C5 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = FishBowlsdk/AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		54369AAE1E27F39C00AF30C5 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = FishBowlsdk/AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		54369AAF1E27F39C00AF30C5 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = FishBowlsdk/AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		54369AB01E27F39C00AF30C5 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = FishBowlsdk/AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		54369AB11E27F39C00AF30C5 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = FishBowlsdk/AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		54369AB21E27F39C00AF30C5 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = FishBowlsdk/AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		54369ABC1E27F3D200AF30C5 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "FishBowlsdk/UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		54369ABD1E27F3D200AF30C5 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "FishBowlsdk/UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		54369ABE1E27F3D200AF30C5 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "FishBowlsdk/UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		54369ABF1E27F3D200AF30C5 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "FishBowlsdk/UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		54369AC01E27F3D200AF30C5 /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+AFNetworking.h"; path = "FishBowlsdk/UIKit+AFNetworking/UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
+		54369AC11E27F3D200AF30C5 /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+AFNetworking.m"; path = "FishBowlsdk/UIKit+AFNetworking/UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
+		54369AC21E27F3D200AF30C5 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "FishBowlsdk/UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		54369AC31E27F3D200AF30C5 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "FishBowlsdk/UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		54369AC41E27F3D200AF30C5 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "FishBowlsdk/UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		54369AC51E27F3D200AF30C5 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "FishBowlsdk/UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		54369AC61E27F3D200AF30C5 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "FishBowlsdk/UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		54369AC71E27F3D200AF30C5 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "FishBowlsdk/UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		54369AC81E27F3D200AF30C5 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "FishBowlsdk/UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		54369AC91E27F3D200AF30C5 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "FishBowlsdk/UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		54369ACA1E27F3D200AF30C5 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "FishBowlsdk/UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		54369ACB1E27F3D200AF30C5 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "FishBowlsdk/UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		54369ACC1E27F3D200AF30C5 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "FishBowlsdk/UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		5448D0E41DAFF46700ABAFBA /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		92CA43801AA0A37A00D4C7D4 /* libFishBowlsdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFishBowlsdk.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		92CA439A1AA0A3D500D4C7D4 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		92CA439C1AA0A3DF00D4C7D4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		92CA439E1AA0A3E900D4C7D4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		92CA43A01AA0A3EE00D4C7D4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		92CA43A21AA0A3F300D4C7D4 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92CA437D1AA0A37A00D4C7D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92CA43A31AA0A3F300D4C7D4 /* PassKit.framework in Frameworks */,
+				92CA43A11AA0A3EE00D4C7D4 /* CoreLocation.framework in Frameworks */,
+				92CA439F1AA0A3E900D4C7D4 /* MapKit.framework in Frameworks */,
+				92CA439D1AA0A3DF00D4C7D4 /* SystemConfiguration.framework in Frameworks */,
+				92CA439B1AA0A3D500D4C7D4 /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5419506B1D4D0F9D00039361 /* ApiClasses */ = {
+			isa = PBXGroup;
+			children = (
+				54369A5A1E27F20300AF30C5 /* ApiClasses.h */,
+				54369A5B1E27F20300AF30C5 /* ApiClasses.m */,
+				54369A5C1E27F20300AF30C5 /* Constant.h */,
+				54369A5D1E27F20300AF30C5 /* ModelClass.h */,
+				54369A5E1E27F20300AF30C5 /* ModelClass.m */,
+				54369A5F1E27F20300AF30C5 /* Reachability.h */,
+				54369A601E27F20300AF30C5 /* Reachability.m */,
+			);
+			name = ApiClasses;
+			sourceTree = "<group>";
+		};
+		54369A7D1E27F2F700AF30C5 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				54369A7E1E27F2F700AF30C5 /* JSONModel.h */,
+				54369A7F1E27F2F700AF30C5 /* JSONModel.m */,
+				54369A801E27F2F700AF30C5 /* JSONModelArray.h */,
+				54369A811E27F2F700AF30C5 /* JSONModelArray.m */,
+				54369A821E27F2F700AF30C5 /* JSONModelClassProperty.h */,
+				54369A831E27F2F700AF30C5 /* JSONModelClassProperty.m */,
+				54369A841E27F2F700AF30C5 /* JSONModelError.h */,
+				54369A851E27F2F700AF30C5 /* JSONModelError.m */,
+			);
+			name = JSONModel;
+			path = FishBowlsdk/JSONModel/JSONModel;
+			sourceTree = "<group>";
+		};
+		54369A861E27F2F700AF30C5 /* JSONModelCategories */ = {
+			isa = PBXGroup;
+			children = (
+				54369A871E27F2F700AF30C5 /* NSArray+JSONModel.h */,
+				54369A881E27F2F700AF30C5 /* NSArray+JSONModel.m */,
+			);
+			name = JSONModelCategories;
+			path = FishBowlsdk/JSONModel/JSONModelCategories;
+			sourceTree = "<group>";
+		};
+		54369A8A1E27F2F700AF30C5 /* JSONModelNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				54369A8B1E27F2F700AF30C5 /* JSONAPI.h */,
+				54369A8C1E27F2F700AF30C5 /* JSONAPI.m */,
+				54369A8D1E27F2F700AF30C5 /* JSONHTTPClient.h */,
+				54369A8E1E27F2F700AF30C5 /* JSONHTTPClient.m */,
+				54369A8F1E27F2F700AF30C5 /* JSONModel+networking.h */,
+				54369A901E27F2F700AF30C5 /* JSONModel+networking.m */,
+			);
+			name = JSONModelNetworking;
+			path = FishBowlsdk/JSONModel/JSONModelNetworking;
+			sourceTree = "<group>";
+		};
+		54369A911E27F2F700AF30C5 /* JSONModelTransformations */ = {
+			isa = PBXGroup;
+			children = (
+				54369A921E27F2F700AF30C5 /* JSONKeyMapper.h */,
+				54369A931E27F2F700AF30C5 /* JSONKeyMapper.m */,
+				54369A941E27F2F700AF30C5 /* JSONValueTransformer.h */,
+				54369A951E27F2F700AF30C5 /* JSONValueTransformer.m */,
+			);
+			name = JSONModelTransformations;
+			path = FishBowlsdk/JSONModel/JSONModelTransformations;
+			sourceTree = "<group>";
+		};
+		5448D0E31DAFF46700ABAFBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5448D0E41DAFF46700ABAFBA /* UserNotifications.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54FE89F81D4A8B0A00C6634D /* FishBowlLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				54FE89F91D4A8B0A00C6634D /* LibraryDemo */,
+			);
+			name = FishBowlLibrary;
+			path = clpsdk/FishBowlLibrary;
+			sourceTree = "<group>";
+		};
+		54FE89F91D4A8B0A00C6634D /* LibraryDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5419506B1D4D0F9D00039361 /* ApiClasses */,
+			);
+			path = LibraryDemo;
+			sourceTree = "<group>";
+		};
+		923B15C81AA0A55400C4EB3C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				54369A791E27F26900AF30C5 /* FishBowlsdk.h */,
+				54369A7A1E27F26900AF30C5 /* FishBowlsdk.m */,
+				54369A761E27F24D00AF30C5 /* FBGuest.h */,
+				54369A771E27F24D00AF30C5 /* FBGuest.m */,
+				54369A641E27F23300AF30C5 /* Database.h */,
+				54369A651E27F23300AF30C5 /* Database.m */,
+				54369A661E27F23300AF30C5 /* FishBowlBeacon.h */,
+				54369A671E27F23300AF30C5 /* FishBowlBeacon.m */,
+				54369A681E27F23300AF30C5 /* FishBowlCustomer.h */,
+				54369A691E27F23300AF30C5 /* FishBowlCustomer.m */,
+				54369A6A1E27F23300AF30C5 /* FishBowlMobileEvent.h */,
+				54369A6B1E27F23300AF30C5 /* FishBowlMobileEvent.m */,
+				54369A6C1E27F23300AF30C5 /* FishBowlMobileSetting.h */,
+				54369A6D1E27F23300AF30C5 /* FishBowlMobileSetting.m */,
+				54369A6E1E27F23300AF30C5 /* FishBowlStore.h */,
+				54369A6F1E27F23300AF30C5 /* FishBowlStore.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		92CA43771AA0A37A00D4C7D4 = {
+			isa = PBXGroup;
+			children = (
+				92CA43A41AA0A3FE00D4C7D4 /* Vendor */,
+				92CA43A21AA0A3F300D4C7D4 /* PassKit.framework */,
+				92CA43A01AA0A3EE00D4C7D4 /* CoreLocation.framework */,
+				92CA439E1AA0A3E900D4C7D4 /* MapKit.framework */,
+				92CA439C1AA0A3DF00D4C7D4 /* SystemConfiguration.framework */,
+				92CA439A1AA0A3D500D4C7D4 /* CoreBluetooth.framework */,
+				92CA43821AA0A37A00D4C7D4 /* FishBowlsdk */,
+				92CA438F1AA0A37A00D4C7D4 /* FishBowlsdkTests */,
+				92CA43811AA0A37A00D4C7D4 /* Products */,
+				5448D0E31DAFF46700ABAFBA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		92CA43811AA0A37A00D4C7D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92CA43801AA0A37A00D4C7D4 /* libFishBowlsdk.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92CA43821AA0A37A00D4C7D4 /* FishBowlsdk */ = {
+			isa = PBXGroup;
+			children = (
+				923B15C81AA0A55400C4EB3C /* model */,
+			);
+			name = FishBowlsdk;
+			path = clpsdk;
+			sourceTree = "<group>";
+		};
+		92CA438F1AA0A37A00D4C7D4 /* FishBowlsdkTests */ = {
+			isa = PBXGroup;
+			children = (
+				92CA43901AA0A37A00D4C7D4 /* Supporting Files */,
+			);
+			name = FishBowlsdkTests;
+			path = clpsdkTests;
+			sourceTree = "<group>";
+		};
+		92CA43901AA0A37A00D4C7D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				54369A7C1E27F29800AF30C5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		92CA43A41AA0A3FE00D4C7D4 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				54FE89F81D4A8B0A00C6634D /* FishBowlLibrary */,
+				92CA43DD1AA0A46700D4C7D4 /* JSONModel */,
+				92CA43C21AA0A44200D4C7D4 /* UIKit+AFNetworking */,
+				92CA43A51AA0A40F00D4C7D4 /* AFNetworking */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		92CA43A51AA0A40F00D4C7D4 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				54369ABC1E27F3D200AF30C5 /* AFNetworkActivityIndicatorManager.h */,
+				54369ABD1E27F3D200AF30C5 /* AFNetworkActivityIndicatorManager.m */,
+				54369ABE1E27F3D200AF30C5 /* UIActivityIndicatorView+AFNetworking.h */,
+				54369ABF1E27F3D200AF30C5 /* UIActivityIndicatorView+AFNetworking.m */,
+				54369AC01E27F3D200AF30C5 /* UIAlertView+AFNetworking.h */,
+				54369AC11E27F3D200AF30C5 /* UIAlertView+AFNetworking.m */,
+				54369AC21E27F3D200AF30C5 /* UIButton+AFNetworking.h */,
+				54369AC31E27F3D200AF30C5 /* UIButton+AFNetworking.m */,
+				54369AC41E27F3D200AF30C5 /* UIImageView+AFNetworking.h */,
+				54369AC51E27F3D200AF30C5 /* UIImageView+AFNetworking.m */,
+				54369AC61E27F3D200AF30C5 /* UIKit+AFNetworking.h */,
+				54369AC71E27F3D200AF30C5 /* UIProgressView+AFNetworking.h */,
+				54369AC81E27F3D200AF30C5 /* UIProgressView+AFNetworking.m */,
+				54369AC91E27F3D200AF30C5 /* UIRefreshControl+AFNetworking.h */,
+				54369ACA1E27F3D200AF30C5 /* UIRefreshControl+AFNetworking.m */,
+				54369ACB1E27F3D200AF30C5 /* UIWebView+AFNetworking.h */,
+				54369ACC1E27F3D200AF30C5 /* UIWebView+AFNetworking.m */,
+			);
+			name = AFNetworking;
+			sourceTree = "<group>";
+		};
+		92CA43C21AA0A44200D4C7D4 /* UIKit+AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				54369AA01E27F39C00AF30C5 /* AFHTTPRequestOperation.h */,
+				54369AA11E27F39C00AF30C5 /* AFHTTPRequestOperation.m */,
+				54369AA21E27F39C00AF30C5 /* AFHTTPRequestOperationManager.h */,
+				54369AA31E27F39C00AF30C5 /* AFHTTPRequestOperationManager.m */,
+				54369AA41E27F39C00AF30C5 /* AFHTTPSessionManager.h */,
+				54369AA51E27F39C00AF30C5 /* AFHTTPSessionManager.m */,
+				54369AA61E27F39C00AF30C5 /* AFNetworking.h */,
+				54369AA71E27F39C00AF30C5 /* AFNetworkReachabilityManager.h */,
+				54369AA81E27F39C00AF30C5 /* AFNetworkReachabilityManager.m */,
+				54369AA91E27F39C00AF30C5 /* AFSecurityPolicy.h */,
+				54369AAA1E27F39C00AF30C5 /* AFSecurityPolicy.m */,
+				54369AAB1E27F39C00AF30C5 /* AFURLConnectionOperation.h */,
+				54369AAC1E27F39C00AF30C5 /* AFURLConnectionOperation.m */,
+				54369AAD1E27F39C00AF30C5 /* AFURLRequestSerialization.h */,
+				54369AAE1E27F39C00AF30C5 /* AFURLRequestSerialization.m */,
+				54369AAF1E27F39C00AF30C5 /* AFURLResponseSerialization.h */,
+				54369AB01E27F39C00AF30C5 /* AFURLResponseSerialization.m */,
+				54369AB11E27F39C00AF30C5 /* AFURLSessionManager.h */,
+				54369AB21E27F39C00AF30C5 /* AFURLSessionManager.m */,
+			);
+			name = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		92CA43DD1AA0A46700D4C7D4 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				54369A7D1E27F2F700AF30C5 /* JSONModel */,
+				54369A861E27F2F700AF30C5 /* JSONModelCategories */,
+				54369A891E27F2F700AF30C5 /* JSONModelLib.h */,
+				54369A8A1E27F2F700AF30C5 /* JSONModelNetworking */,
+				54369A911E27F2F700AF30C5 /* JSONModelTransformations */,
+			);
+			name = JSONModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92CA437F1AA0A37A00D4C7D4 /* FishBowlsdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92CA43941AA0A37A00D4C7D4 /* Build configuration list for PBXNativeTarget "FishBowlsdk" */;
+			buildPhases = (
+				92CA437C1AA0A37A00D4C7D4 /* Sources */,
+				92CA437D1AA0A37A00D4C7D4 /* Frameworks */,
+				92CA437E1AA0A37A00D4C7D4 /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FishBowlsdk;
+			productName = clpsdk;
+			productReference = 92CA43801AA0A37A00D4C7D4 /* libFishBowlsdk.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92CA43781AA0A37A00D4C7D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = clyptech;
+				TargetAttributes = {
+					92CA437F1AA0A37A00D4C7D4 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 92CA437B1AA0A37A00D4C7D4 /* Build configuration list for PBXProject "FishBowlsdk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 92CA43771AA0A37A00D4C7D4;
+			productRefGroup = 92CA43811AA0A37A00D4C7D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92CA437F1AA0A37A00D4C7D4 /* FishBowlsdk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92CA437C1AA0A37A00D4C7D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54369AD31E27F3D200AF30C5 /* UIRefreshControl+AFNetworking.m in Sources */,
+				54369AB81E27F39C00AF30C5 /* AFURLConnectionOperation.m in Sources */,
+				54369AB31E27F39C00AF30C5 /* AFHTTPRequestOperation.m in Sources */,
+				54369A9C1E27F2F700AF30C5 /* JSONHTTPClient.m in Sources */,
+				54369AD41E27F3D200AF30C5 /* UIWebView+AFNetworking.m in Sources */,
+				54369A701E27F23300AF30C5 /* Database.m in Sources */,
+				54369AD21E27F3D200AF30C5 /* UIProgressView+AFNetworking.m in Sources */,
+				54369ACD1E27F3D200AF30C5 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				54369A971E27F2F700AF30C5 /* JSONModelArray.m in Sources */,
+				54369A9F1E27F2F700AF30C5 /* JSONValueTransformer.m in Sources */,
+				54369A961E27F2F700AF30C5 /* JSONModel.m in Sources */,
+				54369A9D1E27F2F700AF30C5 /* JSONModel+networking.m in Sources */,
+				54369AB61E27F39C00AF30C5 /* AFNetworkReachabilityManager.m in Sources */,
+				54369AB71E27F39C00AF30C5 /* AFSecurityPolicy.m in Sources */,
+				54369A711E27F23300AF30C5 /* FishBowlBeacon.m in Sources */,
+				54369AD01E27F3D200AF30C5 /* UIButton+AFNetworking.m in Sources */,
+				54369A9B1E27F2F700AF30C5 /* JSONAPI.m in Sources */,
+				54369A9E1E27F2F700AF30C5 /* JSONKeyMapper.m in Sources */,
+				54369ABA1E27F39C00AF30C5 /* AFURLResponseSerialization.m in Sources */,
+				54369A621E27F20300AF30C5 /* ModelClass.m in Sources */,
+				54369AB41E27F39C00AF30C5 /* AFHTTPRequestOperationManager.m in Sources */,
+				54369AB91E27F39C00AF30C5 /* AFURLRequestSerialization.m in Sources */,
+				54369A9A1E27F2F700AF30C5 /* NSArray+JSONModel.m in Sources */,
+				54369A741E27F23300AF30C5 /* FishBowlMobileSetting.m in Sources */,
+				54369A981E27F2F700AF30C5 /* JSONModelClassProperty.m in Sources */,
+				54369A751E27F23300AF30C5 /* FishBowlStore.m in Sources */,
+				54369A721E27F23300AF30C5 /* FishBowlCustomer.m in Sources */,
+				54369AD11E27F3D200AF30C5 /* UIImageView+AFNetworking.m in Sources */,
+				54369ACF1E27F3D200AF30C5 /* UIAlertView+AFNetworking.m in Sources */,
+				54369ABB1E27F39C00AF30C5 /* AFURLSessionManager.m in Sources */,
+				54369AB51E27F39C00AF30C5 /* AFHTTPSessionManager.m in Sources */,
+				54369A991E27F2F700AF30C5 /* JSONModelError.m in Sources */,
+				54369A7B1E27F26900AF30C5 /* FishBowlsdk.m in Sources */,
+				54369A781E27F24D00AF30C5 /* FBGuest.m in Sources */,
+				54369A611E27F20300AF30C5 /* ApiClasses.m in Sources */,
+				54369ACE1E27F3D200AF30C5 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				54369A731E27F23300AF30C5 /* FishBowlMobileEvent.m in Sources */,
+				54369A631E27F20300AF30C5 /* Reachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		92CA43921AA0A37A00D4C7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
+			};
+			name = Debug;
+		};
+		92CA43931AA0A37A00D4C7D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
+			};
+			name = Release;
+		};
+		92CA43951AA0A37A00D4C7D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/gshukla_ic/Desktop/MyBistroLive/Archive29Sept/iOS_clpsdk,
+					Bistro,
+					2/clpsdk/FaceBook,
+					FrameWork,
+					"$(PROJECT_DIR)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
+			};
+			name = Debug;
+		};
+		92CA43961AA0A37A00D4C7D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/gshukla_ic/Desktop/MyBistroLive/Archive29Sept/iOS_clpsdk,
+					Bistro,
+					2/clpsdk/FaceBook,
+					FrameWork,
+					"$(PROJECT_DIR)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "$(ARCHS_STANDARD)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92CA437B1AA0A37A00D4C7D4 /* Build configuration list for PBXProject "FishBowlsdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92CA43921AA0A37A00D4C7D4 /* Debug */,
+				92CA43931AA0A37A00D4C7D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92CA43941AA0A37A00D4C7D4 /* Build configuration list for PBXNativeTarget "FishBowlsdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92CA43951AA0A37A00D4C7D4 /* Debug */,
+				92CA43961AA0A37A00D4C7D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92CA43781AA0A37A00D4C7D4 /* Project object */;
+}

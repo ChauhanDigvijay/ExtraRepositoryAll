@@ -1,0 +1,74 @@
+//
+//  AnalyticsService.swift
+//  JambaJuice
+//
+//  Created by Eneko Alonso on 7/3/15.
+//  Copyright (c) 2015 Jamba Juice. All rights reserved.
+//
+
+import Foundation
+
+class AnalyticsService {
+
+    class func initialize(googleAccountID: String) {
+        // Initialize Google Analytics
+        GAI.sharedInstance().trackUncaughtExceptions = true
+        GAI.sharedInstance().dispatchInterval = 20
+        GAI.sharedInstance().logger.logLevel = GAILogLevel.Warning
+        GAI.sharedInstance().trackerWithTrackingId(googleAccountID)
+        GAI.sharedInstance().defaultTracker.allowIDFACollection = true
+    }
+
+    /// Track screen view
+    class func trackScreenView(name: String) {
+        GAI.sharedInstance().defaultTracker.set(kGAIScreenName, value: name)
+        let builder = GAIDictionaryBuilder.createScreenView()
+        GAI.sharedInstance().defaultTracker.send(builder.build() as [NSObject : AnyObject])
+    }
+
+    /// Track a single event
+    class func trackEvent(category: String, action: String, label: String? = nil, value: Int? = nil, screenName: String? = nil) {
+        // Google Analytics
+        if screenName != nil {
+            GAI.sharedInstance().defaultTracker.set(kGAIScreenName, value: screenName!)
+        }
+        let builder = GAIDictionaryBuilder.createEventWithCategory(category, action: action, label: label, value: value)
+        GAI.sharedInstance().defaultTracker.send(builder.build() as [NSObject : AnyObject])
+    }
+
+    /// Track purchase
+    class func trackPurchase(orderStatus: OrderStatus, products: [BasketProduct]) {
+        // Send transaction
+        let payload = GAIDictionaryBuilder.createTransactionWithId(orderStatus.orderRef, affiliation: orderStatus.vendorExtRef, revenue: orderStatus.total, tax: orderStatus.salesTax, shipping: 0, currencyCode: "USD").build() as [NSObject:AnyObject]
+        GAI.sharedInstance().defaultTracker.send(payload)
+
+        // Send basket items
+        for product in products {
+            let payload = GAIDictionaryBuilder.createItemWithTransactionId(orderStatus.orderRef, name: product.name, sku: String(product.productId), category: "Product", price: product.totalCost, quantity: NSNumber(long: product.quantity), currencyCode: "USD").build() as [NSObject:AnyObject]
+            GAI.sharedInstance().defaultTracker.send(payload)
+        }
+    }
+
+    /// Track application openURL
+    class func trackOpenURL(url: NSURL, sourceApplication: String?, annotation: AnyObject?) {
+        trackEvent("open_url", action: url.absoluteString ?? "", label: sourceApplication)
+    }
+
+    /// Track user login
+    class func trackUserLogin() {
+        trackEvent("user_account", action: "login")
+    }
+    /// Set/clear the user ID
+    class func setUserId(userId: String?) {
+        // Google Analytics
+        GAI.sharedInstance().defaultTracker.set("&uid", value: userId)
+        GAI.sharedInstance().defaultTracker.set("user_authenticated", value: userId == nil ? "no" : "yes")
+        GAI.sharedInstance().defaultTracker.set(GAIFields.customDimensionForIndex(1), value: userId == nil ? "no" : "yes")
+    }
+
+    /// Send any pending
+    class func sendPending() {
+        GAI.sharedInstance().dispatch()
+    }
+
+}

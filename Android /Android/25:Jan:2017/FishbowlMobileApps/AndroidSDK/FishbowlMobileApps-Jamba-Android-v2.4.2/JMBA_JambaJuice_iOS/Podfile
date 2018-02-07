@@ -1,0 +1,30 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+def pods()
+    pod 'HDK', :path => '../HWAY_HDK_iOS'
+    pod 'OloSDK', :path => '../JMBA_Olo_iOS_SDK'
+    pod 'SpendGoSDK', :path => '../JMBA_SpendGo_iOS_SDK'
+    pod 'InCommSDK', :path => '../JMBA_InComm_iOS_SDK'
+    pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift4'
+    pod 'FishbowlFramework', :git => 'https://vthinkdeveloper@github.com/fishbowlinc/FishbowlFramework.git'
+    pod 'CryptoSwift', '0.7.2'
+    pod 'Alamofire'
+    pod 'SwiftyJSON'
+    pod 'Parse'
+    pod 'AlamofireImage'
+    pod 'SVProgressHUD'
+    pod 'XCGLogger', '5.0.1'
+    pod 'MGSwipeTableCell'
+    pod 'AppsFlyerFramework'
+    pod 'CardIO', '5.4.1'
+end
+
+target "JambaJuice" do
+   pods()
+end
+
+target "JambaJuiceTests" do
+   pods()
+end

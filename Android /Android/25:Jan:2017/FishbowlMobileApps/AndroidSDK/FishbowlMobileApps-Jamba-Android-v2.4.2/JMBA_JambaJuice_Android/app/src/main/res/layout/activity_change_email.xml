@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/splash_bg_layout"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="match_parent" />
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/continueBtn"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="@dimen/text_size_xlarge"
+                android:textColor="@color/dark_green"
+                android:text="Enter your new Email Address"/>
+
+
+            <EditText
+                android:id="@+id/newEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minEms="15"
+                android:maxEms="15"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:layout_marginTop="20dp"
+                android:maxLength="40"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/orange_color"
+                android:hint="New Email Address"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.olo.jambajuice.Views.Generic.SemiBoldButton
+        android:id="@+id/changeEmailBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red_color"
+        android:text="Update Email Address"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

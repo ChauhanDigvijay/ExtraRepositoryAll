@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_place_order"
+        android:layout_below="@+id/toolbar"
+        android:background="@android:color/white">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/savedCardsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/savedCardsText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/light_grey"
+                    android:gravity="left"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Saved Cards"
+                    android:textColor="@color/spec_inst_color"
+                    android:textSize="@dimen/text_size_large" />
+
+                <LinearLayout
+                    android:id="@+id/list_cards_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <TextView
+                    android:id="@+id/noSavedCardsText"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:textStyle="bold"
+                    android:text="No Saved Cards"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/otherPaymentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/otherPaymentText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/light_grey"
+                    android:gravity="left"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Other Payment Methods"
+                    android:textColor="@color/spec_inst_color"
+                    android:textSize="@dimen/text_size_large" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/payInStoreLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="6">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="15dp">
+
+                            <TextView
+                                android:id="@+id/payTypeText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Pay Restaurant Directly"
+                                android:textColor="@color/darker_gray"
+                                android:textSize="@dimen/text_size_medium" />
+
+                            <TextView
+                                android:id="@+id/payDetailText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/payTypeText"
+                                android:text="payinstore"
+                                android:textColor="@color/darker_gray"
+                                android:textSize="@dimen/text_size_medium" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/tickImgPayInstore"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/selectGiftImg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/check_green" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/darker_gray" />
+
+                    <com.olo.jambajuice.Views.Generic.SemiBoldButton
+                        android:id="@+id/addAnotherCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@null"
+                        android:drawableRight="@drawable/forward_arrow"
+                        android:gravity="left"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp"
+                        android:text="Pay with another credit card"
+                        android:textAllCaps="false"
+                        android:textColor="@color/darker_gray"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/darker_gray" />
+
+                    <LinearLayout
+                        android:id="@+id/giftCardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.olo.jambajuice.Views.Generic.SemiBoldButton
+                            android:id="@+id/usingeGiftCard"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@null"
+                            android:drawableRight="@drawable/forward_arrow"
+                            android:gravity="left"
+                            android:paddingBottom="20dp"
+                            android:paddingTop="20dp"
+                            android:text="Pay with Jamba Card"
+                            android:textAllCaps="false"
+                            android:textColor="@color/darker_gray"
+                            android:textSize="@dimen/text_size_medium" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/darker_gray" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.olo.jambajuice.Views.Generic.SemiBoldButton
+        android:id="@+id/tv_place_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="2"
+        android:background="@color/red_color_1"
+        android:gravity="center"
+        android:text="Place Order"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_large" />
+
+    <include layout="@layout/disable_view" />
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>OloSDKTestsConfigurations</key>
+	<dict>
+		<key>OloAPIKey</key>
+		<string>GXRRA3G0NEJtE4HLYrIQHmCxG2idGEcUTkK9V7vwanK1C_YgAPt9BFfQurlFhGjz</string>
+		<key>OloAPIKey (Staging)</key>
+		<string>kpGgmHgbo3J3A4HaXM3AdnAWtYZB9Nb2</string>
+		<key>OloBaseURL</key>
+		<string>https://api.olosandbox.com/v1.1</string>
+		<key>OloBaseURL (Staging)</key>
+		<string>https://api.olostaging.com/v1.1</string>
+		<key>OloCouponCode</key>
+		<string>wah_LQWTMCQM</string>
+		<key>OloUserBasketId</key>
+		<string>9FB8AC40-5CD5-4C26-A03C-2DE21B51D45A</string>
+		<key>OloUserCreditCardCVV</key>
+		<string>445</string>
+		<key>OloUserCreditCardExpiryMonth</key>
+		<string>02</string>
+		<key>OloUserCreditCardExpiryYear</key>
+		<string>2019</string>
+		<key>OloUserCreditCardNumber</key>
+		<string>4556892528054091</string>
+		<key>OloUserCreditCardZip</key>
+		<string>54000</string>
+		<key>OloUserEmailAddress</key>
+		<string>jamba.tester.ios@outlook.com</string>
+		<key>OloUserFirstName</key>
+		<string>Jamba</string>
+		<key>OloUserLastName</key>
+		<string>Tester</string>
+		<key>OloUserPassword</key>
+		<string>shared123</string>
+		<key>OloUserPhoneNumber</key>
+		<string>3007336613</string>
+	</dict>
+</dict>
+</plist>

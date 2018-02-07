@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FBTemplate1</string>
+       <string name="APP_ID">1661409320799739</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="registration_info">Copyright @ 2015 FISHBOWL.All Rights Reserved. </string>
+    <string name="registration_signup_info">By continuing ,You agree our <b>Privacy Policy </b>and <b>Term of service</b></string>
+    <string name="registration_signup_info1">We are <b><i>so</i></b> glad to see you.</string>
+    <string name="registration_signup_info2">Already have an account ? login in</string>
+
+</resources>

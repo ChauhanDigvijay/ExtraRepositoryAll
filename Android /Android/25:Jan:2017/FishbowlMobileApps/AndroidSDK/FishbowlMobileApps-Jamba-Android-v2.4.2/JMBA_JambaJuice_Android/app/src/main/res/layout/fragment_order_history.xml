@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <ListView
+        android:id="@+id/orders_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+
+    </ListView>
+        <TextView
+            android:id="@+id/nofavorites"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:textColor="@color/brown_color"
+            android:text="Create &amp; save your favorite Jamba Juice orders here \n It's easy! \n\n 1. Just find the Jamba Juice closest to you. \n\n 2. Create your favorite order. \n\n 3. Save your order as a favorite - it will appear right here."
+            />
+    </RelativeLayout>
+</LinearLayout>

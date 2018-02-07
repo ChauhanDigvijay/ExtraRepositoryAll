@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/activity_more_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        tools:context="com.olo.jambajuice.Activites.NonGeneric.OrderAhead.RewardsAndPromotions.Offer.MoreInfoActivity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/store_selection_jambaLogoLayout"
+            android:paddingBottom="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10">
+
+            <EditText
+                android:id="@+id/searchAvStore"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/search_height"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/round_corner_gray"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:drawablePadding="10dp"
+                android:hint="Search"
+                android:imeOptions="actionSearch"
+                android:paddingRight="40dp"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_medium" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/availableStoreListView"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+    <include
+        android:id="@+id/screenDisableView"
+        layout="@layout/disable_view" />
+</RelativeLayout>

@@ -1,0 +1,55 @@
+/*
+ Localizable.strings
+ clp register
+ 
+ Created by VT02 on 2/24/15.
+ Copyright (c) 2015 clyptech. All rights reserved.
+ */
+
+//UI Labels
+"Name" = "Name";
+"Mobile Phone" = "Mobile Phone";
+"E-Mail" = "E-Mail";
+"Address" = "Address";
+
+//Title
+"CUSTOMER REGISTRATION" = "CUSTOMER REGISTRATION";
+
+//Footer Text
+"15% off on your next purchase and free membership when you enroll in our Familia Milagros Program. Only valid once." = "15% off on your next purchase and free membership when you enroll in our Familia Milagros Program. Only valid once.";
+
+
+
+//Placeholders
+"Enter Id"="Enter Id";
+"Enter your name"="Enter your name";
+"Enter your mobile number"="Enter your mobile number";
+"Enter your Email address"="Enter your Email address";
+"Enter your address"="Enter your address";
+//"Your address"="Your address"
+
+//UI Buttton
+"Register" = "Register";
+
+//Error Messages
+"Message"="Message";
+"Invalid Email ID" = "Invalid Email ID";
+"Invalid Mobile Phone"="Invalid Mobile Phone";
+"Invalid Name"="Invalid Name";
+"Invalid Address"="Invalid Address";
+"Email Already Exists"="Email Already Exists";
+"Phone Number Already Exists"="Phone Number Already Exists";
+"Mobile Phone Is Required"="Mobile Phone Is Required";
+"Email Is Required"="Email Is Required";
+
+//Alert Informations
+"Thank you for your registration!"="Thank you for your registration!";
+"There is a problem in registration server. Please try again later."="There is a problem in registration server. Please try again later.";
+"Registration failed"="Registration failed";
+
+// Footer Text
+
+//Scanner View
+"Please Scan..."="Please Scan...";
+"Barcode Scanned Successfully.\nTap Close to continue with registration."="Barcode Scanned Successfully.\nTap Close to continue with registration.";
+

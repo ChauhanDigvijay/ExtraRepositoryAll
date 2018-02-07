@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Jamba Juice</string>
+
+    <!-- GAI Key -->
+    <string name="ga_trackingId">UA-61764891-3</string>
+
+    <!--Facebook Key-->
+    <string name="facebook_app_id">1386597415001690</string>
+
+
+    <string name="apiKey">a14d6b01c9ac40ae615172475daf875def5d235e</string>
+    <!--Google Map Key-->
+    <string name="google_maps_key">AIzaSyDIUTOnzSqyPPsm_F6huZ_zhRpSAsyx2h0</string>
+
+    <!-- Removed Urban Airship Keys-->
+    <!--<string name="dev_urban_airship_app_secret">1KNvXC0tQfK0iE-L4RKO9g</string>-->
+    <!--<string name="dev_urban_airship_app_key">oMFXY08uSlmXls9jvS_WaA</string>-->
+    <!--<string name="prod_urban_airship_app_secret"/>-->
+    <!--<string name="prod_urban_airship_app_key"/>-->
+
+    <!--AppsFlyer SDK Key-->
+    <string name="appsflyer_key">UZ4zswHekZwWK46Mr2G9jV</string>
+
+    <string name="google_api_project_number">634193384861</string>
+
+    <!--Parse SDK Production Keys-->
+    <string name="parse_application_id">ZDoQmWb85Uif38XWJAnVlAmVYiDRnQfGfwbOlNkd</string>
+    <string name="parse_client_key">FK4KAbsmaELUR7q3JjkFVeeRqk99tuCmpicY1Qw7</string>
+    <string name="parse_url">https://parse.fishbowlcloud.com:1338/production/jamba/</string>
+
+    <string name="gcm_sender_id_dev">794483341695</string>
+    <string name="gcm_sender_id_development">503777186107</string>
+    <string name="gcm_sender_id_production">636426125388</string>
+    <!-- Updated Keys-->
+
+    <!--&lt;!&ndash;Olo Production SDK Keys&ndash;&gt;-->
+    <string name="olo_base_url">https://ordering.api.olo.com/v1.1</string>
+    <string name="olo_api_key">2Qs7wYoevR3elHBXLw3CTMmGExJfhesu</string>
+
+
+    <!--SpendGo Production new SDK Keys-->
+    <string name="spendgo_base_url">https://my.spendgo.com</string>
+    <string name="spendgo_mobile_url">/mobile/gen/jamba/v1/</string>
+    <string name="spendgo_xclass_key">jambamobile</string>
+    <string name="spendgo_secret_key">onc6fyGnYszZklhCGyu9jUWAQn+53sck1qTAbQna9uk=</string>
+
+    <!--InstaBug API Key-->
+    <!--<string name="insta_bug_api_key">474ad19968466c4800bd9dfa0cebe996</string>-->
+    <!--<string name="title_activity_product_modifiers_substitution">-->
+    <!--ProductModifiersSubstitutionActivity-->
+    <!--</string>-->
+
+    <!--GiftCardString-->
+    <string name="five_dollar">$5</string>
+    <string name="ten_dollar">$10</string>
+    <string name="twoFive_dollar">$25</string>
+    <string name="fifty_dollar">$50</string>
+    <string name="sevenFive_dollar">$75</string>
+    <string name="one_hundred_dollar">$100</string>
+    <string name="two_hundred_dollar">$200</string>
+    <string name="custom_dollar">Custom($5-$500)</string>
+    <string name="five_dollar_amount">5.00</string>
+    <string name="ten_dollar_amount">10.00</string>
+    <string name="twoFive_dollar_amount">25.00</string>
+    <string name="fifty_dollar_amount">50.00</string>
+    <string name="sevenFive_dollar_amount">75.00</string>
+    <string name="oneHundred_dollar_amount">100.00</string>
+    <string name="twoHundred_dollar_amount">200.00</string>
+    <string name="Day_of_week">Day of Week</string>
+    <string name="Select_country">Select Country</string>
+    <string name="Select_state">Select State</string>
+    <string name="Select_credit_card">Select CreditCard Type</string>
+    <string name="Purchase_New_Card">Purchase New Card</string>
+    <string name="Add_ex_card">Add Existing Card</string>
+    <string name="Cancel">Cancel</string>
+    <string name="recipient_first_last_name"><![CDATA[Recipient First & Last Name]]></string>
+
+    <!--Incomm Production new SDK Keys-->
+    <string name="incomm_base_url">https://api.giftango.com/enterpriseapi/v1</string>
+    <string name="incomm_client_id">jambajuicemobileapplication</string>
+    <string name="incomm_brand_id">jambajuice</string>
+    <string name="incomm_secret_key">2bE/V5DrFIIey9gEJ6IfRcwmU35rnxNhhgq3Qe7yRxw=</string>
+
+    <string name="olo_billing_scheme_id">36</string>
+
+    <string name="no"><b>NO</b></string>
+
+</resources>

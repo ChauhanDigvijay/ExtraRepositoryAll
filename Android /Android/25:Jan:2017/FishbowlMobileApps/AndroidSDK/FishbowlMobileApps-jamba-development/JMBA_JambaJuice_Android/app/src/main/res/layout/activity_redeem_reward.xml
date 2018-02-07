@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                tools:context="com.olo.jambajuice.Activites.NonGeneric.OrderAhead.RewardsAndPromotions.RedeemReward.RedeemRewardActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+        android:id="@+id/headerRedeem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Redeem In-Store"
+        android:textSize="@dimen/text_size_large"
+        android:paddingLeft="25dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:textColor="@color/brown_color"
+        android:background="@color/setting_header"
+        android:layout_below="@+id/toolbar"/>
+
+    <TextView
+        android:id="@+id/step1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/headerRedeem"
+        android:textColor="@color/darker_gray"
+        android:textSize="@dimen/text_size_medium"
+        android:text="1. Enter your insider phone number on the touchscreen before you purchase."/>
+
+    <TextView
+        android:id="@+id/step2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/step1"
+        android:textColor="@color/darker_gray"
+        android:textSize="@dimen/text_size_medium"
+        android:text="2. Press &quot;YES&quot; when prompted to use your reward."/>
+
+    <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+        android:id="@+id/headerInApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Redeem In-App"
+        android:textSize="@dimen/text_size_large"
+        android:paddingLeft="25dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/brown_color"
+        android:background="@color/setting_header"
+        android:layout_below="@+id/step2"/>
+
+    <TextView
+        android:id="@+id/redeemInappStep1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/headerInApp"
+        android:textColor="@color/darker_gray"
+        android:textSize="@dimen/text_size_medium"
+        android:text="1. Start a new order."/>
+
+    <TextView
+        android:id="@+id/redeemInappStep2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/redeemInappStep1"
+        android:textColor="@color/darker_gray"
+        android:textSize="@dimen/text_size_medium"
+        android:text="2. Check the basket to see what rewards are available at the selected store."/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="20dp"
+        android:layout_below="@id/redeemInappStep2"
+        android:background="@color/setting_header"
+        android:visibility="gone"
+        android:orientation="vertical"
+        >
+        <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+
+            android:text="Offer are available in the basket section to be applied on checkout "
+            android:textColor="@color/brown_color"
+            android:textSize="@dimen/text_size_large"/>
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/material_grey_100" />
+
+
+    </LinearLayout>
+</RelativeLayout>

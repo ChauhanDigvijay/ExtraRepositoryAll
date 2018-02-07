@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".RegistrationStart" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/registrationbgnormal" >
+
+        <LinearLayout
+            android:id="@+id/linear11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:minHeight="250dp"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+            android:paddingTop="@dimen/feed_item_padding_top_bottom"
+            android:weightSum="100" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="20"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/registxt_name"
+                    style="@style/text.13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Join now!"
+                    android:textColor="@color/Red1"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/registxt1_name"
+                    style="@style/text.13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Get exciting offer every day"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/Red1"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearregistration"
+                style="@style/nametext"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                android:layout_weight="30"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="55dp"
+                android:paddingRight="55dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/registration_name"
+                        style="@style/text.13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textColor="@color/fbbrown"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                    <com.fishbowl.fbtemplate1.widget.CustomEditText
+                        android:id="@+id/name_edtxt"
+                        style="@style/nametext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/two_side_round_corner_button"
+                        android:ems="10"
+                        android:hint=""
+                        android:padding="5dp"
+                        android:textColor="@color/Red1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/registration_start_xcountry_isd"
+                        style="@style/text.13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email Address"
+                        android:textColor="@color/fbbrown"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                    <com.fishbowl.fbtemplate1.widget.CustomEditText
+                        android:id="@+id/email_edtxt"
+                        style="@style/nametext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/two_side_round_corner_button"
+                        android:ems="10"
+                        android:hint=""
+                        android:inputType="textEmailAddress"
+                        android:padding="5dp"
+                        android:textColor="@color/Red1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/registration_start_country_isd"
+                        style="@style/text.13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Password"
+                        android:textColor="@color/fbbrown"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                    <com.fishbowl.fbtemplate1.widget.CustomEditText
+                        android:id="@+id/pass_edtxt"
+                        style="@style/nametext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/two_side_round_corner_button"
+                        android:hint=""
+                        android:inputType="textPassword"
+                        android:padding="5dp"
+                        android:textColor="@color/Red1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/registration_starxt_country_isd"
+                        style="@style/text.13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone Number"
+                        android:textColor="@color/fbbrown"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                    <com.fishbowl.fbtemplate1.widget.CustomEditText
+                        android:id="@+id/phone_edtxt"
+                        style="@style/nametext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/two_side_round_corner_button"
+                        android:hint=""
+                        android:inputType="phone"
+                        android:padding="5dp"
+                        android:textColor="@color/Red1" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="0dp" >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="62dp"
+                    android:paddingRight="62dp" >
+
+                    <Button
+                        android:id="@+id/registration_start_okbutton"
+                        style="@style/text.13"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/Red1"
+                        android:gravity="center"
+                        android:onClick="signup"
+                        android:text="SIGN UP"
+                        android:textAppearance="?android:attr/textAppearanceButton"
+                        android:textColor="@color/White" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
