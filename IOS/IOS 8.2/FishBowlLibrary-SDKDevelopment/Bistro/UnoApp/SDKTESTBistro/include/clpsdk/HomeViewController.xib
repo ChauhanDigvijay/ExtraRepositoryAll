@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Mark Simonson - Proxima Nova Light.ttf">
+            <string>ProximaNova-Light</string>
+        </array>
+        <array key="Mark Simonson - Proxima Nova Regular.ttf">
+            <string>ProximaNova-Regular</string>
+        </array>
+        <array key="TradeGothicLTStd.otf">
+            <string>TradeGothicLTStd</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="dashboardView" destination="iTa-t2-3ez" id="tpw-iB-moE"/>
+                <outlet property="imagePage" destination="NA9-KR-4UG" id="C5H-TU-AGJ"/>
+                <outlet property="locationView" destination="ihB-FI-xTG" id="YTm-Ug-Cnk"/>
+                <outlet property="loyalityPointLbl" destination="m3b-Rb-Y46" id="18B-3x-hNa"/>
+                <outlet property="menuView" destination="ILx-Ky-wn5" id="h5a-Bm-ug0"/>
+                <outlet property="myLoyalityView" destination="Eec-E9-z5T" id="Zf7-gn-clb"/>
+                <outlet property="pageControl" destination="uzb-oL-1Xn" id="bPe-5q-4Te"/>
+                <outlet property="pageControlView" destination="M9l-bD-qfB" id="WR2-7Q-Nac"/>
+                <outlet property="rewardsAndOfferLbl" destination="eW7-O0-e6D" id="Tlm-li-9cl"/>
+                <outlet property="rewardsAndOfferView" destination="y1v-aG-vf4" id="Tcx-Pj-IcP"/>
+                <outlet property="view" destination="n4U-5u-0qZ" id="iTG-Nh-bWh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="F1L-Cn-Tae">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" id="BfF-tB-OoY">
+                    <rect key="frame" x="0.0" y="84.5" width="375" height="492"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ckc-rL-HEj">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="qaV-NJ-8uQ"/>
+                        <outlet property="delegate" destination="-1" id="IwE-um-13s"/>
+                    </connections>
+                </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" defersCurrentPageDisplay="YES" numberOfPages="1" id="M9l-bD-qfB">
+                    <rect key="frame" x="165" y="601.5" width="11.5" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <color key="pageIndicatorTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </pageControl>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clear1.png" id="gF3-Xf-nE1">
+                    <rect key="frame" x="341" y="43.5" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4gk-y1-qMJ">
+                    <rect key="frame" x="310" y="19.5" width="63" height="43"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="TradeGothicLTStd" family="Trade Gothic LT Std" pointSize="18"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <point key="canvasLocation" x="1154" y="76"/>
+        </view>
+        <view contentMode="scaleToFill" id="n4U-5u-0qZ">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="iTa-t2-3ez">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B0K-Ne-ffg">
+                            <rect key="frame" x="144.5" y="26" width="90" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="ProximaNova-Light" family="Proxima Nova" pointSize="17"/>
+                            <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Menu.png" id="baf-GH-wQM">
+                            <rect key="frame" x="338" y="29" width="23" height="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BGv-3q-PTJ">
+                            <rect key="frame" x="283" y="8" width="86" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <connections>
+                                <action selector="sideMenu_Action:" destination="-1" eventType="touchUpInside" id="OB8-xt-YGi"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+                    <rect key="frame" x="0.0" y="65" width="375" height="539.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="doC-MU-4SI">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="545"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </imageView>
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Happy.png" id="NA9-KR-4UG">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="218"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <gestureRecognizers/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="tkE-BX-Na7" appends="YES" id="hI7-jF-KVf"/>
+                                <outletCollection property="gestureRecognizers" destination="lhc-Ei-20p" appends="YES" id="xX8-ZE-0TG"/>
+                            </connections>
+                        </imageView>
+                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="uzb-oL-1Xn">
+                            <rect key="frame" x="140" y="212" width="94" height="37"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <color key="pageIndicatorTintColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="currentPageIndicatorTintColor" red="0.90980392160000001" green="0.14117647059999999" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="slideChange:" destination="-1" eventType="valueChanged" id="v2R-Of-jE8"/>
+                            </connections>
+                        </pageControl>
+                        <view contentMode="scaleToFill" id="haJ-O1-Iyb">
+                            <rect key="frame" x="27" y="243.5" width="325" height="291.5"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" id="Eec-E9-z5T">
+                                    <rect key="frame" x="7" y="0.5" width="150.5" height="138"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reward.png" id="VkP-9e-K3H">
+                                            <rect key="frame" x="54.5" y="35.5" width="39.5" height="52"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MY LOYALTY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1cA-Q5-mjI">
+                                            <rect key="frame" x="23.5" y="81" width="103" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="9"/>
+                                            <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m3b-Rb-Y46">
+                                            <rect key="frame" x="122.5" y="6" width="25" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.90980392160000001" green="0.14117647059999999" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="10"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ilt-4i-u0t">
+                                            <rect key="frame" x="0.0" y="0.0" width="148" height="138.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <action selector="dashboardMenu_Action:" destination="-1" eventType="touchUpInside" id="BLF-jt-8Se"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <view contentMode="scaleToFill" id="ihB-FI-xTG">
+                                    <rect key="frame" x="7" y="147.5" width="150.5" height="137"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maplocation.png" id="4za-LS-P8A">
+                                            <rect key="frame" x="51.5" y="34.5" width="46" height="53"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOCATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Uw6-2w-9oW">
+                                            <rect key="frame" x="15" y="80" width="119.5" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="9"/>
+                                            <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="f2b-Go-zad">
+                                            <rect key="frame" x="0.0" y="0.0" width="150.5" height="137.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <action selector="dashboardMenu_Action:" destination="-1" eventType="touchUpInside" id="u8X-3a-6SU"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <view contentMode="scaleToFill" id="ILx-Ky-wn5">
+                                    <rect key="frame" x="166" y="0.5" width="150.5" height="138"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu1.png" id="YEo-zq-7PZ">
+                                            <rect key="frame" x="51.5" y="35.5" width="46" height="52"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MENU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hkA-cD-Rdr">
+                                            <rect key="frame" x="15" y="81" width="119.5" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="9"/>
+                                            <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bsX-St-oWd">
+                                            <rect key="frame" x="0.0" y="0.0" width="150.5" height="138.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <action selector="dashboardMenu_Action:" destination="-1" eventType="touchUpInside" id="W6P-sh-JHm"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <view contentMode="scaleToFill" id="y1v-aG-vf4">
+                                    <rect key="frame" x="166" y="147.5" width="150.5" height="137"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gift.png" id="6Cg-26-1Xp">
+                                            <rect key="frame" x="51.5" y="34.5" width="46" height="53"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REWARDS AND OFFERS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xxD-Py-gTW">
+                                            <rect key="frame" x="0.0" y="80" width="150.5" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="9"/>
+                                            <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eW7-O0-e6D">
+                                            <rect key="frame" x="122.5" y="6" width="25" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.90980392160000001" green="0.14117647059999999" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="10"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hQA-ak-3zl">
+                                            <rect key="frame" x="0.0" y="0.0" width="150.5" height="137.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <action selector="dashboardMenu_Action:" destination="-1" eventType="touchUpInside" id="XWM-ln-lmz"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <point key="canvasLocation" x="399" y="-137"/>
+        </view>
+        <swipeGestureRecognizer direction="right" id="tkE-BX-Na7">
+            <connections>
+                <action selector="gestureRight:" destination="-1" id="HHh-On-FQq"/>
+            </connections>
+        </swipeGestureRecognizer>
+        <swipeGestureRecognizer direction="left" id="lhc-Ei-20p">
+            <connections>
+                <action selector="gestureLeft:" destination="-1" id="7Rs-S4-fWe"/>
+            </connections>
+        </swipeGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="Clear1.png" width="66" height="66"/>
+        <image name="Happy.png" width="750" height="450"/>
+        <image name="Menu.png" width="42" height="34"/>
+        <image name="gift.png" width="110" height="110"/>
+        <image name="maplocation.png" width="108" height="110"/>
+        <image name="menu1.png" width="110" height="110"/>
+        <image name="reward.png" width="106" height="110"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

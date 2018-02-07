@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Mark Simonson - Proxima Nova Regular.ttf">
+            <string>ProximaNova-Regular</string>
+            <string>ProximaNova-Regular</string>
+            <string>ProximaNova-Regular</string>
+            <string>ProximaNova-Regular</string>
+            <string>ProximaNova-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActivityTableViewCell" rowHeight="45" id="KGk-i7-Jjw" customClass="ActivityTableViewCell" customModule="LoyaltyIpadApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="44.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGx-Hs-JdB">
+                        <rect key="frame" x="15" y="12" width="100" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="2dX-5O-agH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wf0-jG-AJU">
+                        <rect key="frame" x="145" y="12" width="100" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="J1w-LK-YJH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Obd-VT-piz">
+                        <rect key="frame" x="317.5" y="12" width="7.5" height="21"/>
+                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CiU-Dh-hyw">
+                        <rect key="frame" x="350" y="12" width="100" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="DG6-6b-a1q"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnd-Yx-utY">
+                        <rect key="frame" x="480" y="12" width="100" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="LBs-0A-JCE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmn-Iw-ROo">
+                        <rect key="frame" x="280" y="12" width="7.5" height="21"/>
+                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="18"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wf0-jG-AJU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="0dR-WV-gfc"/>
+                    <constraint firstItem="CiU-Dh-hyw" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="54E-B5-p8o"/>
+                    <constraint firstAttribute="bottom" secondItem="Obd-VT-piz" secondAttribute="bottom" constant="11.5" id="76H-bt-ROb"/>
+                    <constraint firstItem="fmn-Iw-ROo" firstAttribute="leading" secondItem="wf0-jG-AJU" secondAttribute="trailing" constant="35" id="7Ka-kP-Pym"/>
+                    <constraint firstItem="vnd-Yx-utY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="Eh5-Kc-oqg"/>
+                    <constraint firstAttribute="trailing" secondItem="vnd-Yx-utY" secondAttribute="trailing" constant="20" id="GyM-nm-cAd"/>
+                    <constraint firstAttribute="bottom" secondItem="fmn-Iw-ROo" secondAttribute="bottom" constant="11.5" id="PNF-Fa-tOn"/>
+                    <constraint firstItem="oGx-Hs-JdB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="RYl-RC-wj8"/>
+                    <constraint firstAttribute="bottom" secondItem="CiU-Dh-hyw" secondAttribute="bottom" constant="11.5" id="Ruy-6g-gYP"/>
+                    <constraint firstItem="wf0-jG-AJU" firstAttribute="leading" secondItem="oGx-Hs-JdB" secondAttribute="trailing" constant="30" id="Sxq-E3-Uq9"/>
+                    <constraint firstItem="oGx-Hs-JdB" firstAttribute="height" secondItem="wf0-jG-AJU" secondAttribute="height" id="TZw-HA-MWd"/>
+                    <constraint firstItem="wf0-jG-AJU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="U8w-V1-rW2"/>
+                    <constraint firstItem="Obd-VT-piz" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ZYg-g6-WLp"/>
+                    <constraint firstItem="fmn-Iw-ROo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="akT-Sm-9NU"/>
+                    <constraint firstItem="vnd-Yx-utY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cZB-By-ioZ"/>
+                    <constraint firstItem="CiU-Dh-hyw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="dQs-Tm-0GO"/>
+                    <constraint firstItem="CiU-Dh-hyw" firstAttribute="leading" secondItem="Obd-VT-piz" secondAttribute="trailing" constant="25" id="hco-qo-edX"/>
+                    <constraint firstItem="fmn-Iw-ROo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="heS-RO-7cT"/>
+                    <constraint firstAttribute="bottom" secondItem="wf0-jG-AJU" secondAttribute="bottom" constant="11.5" id="ke4-SQ-FTn"/>
+                    <constraint firstAttribute="bottom" secondItem="vnd-Yx-utY" secondAttribute="bottom" constant="11.5" id="pFF-sE-abG"/>
+                    <constraint firstItem="vnd-Yx-utY" firstAttribute="leading" secondItem="CiU-Dh-hyw" secondAttribute="trailing" constant="30" id="pYe-PK-Y8E"/>
+                    <constraint firstItem="fmn-Iw-ROo" firstAttribute="width" secondItem="Obd-VT-piz" secondAttribute="width" id="u1G-5Z-5zA"/>
+                    <constraint firstItem="oGx-Hs-JdB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="wH6-3i-bkp"/>
+                    <constraint firstItem="Obd-VT-piz" firstAttribute="leading" secondItem="fmn-Iw-ROo" secondAttribute="trailing" constant="30" id="y62-gf-Afe"/>
+                    <constraint firstItem="Obd-VT-piz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="z7t-sN-eZM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblActivityMessage" destination="fmn-Iw-ROo" id="WrU-0B-gpJ"/>
+                <outlet property="lblCheckPoints" destination="vnd-Yx-utY" id="ilx-Sv-y7f"/>
+                <outlet property="lblDate" destination="wf0-jG-AJU" id="0B6-hJ-nLd"/>
+                <outlet property="lblPointsCount" destination="CiU-Dh-hyw" id="0ux-RX-13K"/>
+                <outlet property="lblPointsDescription" destination="Obd-VT-piz" id="Toh-W3-9BY"/>
+                <outlet property="lblType" destination="oGx-Hs-JdB" id="bHc-va-dzr"/>
+            </connections>
+            <point key="canvasLocation" x="303.5" y="153.5"/>
+        </tableViewCell>
+    </objects>
+</document>

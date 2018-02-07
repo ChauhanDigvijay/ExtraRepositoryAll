@@ -1,0 +1,209 @@
+<html>
+<head>
+<title>Mailing</title>
+<link rel="icon" type="image/png" href="##favicon_new.svg##"/>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script >
+debugger;
+ var offerValid = true; 
+ var outputHtml = '';
+ var expExpiresOnString = '';
+ var expExpiresFooterDate = '';
+ var prommotionValue=undefined;
+ var pageTitle = '';
+ var clientlogo = '';
+ var queryObject={};
+ var query =location.search.substring(1);
+ var vars = query.split("&");
+ for (var i=0;i<vars.length;i++) {
+    var pair = vars[i].split("=");
+        // If first entry with this name
+    if (typeof queryObject[pair[0]] === "undefined") {
+      queryObject[pair[0]] = decodeURIComponent(pair[1]);
+        // If second entry with this name
+    } else if (typeof queryObject[pair[0]] === "string") {
+      var arr = [ queryObject[pair[0]],decodeURIComponent(pair[1]) ];
+      queryObject[pair[0]] = arr;
+        // If third or later entry with this name
+    } else {
+      queryObject[pair[0]].push(decodeURIComponent(pair[1]));
+    }
+  } 
+ if(queryObject!=null&& queryObject instanceof Object){
+	
+	 var monthNames = ["January", "February", "March", "April", "May", "June",
+	                   "July", "August", "September", "October", "November", "December"
+	                 ];	 
+	 
+	prommotionValue=queryObject.pv;
+	var expdate=queryObject.expiryDate;
+	var leftdays = "";
+	var offerexpdate = "";
+	var tenant=queryObject.t
+	var self = this;
+	
+	if(expdate){
+		var splitDate = expdate.split('-');
+		
+		//Unsupported format
+		if ( splitDate.length != 3){
+			expdate = undefined;
+		}
+		else{
+		//var objExpDate = new Date(parseInt(splitDate[2]), parseInt(splitDate[0] - 1), parseInt(splitDate[1]));
+		var objExpDate = new Date(parseInt(splitDate[0]), parseInt(splitDate[1] - 1), parseInt(splitDate[2]));
+		
+	    var eXd = objExpDate.getDate();
+        var eXm = objExpDate.getMonth();
+        var eXy = objExpDate.getFullYear();
+		
+		var objDate = new Date();
+		
+	    var d = objDate.getDate();
+        var m = objDate.getMonth();
+        var y = objDate.getFullYear();		
+			
+		var currDate = new Date(y,m,d);
+		leftdays = daysBetween(currDate, objExpDate);
+		
+		var thDays = "th";
+		var expDay = parseInt(splitDate[1]);
+		
+		if(eXd == 1 || eXd == 21 || eXd == 31)
+		{
+			thDays = "st";
+		} 
+		else if(eXd == 2 || eXd == 22)
+		{
+			thDays = "nd";
+		} 
+		else if(eXd == 3 || eXd == 23)
+		{
+			thDays = "rd";
+		}
+	
+		offerexpdate = monthNames[eXm] + " " + eXd + thDays + " " + eXy;
+		
+		if(leftdays < 0)
+			offerValid =  false;
+		}
+		//alert(leftdays)		
+		//alert(offerexpdate)	
+	}
+	
+	if (window.XMLHttpRequest) {
+		self.xmlHttpReq = new XMLHttpRequest();
+	}
+	// per tutte le altre versioni di IE
+	else if (window.ActiveXObject) {
+		self.xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	
+
+	var strURL=window.location.origin+'/api/Public/'+tenant+'/ViewCoupons/'+queryObject.id;
+	
+	self.xmlHttpReq.open('GET', strURL, true);
+	self.xmlHttpReq.setRequestHeader("Access-Control-Allow-Origin", "*");
+	
+	self.xmlHttpReq.onreadystatechange = function() {
+	if (self.xmlHttpReq.readyState == 4) {
+				if(self.xmlHttpReq.status == 200) {
+				var objJson = jQuery.parseJSON(self.xmlHttpReq.response);												
+// 				outputHtml = objJson[0].HTMLBodyDefinition;
+// 				pageTitle = objJson[0].Name;
+				outputHtml = objJson.data[0].value;
+				pageTitle = objJson.data[1].value;
+				clientlogo = objJson.data[3].value;
+				if(prommotionValue)
+					outputHtml =  outputHtml.replace(new RegExp("##PromotionValue##",'g'), prommotionValue);
+				else
+					outputHtml =  outputHtml.replace(new RegExp("##PromotionValue##",'g'), objJson.data[2].value);
+				
+				 if(expdate == undefined){
+					 expExpiresOnString = 'Offer never expire';
+					 expExpiresFooterDate = 'Offer never expire';
+				 }
+				 else{
+					 if(leftdays === 0)
+						 expExpiresOnString = 'Offer Expiring Today';
+					 else 
+					 	expExpiresOnString = 'Expires in '+ leftdays +' days';
+					 expExpiresFooterDate = 'Offer expires on ' + offerexpdate;
+				 }
+				
+/* 				outputHtml =  outputHtml.replace(new RegExp("##daysleft##",'g'), leftdays);				
+				outputHtml =  outputHtml.replace(new RegExp("##expirydate##",'g'), offerexpdate); */		
+				
+				setTimeout(function(){ 
+					loadContent();
+					}, 50);
+				}
+		}
+	
+	}
+	
+	if( queryObject.id == 0){
+		 var coupenHtml =  localStorage["coupenHtmlbody"];
+		 document.write(coupenHtml);
+		 $("body").addClass("coupenPreview");
+	}
+	else
+		self.xmlHttpReq.send();
+}
+ 
+ function loadContent(){
+	 document.write(outputHtml);
+	 document.title = pageTitle;
+	 $("body").addClass("coupenPreview");
+	 jQuery('link[type="image/png"]').attr('href',clientlogo);
+	 $("head").append('<meta name="viewport" content="width=device-width, initial-scale=1.0">');
+	 
+	 if(expExpiresOnString != ''){
+		 
+		 $('.couponExpiration').html(expExpiresOnString);		 
+		 $('.promotioncampaignexpiry').html(expExpiresOnString);
+		 $('.promotionofferexpirynote').html(expExpiresFooterDate);
+	 }
+	 
+	 if(!offerValid)
+	 {	
+		 $('.couponExpiration').html('Offer Expired');
+		 $('.couponExpiration').css('text-decoration','line-through');		 
+		 
+		 $('.promotioncampaignexpiry').html('Offer Expired');
+		 $('.promotioncampaignexpiry').css('text-decoration','line-through');
+		 $('.promotionofferexpirynote').css('text-decoration','line-through');
+		 $('.promotioncampaignname').css('text-decoration','line-through');		 
+		 $('.promotioncampaigndesc').css('text-decoration','line-through');		 		 
+		 
+	 }
+	 //promotioncampaignexpiry
+	 
+	var isEmbededPromotion = $('img[offerid]');
+	if(isEmbededPromotion && isEmbededPromotion.length > 0)
+	{
+		var OfferType = $(isEmbededPromotion).attr("barcodetype");
+		var promotionManagerUrl = "https://promotionsmanager.fishbowl.com/PromotionsManager/Handlers/BarcodeGenerator.ashx?CouponCode="+prommotionValue;
+		promotionManagerUrl += "&BarCodeType="+OfferType+"&DPI=200";
+		$(isEmbededPromotion).attr("src",promotionManagerUrl);
+		//https://promotionsmanager.fishbowl.com/PromotionsManager/Handlers/BarcodeGenerator.ashx?CouponCode=123456&BarCodeType=QRCode&DPI=300
+	}	 
+	 
+ }
+
+ function treatAsUTC(date) {
+	    var result = new Date(date);
+	    result.setMinutes(result.getMinutes() - result.getTimezoneOffset());
+	    return result;
+	}
+
+	function daysBetween(startDate, endDate) {
+	    var millisecondsPerDay = 24 * 60 * 60 * 1000;
+	    return (treatAsUTC(endDate) - treatAsUTC(startDate)) / millisecondsPerDay;
+	}
+ 
+</script>
+<body>
+<div id="includedContent"></div> 
+</body>
+</html>

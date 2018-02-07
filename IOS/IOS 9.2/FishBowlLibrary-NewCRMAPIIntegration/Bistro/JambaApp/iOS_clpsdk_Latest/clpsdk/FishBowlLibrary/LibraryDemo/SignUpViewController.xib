@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Avant_Garde_XLight_Regular.ttf">
+            <string>AvantGardeXLight</string>
+        </mutableArray>
+        <mutableArray key="MyriadPro-Regular.otf">
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController">
+            <connections>
+                <outlet property="backgroundImg" destination="sCQ-v5-B8F" id="OGA-KL-zSF"/>
+                <outlet property="btnPrivacy" destination="IsD-AS-jo3" id="Dzk-oc-ACx"/>
+                <outlet property="btnTerm" destination="3UC-Sl-E1M" id="Cmx-bE-QR2"/>
+                <outlet property="companyLogoImage" destination="73W-iN-Fw3" id="kI2-4C-sTx"/>
+                <outlet property="datePicker" destination="Od7-Mz-fNT" id="7CD-pw-vuj"/>
+                <outlet property="datePickerView" destination="Fff-fm-nRP" id="2Bz-Nd-h9N"/>
+                <outlet property="doneBtn" destination="gbm-OZ-gtr" id="FZY-65-xg3"/>
+                <outlet property="getStartedBtn" destination="uGb-eN-IC0" id="U59-0S-X9c"/>
+                <outlet property="mainViewOL" destination="czg-lI-3x5" id="XFO-A1-IFm"/>
+                <outlet property="signUPLoyality" destination="nOE-WY-X4Q" id="y77-zC-GAY"/>
+                <outlet property="textFieldScroll" destination="nsY-dQ-GWb" id="eb6-rS-bA9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="sCQ-v5-B8F">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" id="g7l-cu-d4l">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="czg-lI-3x5">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="nsY-dQ-GWb" customClass="TPKeyboardAvoidingScrollView">
+                                    <rect key="frame" x="0.0" y="0.0" width="321" height="480"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up &amp; Get Loyalty Rewards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nOE-WY-X4Q">
+                                            <rect key="frame" x="8" y="77" width="305" height="31.5"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="21"/>
+                                            <color key="textColor" red="0.90980392160000001" green="0.14117647059999999" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3UC-Sl-E1M">
+                                            <rect key="frame" x="94" y="229.5" width="92" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="10"/>
+                                            <state key="normal" title="Terms &amp; conditions |">
+                                                <color key="titleColor" red="0.91372549020000005" green="0.2470588235" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="termsConditionsBtn_Action:" destination="-1" eventType="touchUpInside" id="yw0-EL-DTT"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="IsD-AS-jo3">
+                                            <rect key="frame" x="112" y="229.5" width="62" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="10"/>
+                                            <state key="normal" title="Privacy Links">
+                                                <color key="titleColor" red="0.91372549020000005" green="0.2470588235" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="privacyPolicyBtn_Action:" destination="-1" eventType="touchUpInside" id="oGb-kD-JhP"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uGb-eN-IC0">
+                                            <rect key="frame" x="80" y="219" width="160" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.90980392160000001" green="0.14117647059999999" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="15"/>
+                                            <state key="normal" title="GET STARTED!"/>
+                                            <connections>
+                                                <action selector="getStartedBtn_Action:" destination="-1" eventType="touchUpInside" id="06x-GG-SWv"/>
+                                            </connections>
+                                        </button>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="73W-iN-Fw3">
+                                            <rect key="frame" x="108" y="15" width="87" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Become a fishbowl member today!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Olv-Nj-s6f">
+                                            <rect key="frame" x="8" y="96" width="305" height="31.5"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </scrollView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back.png" id="fhX-ar-KRS">
+                                    <rect key="frame" x="17" y="30" width="10" height="10"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0M7-bm-v9F">
+                                    <rect key="frame" x="0.0" y="16" width="67" height="47"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <connections>
+                                        <action selector="backBtn_Action:" destination="-1" eventType="touchUpInside" id="ojK-Up-tNo"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="Fff-fm-nRP">
+                            <rect key="frame" x="0.0" y="278" width="320" height="201"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            <subviews>
+                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" useCurrentDate="NO" id="Od7-Mz-fNT">
+                                    <rect key="frame" x="0.0" y="41" width="320" height="160"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                    <date key="date" timeIntervalSinceReferenceDate="486641211.689964">
+                                        <!--2016-06-03 10:06:51 +0000-->
+                                    </date>
+                                    <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                        <!--1970-01-01 11:00:00 +0000-->
+                                    </date>
+                                    <date key="maximumDate" timeIntervalSinceReferenceDate="1165662000">
+                                        <!--2037-12-09 11:00:00 +0000-->
+                                    </date>
+                                    <connections>
+                                        <action selector="datePicker_Action:" destination="-1" eventType="valueChanged" id="rbd-bd-cmA"/>
+                                    </connections>
+                                </datePicker>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gbm-OZ-gtr">
+                                    <rect key="frame" x="266" y="7" width="50" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" name="AvantGardeXLight" family="Avant Garde XLight" pointSize="15"/>
+                                    <state key="normal" title="Done">
+                                        <color key="titleColor" red="0.91372549020000005" green="0.2470588235" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="pickerDoneButton_Action:" destination="-1" eventType="touchUpInside" id="lAa-AW-ovo"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.97254901959999995" green="0.96470588239999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="592" y="-30"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back.png" width="57" height="99"/>
+    </resources>
+</document>

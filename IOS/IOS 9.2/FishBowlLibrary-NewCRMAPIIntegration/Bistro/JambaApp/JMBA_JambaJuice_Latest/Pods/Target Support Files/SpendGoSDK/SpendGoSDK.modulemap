@@ -1,0 +1,6 @@
+framework module SpendGoSDK {
+  umbrella header "SpendGoSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
