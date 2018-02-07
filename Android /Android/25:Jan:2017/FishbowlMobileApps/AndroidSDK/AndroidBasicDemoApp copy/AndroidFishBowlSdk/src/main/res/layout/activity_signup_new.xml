@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/img_Back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bgimage"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+
+
+        android:orientation="vertical"
+
+       >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/im_logo"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/logo"
+                android:layout_marginLeft="17dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp"
+            >
+
+            <TextView
+                android:id="@+id/firstText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Sign up &amp; Get Loyalty Rewards!"
+                android:textColor="@color/orange"
+                android:textSize="23sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Become a fishbowl member today"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            android:paddingBottom="15dp"
+            >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/scrollViewLinearLayout">
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="4dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/text_terms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Terms &amp; conditions"
+                        android:textSize="12sp"
+                        android:padding="5dp"
+
+                        android:textColor="@color/black"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="10sp"
+                        android:background="@color/black"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="2dp"
+                        android:padding="5dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_gravity="center_vertical"
+                        />
+                    <TextView
+                        android:id="@+id/text_privacy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Privacy links"
+                        android:textSize="12sp"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:paddingBottom="10sp" />
+                </LinearLayout>
+                <Button
+                    android:layout_gravity="center"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/getStarted"
+                    android:gravity="center"
+                    android:text="GET STARTED!"
+                    android:background="@drawable/normal"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+
+</LinearLayout>
+        </ScrollView>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

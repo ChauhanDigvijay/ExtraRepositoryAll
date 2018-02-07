@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fishbowl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/fbmenucolor"
+    android:padding="4dp" >
+
+    <TextView
+        android:id="@+id/imageView1"
+        style="@style/text.17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:src="@drawable/backwardb"
+        android:text="MENU"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/actionbar_order_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/actionbar_order_imageview"
+        android:text="0"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/actionbar_offer_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/actionbar_offer_imageview"
+        android:text="0"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/actionbar_cart_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="0"
+           android:layout_marginRight="17dp"
+        android:textColor="@color/White"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/actionbar_cart_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:gravity="center"
+        android:padding="4dp"
+        android:layout_marginRight="17dp"   
+        android:src="@drawable/orderwhite" />
+
+    <ImageView
+        android:id="@+id/actionbar_order_imageview"
+        style="@style/text.15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/actionbar_cart_imageview"
+        android:layout_alignBottom="@+id/actionbar_cart_imageview"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/actionbar_cart_imageview"
+        android:background="@null"
+        android:gravity="center"
+        android:padding="4dp"
+        android:src="@drawable/ic_action_search" />
+
+    <ImageView
+        android:id="@+id/actionbar_offer_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/actionbar_order_imageview"
+        android:layout_alignBottom="@+id/actionbar_order_imageview"
+        android:layout_gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/actionbar_order_imageview"
+        android:gravity="center"
+        android:padding="4dp"
+        android:src="@drawable/giftb"
+        android:visibility="gone" />
+
+</RelativeLayout>

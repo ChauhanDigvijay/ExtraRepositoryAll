@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:autofit="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#80000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_centerVertical="true"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:background="@color/screen_bg">
+
+        <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Where will you be\npicking up your order?"
+            android:textSize="@dimen/text_size_xxlarge"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/orange_color"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preferred Store"
+            android:textSize="@dimen/text_size_large"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/brown_color"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:id="@+id/storeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Church &amp; Market"
+            android:textColor="@color/brown_color"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:id="@+id/storeAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2020 Market St\nSan Francisco, CA 94000"
+            android:textColor="@color/brown_color"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <com.olo.jambajuice.Views.Generic.SemiBoldButton
+            android:id="@+id/selectAnotherStore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner_white"
+            android:text="Select Another Store"
+            android:textAllCaps="false"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/red_color"/>
+
+        <com.olo.jambajuice.Views.Generic.SemiBoldButton
+            android:id="@+id/pickUpAtPreferredStore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner_red"
+            android:text="At My Preferred Store"
+            android:textAllCaps="false"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@android:color/white"
+            android:layout_above="@+id/selectAnotherStore"/>
+    </LinearLayout>
+
+
+
+    <include
+        android:id="@+id/screenDisableView"
+        layout="@layout/disable_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

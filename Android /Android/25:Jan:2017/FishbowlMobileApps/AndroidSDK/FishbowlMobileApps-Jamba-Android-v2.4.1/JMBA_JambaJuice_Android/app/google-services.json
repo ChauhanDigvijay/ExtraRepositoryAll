@@ -1,0 +1,45 @@
+{
+  "project_info": {
+    "project_number": "636426125388",
+    "firebase_url": "https://jamba-juice-production.firebaseio.com",
+    "project_id": "jamba-juice-production"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636426125388:android:cf6a9575c92c174d",
+        "android_client_info": {
+          "package_name": "com.olo.jambajuice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636426125388-uge4nji12h5gkr37rltanmm353ran1hh.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "636426125388-36s00lj6fg9qll6a0j7fhrff5u201lkl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvvJ_2PYU2FWTBhOKNYaUS4-VP3L0GrZY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

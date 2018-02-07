@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rootView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.olo.jambajuice.Activites.NonGeneric.Store.StoreLocator.StoreLocatorActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/hiddenView"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+
+        <requestFocus/>
+    </EditText>
+
+    <include
+        android:id="@+id/screenDisableView"
+        layout="@layout/disable_view"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/hiddenView"
+        android:layout_toEndOf="@+id/hiddenView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar">
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/btns"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@android:color/white"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:paddingBottom="@dimen/header_top_bottom_padding"-->
+                <!--android:paddingTop="@dimen/header_top_bottom_padding">-->
+
+                <!--<com.olo.jambajuice.Views.Generic.SemiBoldButton-->
+                    <!--android:id="@+id/menuBtn"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:background="@null"-->
+                    <!--android:text="Menu"-->
+                    <!--android:textAllCaps="false"-->
+                    <!--android:textColor="@color/brown_color"-->
+                    <!--android:textSize="@dimen/text_size_xlarge"/>-->
+
+                <!--<com.olo.jambajuice.Views.Generic.SemiBoldButton-->
+                    <!--android:id="@+id/storeBtn"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:background="@null"-->
+                    <!--android:text="Stores"-->
+                    <!--android:textAllCaps="false"-->
+                    <!--android:textColor="@color/brown_color"-->
+                    <!--android:textSize="@dimen/text_size_xlarge"-->
+                    <!--android:textStyle="bold"/>-->
+
+            <!--</LinearLayout>-->
+            <RelativeLayout
+                android:id="@+id/store_selection_jambaLogoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/storeBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:padding="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/exp_down"/>
+                <ImageView
+                    android:id="@+id/store_selection_jambaLogo"
+                    android:layout_width="@dimen/splash_logo_width"
+                    android:layout_height="@dimen/splash_logo_height"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/store_selection_jambaLogoLayout"
+                android:paddingBottom="@dimen/margin_10"
+                android:paddingTop="@dimen/margin_10">
+
+                <EditText
+                    android:id="@+id/searchEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/search_height"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:background="@drawable/round_corner_gray"
+                    android:drawableLeft="@android:drawable/ic_menu_search"
+                    android:drawablePadding="10dp"
+                    android:hint="Enter city, zip or landmark"
+                    android:imeOptions="actionSearch"
+                    android:paddingRight="40dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_medium"/>
+                <ImageView
+                    android:id="@+id/locationImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:backgroundTint="@color/semi_transparent_white"
+                    android:paddingRight="@dimen/margin_5"
+                    android:src="@drawable/gps_pointer_grey" />
+
+                <ImageView
+                    android:id="@+id/cancelImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:backgroundTint="@color/semi_transparent_white"
+                    android:paddingRight="@dimen/margin_5"
+                    android:src="@android:drawable/ic_menu_close_clear_cancel"/>
+            </RelativeLayout>
+
+            <!--<FrameLayout-->
+                <!--android:id="@+id/mapContainer"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/top_container_height"-->
+                <!--android:layout_below="@+id/searchView"/>-->
+
+            <!--<View-->
+                <!--android:id="@+id/transparentView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/top_container_height"-->
+                <!--android:layout_below="@+id/searchView"/>-->
+
+            <RelativeLayout
+                android:id="@+id/orderAheadView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/searchView"
+                android:background="@color/toolbar_bg"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/orderAheadIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/order_ahead_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/orderAheadIcon"
+                    android:text="Indicates store supports Order Ahead"
+                    android:textColor="@color/dark_green"
+                    android:textSize="@dimen/text_size_medium"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/orderAheadView">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="@dimen/progress_bar"
+                    android:layout_height="@dimen/progress_bar"
+                    android:visibility="gone"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"/>
+
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/noStoreAvailableView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/listView"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:paddingBottom="@dimen/margin_20"
+                    android:visibility="gone">
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/sorryMessage"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="Sorry we were unable to find any\nparticipating stores in the selected area"-->
+                        <!--android:textColor="@color/darker_gray"-->
+                        <!--android:textSize="@dimen/text_size_medium"/>-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/participatingStores"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@+id/sorryMessage"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:layout_marginTop="20dp"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="Participating Stores"-->
+                        <!--android:textColor="@color/dark_green"-->
+                        <!--android:textSize="@dimen/text_size_large"/>-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/areaNames"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@+id/participatingStores"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="Hawaii / Northern CA / Southern CA\nChicago / New York NY"-->
+                        <!--android:textColor="@color/darker_gray"-->
+                        <!--android:textSize="@dimen/text_size_medium"/>-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/orderAheadMap"-->
+                        <!--android:layout_width="@dimen/order_ahead_map_width"-->
+                        <!--android:layout_height="@dimen/order_ahead_map_height"-->
+                        <!--android:layout_below="@+id/areaNames"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:layout_margin="20dp"/>-->
+
+                    <TextView
+                        android:id="@+id/cannotFindMessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Cannot find a store?"
+                        android:textColor="@color/darker_gray"
+                        android:textSize="@dimen/text_size_medium"/>
+
+                    <com.olo.jambajuice.Views.Generic.SemiBoldButton
+                        android:id="@+id/continueOnMaps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cannotFindMessage"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_corner_red"
+                        android:text="Search On Maps"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_large"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

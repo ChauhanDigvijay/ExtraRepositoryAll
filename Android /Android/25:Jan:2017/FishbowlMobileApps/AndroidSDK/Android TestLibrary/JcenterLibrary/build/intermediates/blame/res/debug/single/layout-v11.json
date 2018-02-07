@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/digvijaychauhan/Desktop/Debugger Test/JambaUTA/JcenterLibrary/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_narrow.xml",
+        "source": "/Users/digvijaychauhan/.android/build-cache/e75890bf76a3c175750c2e68b1cfebc2e8f95e59/output/res/layout-v11/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/Users/digvijaychauhan/Desktop/Debugger Test/JambaUTA/JcenterLibrary/build/intermediates/res/merged/debug/layout-v11/notification_media_cancel_action.xml",
+        "source": "/Users/digvijaychauhan/.android/build-cache/e75890bf76a3c175750c2e68b1cfebc2e8f95e59/output/res/layout-v11/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/Users/digvijaychauhan/Desktop/Debugger Test/JambaUTA/JcenterLibrary/build/intermediates/res/merged/debug/layout-v11/notification_media_action.xml",
+        "source": "/Users/digvijaychauhan/.android/build-cache/e75890bf76a3c175750c2e68b1cfebc2e8f95e59/output/res/layout-v11/notification_media_action.xml"
+    },
+    {
+        "merged": "/Users/digvijaychauhan/Desktop/Debugger Test/JambaUTA/JcenterLibrary/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_custom.xml",
+        "source": "/Users/digvijaychauhan/.android/build-cache/e75890bf76a3c175750c2e68b1cfebc2e8f95e59/output/res/layout-v11/notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "/Users/digvijaychauhan/Desktop/Debugger Test/JambaUTA/JcenterLibrary/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_narrow_custom.xml",
+        "source": "/Users/digvijaychauhan/.android/build-cache/e75890bf76a3c175750c2e68b1cfebc2e8f95e59/output/res/layout-v11/notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "/Users/digvijaychauhan/Desktop/Debugger Test/JambaUTA/JcenterLibrary/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media.xml",
+        "source": "/Users/digvijaychauhan/.android/build-cache/e75890bf76a3c175750c2e68b1cfebc2e8f95e59/output/res/layout-v11/notification_template_big_media.xml"
+    }
+]

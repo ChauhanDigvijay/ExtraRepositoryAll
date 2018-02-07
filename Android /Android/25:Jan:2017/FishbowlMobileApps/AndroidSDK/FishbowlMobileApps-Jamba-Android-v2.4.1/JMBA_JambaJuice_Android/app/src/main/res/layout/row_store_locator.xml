@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/store_list1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/storeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/arrowImage"
+            android:drawablePadding="5dp"
+            android:text="Jamba Juice"
+            android:textColor="@color/brown_color"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/storeCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/storeName"
+            android:layout_below="@+id/storeName"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/arrowImage"
+            android:text="Canada"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/storeAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/storeName"
+            android:layout_below="@+id/storeCity"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/arrowImage"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="123 A Street"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_size_medium" />
+
+        <ImageView
+            android:id="@+id/arrowImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_20"
+            android:background="@drawable/forward_arrow_gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/store_list1"
+        android:layout_marginLeft="@dimen/margin_10">
+
+        <ImageView
+            android:id="@+id/orderAheadImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:src="@drawable/order_ahead_icon" />
+
+        <ImageView
+            android:id="@+id/deliveryImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_toRightOf="@id/orderAheadImage"
+            android:src="@drawable/delivery_icon" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/storeMiles"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30.72"
+                android:textColor="@color/brown_color"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_below="@+id/storeMiles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="left"
+                android:text="Miles"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size_medium" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

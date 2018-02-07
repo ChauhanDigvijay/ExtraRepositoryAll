@@ -1,0 +1,10 @@
+framework module FishBowlLibrary {
+  umbrella header "FishBowlLibrary.h"
+
+  export *
+  module * { export * }
+}
+
+module FishBowlLibrary.Swift {
+    header "FishBowlLibrary-Swift.h"
+}

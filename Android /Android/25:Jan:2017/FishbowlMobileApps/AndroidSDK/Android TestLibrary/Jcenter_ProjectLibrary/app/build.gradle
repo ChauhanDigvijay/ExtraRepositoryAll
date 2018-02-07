@@ -1,0 +1,49 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    defaultConfig {
+        consumerProguardFiles 'proguard-rules.txt'
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    allprojects {
+        repositories {
+            jcenter()
+            maven {
+                url "https://maven.google.com"
+            }
+        }
+    }
+
+
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile 'com.android.support:appcompat-v7:26.0.0'
+
+    compile group: 'com.google.code.gson', name: 'gson', version: '1.7.2'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.mcxiaoke.volley:library:1.0.14'
+    compile('com.google.android.gms:play-services-location:11.0.4')
+    compile('com.google.android.gms:play-services-gcm:11.0.4')
+}

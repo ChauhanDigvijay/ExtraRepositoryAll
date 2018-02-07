@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/cat_list_cell_selected" android:state_pressed="true"/>
+    <item android:drawable="@drawable/cat_list_cell" android:state_focused="true"/>
+    <item android:drawable="@drawable/cat_list_cell"/>
+
+</selector>

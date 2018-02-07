@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/historyprogress"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/prog"
+            android:layout_centerInParent="true"
+            android:text="Please wait..."
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_large"/>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/deliveryTypeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/margin_20"
+        android:paddingRight="@dimen/margin_20"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/toolbar">
+
+        <Button
+            android:id="@+id/hist_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_right_favorite"
+            android:minHeight="0dp"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="Order History"
+            android:textAllCaps="false"
+            android:textColor="@drawable/selector_txt_basket_time"
+            android:textSize="@dimen/text_size_large" />
+
+        <Button
+            android:id="@+id/fav_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_left_favorite"
+            android:minHeight="0dp"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="My Favorites"
+            android:textAllCaps="false"
+            android:textColor="@drawable/selector_txt_basket_time"
+            android:textSize="@dimen/text_size_large" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/deliveryTypeLayout">
+
+        <com.olo.jambajuice.Views.Generic.CustomViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+</RelativeLayout>

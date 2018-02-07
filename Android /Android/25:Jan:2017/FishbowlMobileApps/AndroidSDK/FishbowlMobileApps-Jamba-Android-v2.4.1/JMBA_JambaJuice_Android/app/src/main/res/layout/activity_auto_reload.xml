@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.NonGeneric.GiftCardNonGeneric.ManageGiftCard.AutoReloadActivityGiftCard">
+
+    <RelativeLayout
+        android:id="@+id/ARHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/autoReloadDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/delete" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/autoReloadSwitchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ARHeader"
+        android:background="@android:color/black"
+        android:padding="20dp">
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/setAutoReload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Auto Reload"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_large"
+            android:theme="@style/ARSwitch" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/ARScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomLayout"
+        android:layout_below="@+id/autoReloadSwitchLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/selectReloadAmountLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/selectReloadAmountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Select Reload Amount"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/DollarSymbolText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="$"
+                    android:layout_toLeftOf="@+id/selectAmount"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/selectAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/SRANotExpand"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_large"/>
+
+                <ImageView
+                    android:id="@+id/SRANotExpand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/not_expand" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/setting_header" />
+
+            <RelativeLayout
+                android:id="@+id/balanceBelowLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="15dp">
+
+                <ImageButton
+                    android:id="@+id/selectBtnBalanceBelow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:paddingRight="10dp"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:src="@drawable/select_white" />
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/balanceBelowText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/selectBtnBalanceBelow"
+                    android:text="When balance is below"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/setting_header" />
+
+            <RelativeLayout
+                android:id="@+id/belowAmountEditTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$"
+                    android:id="@+id/dollarLable"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="35dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_black"
+                    android:visibility="invisible"/>
+
+                <EditText
+                    android:id="@+id/belowBalanceAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignLeft="@+id/dollarLable"
+                    android:layout_alignStart="@+id/dollarLable"
+                    android:paddingLeft="12dp"
+                    android:maxLength="6"
+                    android:inputType="number"
+                    android:enabled="false"
+                    android:clickable="false"
+                    android:background="@android:color/transparent"
+                    android:hint="Enter the amount ($)" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/setting_header" />
+
+            <RelativeLayout
+                android:id="@+id/onSpecificLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+
+                <ImageButton
+                    android:id="@+id/selectBtnOnSpecific"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:paddingRight="10dp"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:src="@drawable/select_white" />
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/onSpecificText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/selectBtnOnSpecific"
+                    android:text="On a specific"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/OSSpinner"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:layout_toLeftOf="@+id/OSNotExpand"
+                    android:background="@android:color/transparent"
+                    android:spinnerMode="dialog"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/OSNotExpand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:src="@drawable/not_expand" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/setting_header" />
+
+            <RelativeLayout
+                android:id="@+id/startDateLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/startDateText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Start Date"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/startDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/SDNotExpand"
+                    android:layout_centerVertical="true"
+                    android:text="8/09/2016"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_large"
+                    android:visibility="gone"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/SDNotExpand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/expand" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/setting_header" />
+
+            <RelativeLayout
+                android:id="@+id/endDateLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/endDateText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="End Date"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/endDate"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/EDNotExpand"
+                    android:text="Never"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:gravity="end"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_large"
+                    android:visibility="gone"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/EDNotExpand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/not_expand" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/setting_header" />
+
+            <RelativeLayout
+                android:id="@+id/paymentAccountLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/paymentAccountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Payment Account"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+                <ImageView
+                    android:id="@+id/creditCardImg"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/givenCardNumber"
+                    android:src="@drawable/visa"
+                    android:visibility="gone" />
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/givenCardNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/selectedCardNotExpand"
+                    android:text="..."
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_large"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+
+
+                <ImageButton
+                    android:id="@+id/selectedCardNotExpand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:src="@drawable/not_expand" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:id="@+id/autoReloadInfoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <ImageButton
+                android:id="@+id/infoIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/info_box_icon" />
+
+            <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/infoIcon"
+                android:text="eGift Card Price Range $5 - $500\nAuto-reloads occur once per day"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ARFooter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red_color">
+
+            <com.olo.jambajuice.Views.Generic.SemiBoldButton
+                android:id="@+id/footerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+                android:text="Save Rules"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_large" />
+        </RelativeLayout>
+    </LinearLayout>
+    <include
+        android:id="@+id/screenDisableView"
+        layout="@layout/disable_view"/>
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@color/fbred"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:weightSum="10" >
+
+        <EditText
+            android:id="@+id/search_view"
+            style="@style/text.14"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="7"
+            android:background="@drawable/two_side_round_corner_button"
+            android:ems="10"
+            android:hint="Zip,City or State"
+            android:padding="5dp"
+            android:text="South Carolina" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/find_btn"
+
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+
+            android:background="@color/White"
+            android:layout_weight="3"
+
+            android:gravity="center"
+            android:onClick="contiue"
+            android:text="Find"
+            android:textColor="#ce5700"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/feed_item_profile_info_padd"
+        tools:context=".GoogleMapActivity" >
+
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            class="com.google.android.gms.maps.SupportMapFragment" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

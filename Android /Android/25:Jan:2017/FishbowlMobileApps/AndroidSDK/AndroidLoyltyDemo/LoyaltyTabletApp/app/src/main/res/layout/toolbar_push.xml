@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/fbheadercolor"
+    android:layout_height="75dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:id="@+id/headerImage"
+            />
+
+        <ImageView
+            android:id="@+id/backbutton"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="8dp"
+            android:src="@drawable/backre" />
+
+        <TextView
+            android:id="@+id/title_textf"
+            style="@style/text.13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:padding="8dp"
+            android:background="@null"
+            android:text="ADD TO CART"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/title_text"
+            style="@style/text.17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="22dp"
+            android:text="PUSHDETAIL"
+            android:textAllCaps="true"
+            android:textColor="@color/White"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

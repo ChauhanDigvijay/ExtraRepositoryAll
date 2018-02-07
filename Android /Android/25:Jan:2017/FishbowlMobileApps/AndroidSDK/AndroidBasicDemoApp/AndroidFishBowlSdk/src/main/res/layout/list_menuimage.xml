@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    >
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/menu_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY" >
+    </com.android.volley.toolbox.NetworkImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:orientation="horizontal" >
+
+
+            <FrameLayout android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                >
+
+                <com.fishbowl.basicmodule.Utils.RoundedImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView_round"
+                    android:visibility="gone"
+                    >
+                </com.fishbowl.basicmodule.Utils.RoundedImageView>
+
+                <TextView
+                    android:id="@+id/categoryNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:text="3"
+                    android:visibility="gone"
+                    android:textColor="@color/RedOrgin"
+                    android:textSize="18dp"
+                    android:textStyle="bold" >
+                </TextView>
+
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+
+            >
+            <TextView
+                android:id="@+id/categoryName"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="asd"
+                android:textColor="@color/White"
+                android:layout_centerInParent="true"
+                android:textSize="20dp"
+                android:textStyle="bold">
+
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

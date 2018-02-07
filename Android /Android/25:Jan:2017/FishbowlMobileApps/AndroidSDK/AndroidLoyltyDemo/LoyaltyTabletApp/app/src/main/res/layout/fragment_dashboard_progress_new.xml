@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:seekarc="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/progress_background">
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:visibility="gone" />
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/right_side_image_url"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="100"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:layout_weight="10"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="80"
+                android:orientation="vertical"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="My VIP Points"
+                        android:textSize="@dimen/heading_text"
+                        android:textColor="@color/orignalText"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="60"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/seekArcContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <com.fishbowl.LoyaltyTabletApp.Utils.SeekArc
+                            android:id="@+id/seekArc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:padding="12dp"
+                            android:paddingTop="5dp"
+                            app:progressColor="@color/redLoyalty"
+                            app:arcColor="@color/textHint"
+                            app:progressWidth="12dp"
+                            app:startAngle="225"
+                            app:sweepAngle="270" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="90">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="30"
+                                android:gravity="center"
+                                android:orientation="vertical"
+
+                                >
+
+                                <ImageView
+                                    android:id="@+id/rewards"
+                                    android:layout_width="@dimen/trophy_width"
+                                    android:layout_height="@dimen/trophy_height"
+                                    android:src="@drawable/reward"
+                                    android:scaleType="fitXY"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/seekArcProgress"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="0dp"
+                                    android:padding="0dp"
+                                    android:text="0"
+                                    android:singleLine="true"
+                                    android:textColor="@color/orignalText"
+                                    android:textSize="@dimen/text_earned_reaward_point"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="30" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textStart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+
+                                android:layout_marginLeft="@dimen/progress_txt_margin_left"
+                                android:layout_marginBottom="@dimen/progress_txt_margin_bottom"
+                                android:text="0"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/orignalText"
+                                android:textSize="@dimen/zero_next_reward_text"/>
+
+
+                            <TextView
+                                android:id="@+id/textEnd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginBottom="@dimen/progress_txt_margin_bottom"
+                                android:layout_marginRight="@dimen/progress_txt_margin_right"
+                                android:gravity="bottom"
+                                android:text="35"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/orignalText"
+                                android:textSize="@dimen/zero_next_reward_text"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="POINTS"
+                                android:layout_marginBottom="@dimen/progress_txt_margin_bottom"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentBottom="true"
+                                android:textColor="@color/orignalText"
+                                />
+
+                        </RelativeLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/points_until_rewards"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text=""
+                        android:textColor="@color/orignalText"
+                        android:textSize="@dimen/remaining_point_text" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/allside_round_cornner_buttton"
+                        android:padding="15dp"
+                        android:text="Redeem  your rewards"
+                        android:textColor="@color/White"
+                        android:visibility="gone" />
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/mybutton"
+                        android:padding="15dp"
+                        android:text="Special offers for you"
+                        android:textColor="@color/White"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/loyalty_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="6"
+                        android:layout_marginLeft="@dimen/loyalty_card_margin"
+                        android:layout_marginRight="@dimen/loyalty_card_margin"
+                        android:background="@drawable/twodise_offwhite"
+                        android:gravity="center_vertical"
+                        android:layout_alignParentTop="true"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:id="@+id/loyatycardlayout"
+                            android:padding="@dimen/loyalty_card_padding"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/loyalty_card_image" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="View My VIP Card"
+                                android:textColor="@color/orignalText"
+                                android:textSize="@dimen/loyalty_card_text" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/program_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4"
+                        android:gravity="center|center_vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_program_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Program Details"
+                            android:textSize="13sp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="5dp"
+                            />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:layout_weight="10" />
+        </LinearLayout>
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/footer_image_url"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,88 @@
+//
+//  OloExportServiceTests.swift
+//  Olo
+//
+//  Created by Taha Samad on 28/04/2015.
+//  Copyright (c) 2015 Hathway, Inc. All rights reserved.
+//
+
+import Foundation
+import XCTest
+
+class OloExportServiceTests: XCTestCase {
+    func testVendorExport() {
+        var expectation = self.expectationWithDescription("OLOService")
+        OloExportService.vendorExport { (downloadedFileURL, error) -> Void in
+            if error != nil {
+                println(error!.localizedDescription)
+                XCTAssert(false, "Request failed")
+            }
+            else {
+                XCTAssert(downloadedFileURL != nil, "file destination url should be present")
+                println("\(downloadedFileURL)")
+            }
+            expectation.fulfill()
+        }
+        self.waitForExpectationsWithTimeout(30, handler: nil)
+    }
+    
+    func testVendorExportNegativeScenerios() {
+        OloExportService.vendorExport (downloadFileDestinationURL: NSURL(string: "http://www.server.com/somefile.zip")) { (downloadedFileURL, error) -> Void in
+            println(error!.localizedDescription)
+            XCTAssertNotNil(error, "Error should be returned as path is invalid")
+        }
+        let documentDirectoryURL = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0] as! NSURL
+        OloExportService.vendorExport (downloadFileDestinationURL: documentDirectoryURL) { (downloadedFileURL, error) -> Void in
+            println(error!.localizedDescription)
+            XCTAssertNotNil(error, "Error should be returned as path is invalid")
+        }
+        let filePathURL = documentDirectoryURL.URLByAppendingPathComponent("test.doc")
+        OloExportService.vendorExport (downloadFileDestinationURL: filePathURL) { (downloadedFileURL, error) -> Void in
+            println(error!.localizedDescription)
+            XCTAssertNotNil(error, "Error should be returned as path is invalid")
+        }
+    }
+    
+    func testUnzipVendorExportZipAtPathURL() {
+        let fileManager = NSFileManager.defaultManager()
+        let documentDirectoryURL = fileManager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0] as! NSURL
+        var error: NSError? = nil
+        //
+        OloExportService.unzipVendorExportZipAtPathURL(NSURL(string: "http://www.server.com/somefile.zip")!, toDestinationDirectoryURL: documentDirectoryURL, error: &error)
+        XCTAssertNotNil(error, "Error should be returned for invalid parameter")
+        //
+        error = nil
+        OloExportService.unzipVendorExportZipAtPathURL(NSURL(string: "file:///somefile")!, toDestinationDirectoryURL: documentDirectoryURL, error: &error)
+        XCTAssertNotNil(error, "Error should be returned for invalid parameter")
+        //
+        error = nil
+        OloExportService.unzipVendorExportZipAtPathURL(NSURL(string: "file:///somefile.zip")!, toDestinationDirectoryURL: documentDirectoryURL, error: &error)
+        XCTAssertNotNil(error, "Error should be returned for invalid parameter")
+        //
+        error = nil
+        let testDirectoryPath = documentDirectoryURL.path!.stringByAppendingPathComponent("directory.zip")
+        let didCreate = fileManager.createDirectoryAtPath(testDirectoryPath, withIntermediateDirectories: true, attributes: nil, error: nil)
+        XCTAssertTrue(didCreate, "Directory should exist")
+        OloExportService.unzipVendorExportZipAtPathURL(NSURL(string: testDirectoryPath)!, toDestinationDirectoryURL: documentDirectoryURL, error: &error)
+        XCTAssertNotNil(error, "Error should be returned for invalid parameter")
+        //
+        error = nil
+        let zipFilePath = NSBundle(forClass: OloExportService.self).pathForResource("vendorexport", ofType: "zip")
+        let zipFileURL = NSURL(fileURLWithPath: zipFilePath!)!
+        OloExportService.unzipVendorExportZipAtPathURL(zipFileURL, toDestinationDirectoryURL: NSURL(string: "http://www.server.com/somefile")!, error: &error)
+        XCTAssertNotNil(error, "Error should be returned for invalid parameter")
+        //
+        error = nil
+        OloExportService.unzipVendorExportZipAtPathURL(zipFileURL, toDestinationDirectoryURL: zipFileURL, error: &error)
+        XCTAssertNotNil(error, "Error should be returned for invalid parameter")
+        //
+        error = nil
+        let destinationDirectoryURL = documentDirectoryURL.URLByAppendingPathComponent("vendorexport")
+        fileManager.removeItemAtPath(destinationDirectoryURL.path!, error: nil)
+        println(zipFileURL)
+        println(destinationDirectoryURL)
+        OloExportService.unzipVendorExportZipAtPathURL(zipFileURL, toDestinationDirectoryURL: destinationDirectoryURL, error: &error)
+        XCTAssertNil(error, "Error should not have been returned")
+    }
+
+}

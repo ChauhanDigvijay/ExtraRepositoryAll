@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><!--  Single List Item Design -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/text_white"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remove"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_size_large" />
+
+
+    <ImageView
+        android:id="@+id/img_rmv_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="center"
+        android:minHeight="0dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="3dp"
+        android:src="@drawable/check_orange"
+        android:textAllCaps="false"
+        android:textColor="@color/orange_color"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
+

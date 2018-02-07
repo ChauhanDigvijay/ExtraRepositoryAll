@@ -1,0 +1,65 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion 26
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+    }
+
+    allprojects {
+        repositories {
+            maven { url "https://jitpack.io" }
+            mavenLocal()
+            mavenCentral()
+            maven {
+                url "https://maven.google.com"
+            }
+        }
+
+    }
+    defaultConfig {
+        consumerProguardFiles 'proguard-rules.txt'
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    productFlavors {
+    }
+}
+
+dependencies {
+
+
+//extra
+    compile 'com.google.code.gson:gson:2.5'
+    compile 'com.mcxiaoke.volley:library:1.0.14'
+    compile 'com.estimote:sdk:0.10.5@aar'
+
+
+
+
+//google
+    compile('com.google.android.gms:play-services-location:11.0.4')
+    compile('com.google.android.gms:play-services-gcm:11.0.4')
+    compile('com.google.android.gms:play-services:11.0.4')
+    compile ('com.google.firebase:firebase-messaging:11.0.4')
+
+
+//    compile 'com.android.support:appcompat-v7:25.2.0'
+//    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+//
+//
+//    compile 'com.google.android.gms:play-services-wallet:11.4.0'
+//    compile 'com.google.android.gms:play-services-base:11.4.0'
+
+    //compile 'com.wallet.objects.library.wallet-objects:1.19.1'
+}
+

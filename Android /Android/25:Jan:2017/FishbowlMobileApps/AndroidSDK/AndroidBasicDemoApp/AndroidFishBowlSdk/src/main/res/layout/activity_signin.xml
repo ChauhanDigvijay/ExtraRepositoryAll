@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/loginBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bgimage"
+        android:scaleType="fitXY"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="25">
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/im_logo"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:src="@drawable/logo"
+                android:layout_marginLeft="17dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:gravity="center_vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPhonetic"
+                android:ems="10"
+                android:id="@+id/et_mail"
+                android:hint="Email / Mobile"
+                android:gravity="left"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:background="#D9000000"
+                android:padding="12dp"
+                />
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_mail"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/et_pass"
+                android:hint="Password"
+                android:textColorHint="@color/white"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:textColor="@color/white"
+                android:background="#D9000000"
+                android:padding="12dp"
+                />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_pass"
+                android:text="SIGN IN"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:id="@+id/bt_checkin"
+                android:background="@drawable/normal"
+                android:layout_marginTop="28dp"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:padding="20dp">
+            <TextView
+                android:id="@+id/no_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/user_signup"
+                android:text="Don't have an Account?"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:layout_centerHorizontal="true"
+
+
+                />
+            <TextView
+                android:id="@+id/user_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Register Here"
+                android:textColor="@color/orange"
+                android:textSize="20sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+
+
+
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

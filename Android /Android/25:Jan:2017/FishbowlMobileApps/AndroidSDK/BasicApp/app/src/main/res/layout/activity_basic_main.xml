@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/apple"
+    android:gravity="center"
+    tools:context="com.fishbowl.BasicApp.BasicMainActivity">
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:visibility="invisible"
+        android:src="@drawable/mybistro"
+        android:layout_marginBottom="50dp"/>
+
+    <!--<com.fishbowl.basicmodule.SavePay.SaveBottomActivity-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!---->
+        <!--android:id="@+id/bottom_toolbar"-->
+
+
+        <!--/>-->
+
+    <!--<com.fishbowl.basicmodule.SavePay.SaveBottomActivity-->
+        <!--android:id="@+id/bottom_toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:background="#0000"-->
+        <!--android:clickable="true"-->
+        <!--android:longClickable="false"-->
+        <!--android:minWidth="200dp"-->
+        <!--android:onClick="saveToAndroidPay"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--android:src="@drawable/s2ap" />-->
+
+
+
+    <!--<WebView  xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/vW"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--/>-->
+
+
+    <!--//1.Save Button Option-->
+    <com.fishbowl.basicmodule.SavePay.SaveGiftWidget
+        android:id="@+id/savegift"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="top"
+        android:layout_gravity="top"
+        />
+
+    <!--//2.Update Button Option-->
+    <com.fishbowl.basicmodule.SavePay.UpdateGiftWidget
+        android:id="@+id/updategift"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        />
+
+    <!--//3.Save and Update both Button Option-->
+    <com.fishbowl.basicmodule.SavePay.SaveUpdateGiftWidget
+        android:id="@+id/saveupdategift"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+         android:gravity="bottom"
+        android:layout_gravity="bottom"
+        />
+
+
+    <TextView
+        android:id="@+id/txt_push_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorPrimary"
+        android:textSize="26dp" />
+
+    <TextView
+        android:id="@+id/txt_reg_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</LinearLayout>

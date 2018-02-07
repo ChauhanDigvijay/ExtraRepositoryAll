@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/strokeBorder"
+        android:layout_alignParentRight="true"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Rewards and Offers"
+            android:textColor="@color/orignalText"
+            android:textSize="@dimen/row_list_heading_text"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/row_list_padding"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/strokeBorder"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="85">
+        <ListView
+            android:id="@+id/reward_offer_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/strokeBorder"
+            android:scrollbars="none"
+            android:dividerHeight="0dp" >
+        </ListView>
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menudraw_container"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:components="http://schemas.android.com/apk/res/com.fishbowl.fbtemplate1"
+        android:id="@+id/ll_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <fragment
+                android:id="@+id/image_fragment"
+                android:name="com.fishbowl.fbtemplate1.fragment.ImageMenu_Fragment"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="45" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width=".5px"
+                android:layout_height="match_parent"
+                android:background="@color/fbbrown" />
+
+            <fragment
+                android:id="@+id/detail_fragment"
+                android:name="com.fishbowl.fbtemplate1.fragment.DetailMenu_Fragment"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="55" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/White"
+        android:choiceMode="singleChoice"
+        android:divider="@color/Red"
+        android:dividerHeight="1dp" />
+
+</android.support.v4.widget.DrawerLayout>

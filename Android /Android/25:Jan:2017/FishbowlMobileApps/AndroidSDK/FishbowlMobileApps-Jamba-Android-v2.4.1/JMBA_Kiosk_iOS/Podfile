@@ -1,0 +1,31 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '8.0'
+use_frameworks!
+
+def pods()
+    pod 'HDK', :git => 'git@github.com:hathway/HWAY_HDK_iOS.git', :branch => 'master'
+    pod 'OloSDK', :git => 'git@github.com:hathway/JMBA_Olo_iOS_SDK.git', :branch => 'master'
+    pod 'SpendGoSDK', :git => 'git@github.com:hathway/JMBA_SpendGo_iOS_SDK.git', :branch => 'master'
+    pod 'Alamofire'
+    pod 'SwiftyJSON'
+    pod 'Parse'
+    pod 'HanekeSwift'
+    pod 'XCGLogger'
+    pod 'CryptoSwift'
+    pod 'Instabug'
+    pod 'SVProgressHUD'
+    pod 'MGSwipeTableCell'
+    pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift2'
+end
+
+target 'JambaKiosk' do
+    pods()
+end
+
+target 'JambaKioskTests' do
+    pods()
+end
+
+target 'JambaKioskUITests' do
+    pods()
+end

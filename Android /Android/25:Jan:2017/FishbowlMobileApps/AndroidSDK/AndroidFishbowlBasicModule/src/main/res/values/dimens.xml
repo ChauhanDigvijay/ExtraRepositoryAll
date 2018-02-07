@@ -1,0 +1,221 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="feed_item_margin">10dp</dimen>
+    <dimen name="feed_item_padding_top_bottom">5dp</dimen>
+    <dimen name="feed_item_padding_left_right">15dp</dimen>
+    <dimen name="feed_item_padding_left_right2">10dp</dimen>
+    <dimen name="feed_item_padding_left_right1">20dp</dimen>
+    <dimen name="feed_item_profile_pic">50dp</dimen>
+    <dimen name="feed_item_profile_pic1">40dp</dimen>
+    <dimen name="feed_item_profile_pic2">80dp</dimen>
+    <dimen name="feed_item_profile_info_padd">10dp</dimen>
+    <dimen name="feed_item_profile_info_padd1">5dp</dimen>
+    <dimen name="feed_item_profile_name">15dp</dimen>
+    <dimen name="feed_item_timestamp">13dp</dimen>
+    <dimen name="feed_item_status_pad_left_right">15dp</dimen>
+    <dimen name="feed_item_status_pad_top">13dp</dimen>
+    <dimen name="feed_item_corner_radius">3dp</dimen>
+    <dimen name="feed_item_border_width">1dp</dimen>
+    <dimen name="font_size">20sp</dimen>
+
+    <!-- Dj Style -->
+    <style name="text">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">12sp</item>
+
+        <item name="android:cursorVisible">true</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text.11">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="text.12">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="text.13">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="text.14">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="text.15">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="text.16">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="text.17">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="text.18">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="text.19">
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="text.20">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="text.25">
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="text.30">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="text.40">
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="text.50">
+        <item name="android:textSize">50sp</item>
+    </style>
+
+    <style name="text.60">
+        <item name="android:textSize">60sp</item>
+    </style>
+
+    <style name="text.13.prompt">
+        <item name="android:singleLine">false</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="text.14.prompt">
+        <item name="android:singleLine">false</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="text.15.prompt">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="text.12.prompt">
+        <item name="android:singleLine">false</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="text.19.prompt">
+        <item name="android:singleLine">false</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+
+
+    <style name="text.18.prompt">
+        <item name="android:singleLine">false</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="text.17.prompt">
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="text.16.prompt">
+        <item name="android:singleLine">false</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!--Common Dimensions-->
+
+
+    <bool name="isTablet">true</bool>
+
+    <!--Text Sizes-->
+    <dimen name="text_size_small">15sp</dimen>
+    <dimen name="text_size_medium">20sp</dimen>
+    <dimen name="text_size_large">25sp</dimen>
+    <dimen name="text_size_xlarge">30sp</dimen>
+    <dimen name="text_size_xxlarge">35sp</dimen>
+    <dimen name="text_size_xxxlarge">45sp</dimen>
+    <dimen name="text_size_welcome_font">55sp</dimen>
+    <dimen name="text_size_xxxxlarge">70sp</dimen>
+
+    <!--Common Dimensions-->
+    <dimen name="progress_bar">60dp</dimen>
+
+    <!--Menu & Store Padding-->
+    <dimen name="header_top_bottom_padding">25dp</dimen>
+
+    <!--Basket Icon Margin 48dp for button height plus header_top_padding-->
+    <dimen name="basket_icon_top_margin">98dp</dimen>
+
+    <!--Settings-->
+    <dimen name="view_pager_icon_height">200dp</dimen>
+
+    <!--Map-->
+    <dimen name="top_container_height">350dp</dimen>
+
+    <!--SignUp Page Control-->
+    <dimen name="page_control_size">12dp</dimen>
+
+    <!--Order Ahead Map Size-->
+    <dimen name="order_ahead_map_width">451dp</dimen>
+    <dimen name="order_ahead_map_height">241dp</dimen>
+
+    <!--Margin On Tablet-->
+    <dimen name="margin_5">10dp</dimen>
+    <dimen name="margin_10">15dp</dimen>
+    <dimen name="margin_20">30dp</dimen>
+
+    <!--StoreLocator Search-->
+    <dimen name="search_height">40dp</dimen>
+
+    <!--Splash Jamaba Logo-->
+    <dimen name="splash_logo_width">158dp</dimen>
+    <dimen name="splash_logo_height">115dp</dimen>
+
+    <!--Splash Jamaba Logo-->
+    <dimen name="signed_logo_width">250dp</dimen>
+    <dimen name="signed_logo_height">100dp</dimen>
+
+    <!--Order Confirmation Margin Top-->
+    <dimen name="confirmation_screen_top_margin">150dp</dimen>
+
+    <!--SignUp Store Detail Map-->
+    <dimen name="sign_up_map_width">400dp</dimen>
+    <dimen name="sign_up_map_height">250dp</dimen>
+
+    <!--Order Ahead Icon-->
+    <dimen name="order_ahead_icon_width">15dp</dimen>
+    <dimen name="order_ahead_icon_height">25dp</dimen>
+
+    <!--Splash Screen-->
+    <dimen name="splash_top_left_width">258dp</dimen>
+    <dimen name="splash_top_left_height">291dp</dimen>
+
+    <dimen name="splash_top_right_width">371dp</dimen>
+    <dimen name="splash_top_right_height">330dp</dimen>
+
+    <dimen name="splash_bottom_right_width">258dp</dimen>
+    <dimen name="splash_bottom_right_height">217dp</dimen>
+
+    <dimen name="splash_bottom_left_width">196dp</dimen>
+    <dimen name="splash_bottom_left_height">220dp</dimen>
+
+    <dimen name="splash_blend_in_good_width">280dp</dimen>
+    <dimen name="splash_blend_in_good_height">120dp</dimen>s
+
+    <!--SpendGo Logo-->
+    <dimen name="spend_go_width">168dp</dimen>
+    <dimen name="spend_go_height">24dp</dimen>
+    <item name="productThumbAspectRatio" format="float" type="dimen">1.26219512</item>
+</resources>

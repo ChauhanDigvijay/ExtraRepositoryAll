@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>InCommSDKTestsConfigurations</key>
+	<dict>
+		<key>InCommApiKey</key>
+		<string>aWQ9MzYzNDE3NyZleHBpcmVzPTE0NzM5NDM1NjkmU2lnbmF0dXJlPWlBNWtrNXM2Rk9hd3IrSVRIT01XNzJrQmY4T0E4clVyWmZrZUYwc25Bc3c9</string>
+		<key>InCommClientSecretKey</key>
+		<string></string>
+		<key>InCommBaseURL</key>
+		<string>https://api.giftango.com/enterpriseapi/v1</string>
+		<key>InCommClientId</key>
+		<string>jambajuicemobileapplicationtest</string>
+		<key>InCommNoFundsCollected</key>
+		<false/>
+		<key>InCommTestBrandId</key>
+		<string>711763</string>
+		<key>InCommTestCardId</key>
+		<integer>29110305</integer>
+		<key>InCommTestCardNumber</key>
+		<string>Testk782testj179992</string>
+		<key>InCommTestCardPin</key>
+		<string></string>
+		<key>InCommTestMessageFrom</key>
+		<string>Jamba1</string>
+		<key>InCommTestMessageText</key>
+		<string>Hello!</string>
+		<key>InCommTestMessageTo</key>
+		<string>Jamba2</string>
+		<key>InCommUserCreditCardCVV</key>
+		<string>445</string>
+		<key>InCommUserCreditCardExpiryMonth</key>
+		<integer>2</integer>
+		<key>InCommUserCreditCardExpiryYear</key>
+		<integer>2019</integer>
+		<key>InCommUserCreditCardNumber</key>
+		<string>4111111111111111112</string>
+		<key>InCommUserCreditCardType</key>
+		<string>VISA</string>
+		<key>InCommUserCreditCardZip</key>
+		<string>54000</string>
+		<key>InCommUserEmailAddress</key>
+		<string>jamba.tester.ios@outlook.com</string>
+	</dict>
+</dict>
+</plist>

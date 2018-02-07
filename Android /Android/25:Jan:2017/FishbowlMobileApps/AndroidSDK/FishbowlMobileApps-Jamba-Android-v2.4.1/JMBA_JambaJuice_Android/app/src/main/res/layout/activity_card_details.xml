@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CIRootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.NonGeneric.GiftCardNonGeneric.ManageGiftCard.CardDetailsActivityGiftCard">
+
+    <RelativeLayout
+        android:id="@+id/CIHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#deecf9">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/CIFooter"
+        android:layout_below="@+id/CIHeader">
+
+        <LinearLayout
+            android:id="@+id/CIContentArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/selectImageCDLayout"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:focusableInTouchMode="true"
+                android:padding="25dp">
+
+                <ImageView
+                    android:id="@+id/CICardImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/visa"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cardRLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/CICardNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Name"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_large" />
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/CICardName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toEndOf="@+id/CICardNameText"
+                    android:layout_toLeftOf="@+id/imgBtnReloadNotExpand"
+                    android:layout_toRightOf="@+id/CICardNameText"
+                    android:layout_toStartOf="@+id/imgBtnReloadNotExpand"
+                    android:background="@android:color/transparent"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="My Jamba Card"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_large"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etCardName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/imgBtnClear"
+                    android:layout_toStartOf="@+id/imgBtnClear"
+                    android:background="@android:color/transparent"
+                    android:ellipsize="end"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="32dp"
+                    android:singleLine="true"
+                    android:textAlignment="gravity"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+                <ImageButton
+                    android:id="@+id/imgBtnReloadNotExpand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:src="@drawable/forward_arrow_gray" />
+
+                <ImageButton
+                    android:id="@+id/imgBtnClear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/close"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/setting_header" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/CICardNumberText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Number"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_large" />
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/CICardNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="4548151454874515"
+                    android:layout_toStartOf="@+id/CICardNumberText"
+                    android:layout_toRightOf="@+id/CICardNumberText"
+                    android:layout_toEndOf="@+id/CICardNumberText"
+                    android:layout_toLeftOf="@+id/CICardNumberText"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_large"
+                    android:textStyle="bold"
+                    android:textAlignment="gravity"
+                    android:gravity="end" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/setting_header" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/CIPinNumberText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="PIN Number"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_large" />
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/CIPinNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="show"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textSize="@dimen/text_size_large"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/setting_header" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:visibility="gone">
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/CIPurchaseDateText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Last Modified Date"
+
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_large" />
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/CIPurchaseDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:ellipsize="end"
+                    android:maxLength="10"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_large"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:visibility="gone">
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/CIInitBalanceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Expiration Date"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_large" />
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/CIInitBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_large"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/setting_header"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/CIBalanceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Balance"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_large" />
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/CIBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="$12.00"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_large"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:visibility="gone">
+
+                <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+                    android:id="@+id/CIAutoReloadText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Auto Reload"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_large" />
+
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/ARImage" />
+
+                <ImageView
+                    android:id="@+id/ARImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/not_expand" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/setting_header" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/CIFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="@color/red_color">
+        <com.olo.jambajuice.Views.Generic.SemiBoldButton
+            android:id="@+id/deleteButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/transparent"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:text="Remove Card"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_large" />
+
+        <com.olo.jambajuice.Views.Generic.SemiBoldButton
+            android:id="@+id/footerButton"
+            android:layout_below="@+id/deleteButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/white"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:layout_gravity="center"
+            android:text="Edit Card Name"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_large" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/screenDisableView"
+        layout="@layout/disable_view" />
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/detailheader_textview"
+            style="@style/text.25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|start"
+            android:padding="6dp"
+            android:singleLine="false"
+            android:text="WE&apos;RE GIVING YOU FREE SLICE"
+            android:visibility="gone"
+            android:textColor="@color/Red"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/detail_list"
+            style="@style/text.20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:divider="@color/fbbrown"
+            android:scrollbars="none"
+            android:dividerHeight=".5px" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

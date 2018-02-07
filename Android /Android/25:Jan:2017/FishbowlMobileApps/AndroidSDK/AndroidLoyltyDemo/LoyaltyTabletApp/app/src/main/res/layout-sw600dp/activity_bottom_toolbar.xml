@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:weightSum="10"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/buttonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18"
+
+        >
+
+        <TextView
+            android:id="@+id/loyaltytopheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="View My VIP Card"
+            android:layout_centerVertical="true"
+            android:textColor="@color/orignalText"
+            android:textSize="@dimen/header_text"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/strokeBorder"
+            />
+
+        <ImageView
+            android:id="@+id/finish"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/crossgrey"
+            android:visibility="gone"
+            android:padding="10dp"/>
+        <LinearLayout
+            android:id="@+id/sendPrint"
+            android:layout_toLeftOf="@+id/sendEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/allside_round_cornner_buttton"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/print"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Print"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/contact_restText"
+                android:layout_marginLeft="7dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sendEmail"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:background="@drawable/allside_round_cornner_buttton"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/sendemail"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/contact_restText"
+                android:layout_marginLeft="7dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

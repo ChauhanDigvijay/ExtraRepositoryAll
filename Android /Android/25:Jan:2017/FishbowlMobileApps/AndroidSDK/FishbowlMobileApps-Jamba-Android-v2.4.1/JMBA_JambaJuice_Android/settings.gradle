@@ -1,0 +1,3 @@
+include ':app', '..:JMBA_Olo_Android_SDK:app', '..:JMBA_SpendGo_Android_SDK:app','..:JMBA_InComm_Android_SDK:app';
+//include '..:AndroidFishbowlBasicModule';
+

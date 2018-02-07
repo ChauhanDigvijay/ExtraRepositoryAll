@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/img_Back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bgimage"
+            android:scaleType="fitXY"/>
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/toolbar_menu_item"
+            ></include>
+
+
+        <ScrollView
+            android:layout_below="@id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:scrollbars="none"
+            android:background="@null"
+            android:fillViewport="true"
+            android:layout_marginBottom="60dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/topframe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                      >
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:adjustViewBounds="true"
+                        android:id="@+id/netimage"
+                        android:scaleType="fitXY"
+                        /></LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/viewsep"
+                    android:layout_width="match_parent"
+                    android:layout_height=".5px"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/fbbrown" />
+
+                <LinearLayout
+                    android:id="@+id/vptextlinearlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp" >
+                    <LinearLayout
+                        android:id="@+id/vptextlinearlayoutname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@null"
+                        android:orientation="horizontal"
+
+                        android:weightSum="1"
+                        android:paddingRight="15dp" >
+                        <TextView
+                            android:id="@+id/expenseType1"
+                            style="@style/text.15.prompt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:text="Name"
+                            android:layout_weight="1"
+                            android:textColor="@color/Red"
+                            android:textStyle="bold"
+                            />
+                        <TextView
+                            android:id="@+id/expenseType2"
+                            style="@style/text.15.prompt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+
+                            android:text="Cost"
+                            android:visibility="visible"
+                            android:textColor="@color/Red"
+                            android:textStyle="bold"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/expenseType"
+                        style="@style/text.17.prompt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Description"
+                        android:visibility="gone"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/todayDate"
+                        style="@style/text.13.prompt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/desc"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/btn_next"
+                        android:text="Red Onions,Bell Paper,Button,Tomatoes,Tomato Saurce"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+
+                    <Button
+                        android:id="@+id/contnue_btn"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/Red1"
+                        android:gravity="center"
+                        android:onClick="orderscreen"
+                        android:text="Add To Order"
+                        android:textColor="@color/White"
+                        android:visibility="gone" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingRight="8dp"
+                        android:paddingLeft="8dp">
+                       <ListView
+                           android:layout_width="match_parent"
+                           android:layout_height="80dp"
+                           android:id="@+id/nutrition_list"></ListView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginBottom="3dp"
+                            >
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/gray"
+                                />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="10">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:layout_weight="5"
+                                    android:gravity="center">
+                                    <TextView
+                                        android:id="@+id/buttonInc"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="+"
+                                        android:textColor="@color/blue"
+                                        style="@style/text.25"
+
+                                        android:src="@drawable/abback"/>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="15dp"
+                                        android:paddingRight="15dp"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:gravity="center"
+                                        android:layout_gravity="center_vertical">
+                                        <TextView
+                                            android:id="@+id/txtCount"
+                                            android:layout_width="30dp"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/two_side_round_corner_button"
+                                            android:text="1"
+
+                                            android:gravity="center"
+                                            /></LinearLayout>
+                                    <TextView
+                                        android:id="@+id/buttonDec"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="-"
+                                        android:textColor="@color/blue"
+                                        style="@style/text.25"
+                                        android:src="@drawable/abback"/></LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:layout_weight="5"
+                                    android:gravity="center">
+                                    <Button
+                                        android:id="@+id/addorder"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="end"
+                                        android:paddingLeft="15dp"
+                                        android:paddingRight="15dp"
+                                        android:text="Add To Order"
+
+                                        android:background="@color/Red1"
+                                        android:textColor="@color/white"/>
+                                </LinearLayout></LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="15"
+            android:gravity="bottom"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <com.BasicApp.Activites.Generic.BottomToolbarActivity
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/bottom_toolbar"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/White"
+        android:choiceMode="singleChoice"
+        android:dividerHeight="0dp"
+        android:divider="@color/white" />
+
+</android.support.v4.widget.DrawerLayout>

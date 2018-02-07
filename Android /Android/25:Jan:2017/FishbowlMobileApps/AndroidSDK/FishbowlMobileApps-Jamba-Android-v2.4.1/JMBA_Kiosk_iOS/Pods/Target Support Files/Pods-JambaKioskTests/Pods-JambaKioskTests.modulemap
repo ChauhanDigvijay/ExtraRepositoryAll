@@ -1,0 +1,6 @@
+framework module Pods_JambaKioskTests {
+  umbrella header "Pods-JambaKioskTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

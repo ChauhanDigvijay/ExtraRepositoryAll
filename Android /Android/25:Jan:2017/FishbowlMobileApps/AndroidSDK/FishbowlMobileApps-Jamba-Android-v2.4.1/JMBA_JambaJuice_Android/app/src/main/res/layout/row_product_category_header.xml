@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.olo.jambajuice.Views.Generic.CustomRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    attrs:layoutAspectRatio="@dimen/productCategoryHeaderAspectRatio"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/continueShoppingBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_margin="15dp"
+        android:drawableLeft="@drawable/circle_orange_down_icon"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_medium"
+        android:textAllCaps="false" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <com.olo.jambajuice.Views.Generic.BoldTextView
+            android:id="@+id/productName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_xxxlarge"
+            android:textColor="@color/dark_green" />
+
+
+        <com.olo.jambajuice.Views.Generic.SemiBoldTextView
+            android:id="@+id/productTagLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/dark_green" />
+
+    </LinearLayout>
+
+
+</com.olo.jambajuice.Views.Generic.CustomRelativeLayout>

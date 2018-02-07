@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.olo.jambajuice.Fragments.ProductDetailFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:layout_above="@+id/add_to_basket_layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.olo.jambajuice.Views.Generic.CustomRelativeLayout
+                xmlns:attr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/product_detail_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                attr:layoutAspectRatio="@dimen/productDetailAspectRatio">
+
+                <ImageView
+                    android:id="@+id/productImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/darker_gray"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/product_placeholder"/>
+
+                <ImageView
+                    android:id="@+id/productImageGradient"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_added_time"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColor="@android:color/white"-->
+                    <!--android:textSize="@dimen/text_size_small" />-->
+
+                    <com.olo.jambajuice.Views.Generic.BoldTextView
+                        android:id="@+id/tv_product_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="Strawberry Surfrider Smoothie"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_xxlarge"/>
+
+                    <TextView
+                        android:id="@+id/tv_ingredient_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_medium"/>
+
+                </LinearLayout>
+            </com.olo.jambajuice.Views.Generic.CustomRelativeLayout>
+
+            <Button
+                android:id="@+id/continueShoppingBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_margin="15dp"
+                android:drawableLeft="@drawable/circle_orange_down_icon"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_medium"
+                android:textAllCaps="false" />
+
+            <LinearLayout
+                android:id="@+id/productPriceQuantityContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_detail_container"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/size1"
+                    layout="@layout/layout_product_price_quantity"/>
+
+                <include
+                    android:id="@+id/size2"
+                    layout="@layout/layout_product_price_quantity"/>
+
+                <include
+                    android:id="@+id/size3"
+                    layout="@layout/layout_product_price_quantity"/>
+            </LinearLayout>
+
+            <include
+                android:id="@+id/selectionType"
+                layout="@layout/row_make_it_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productPriceQuantityContainer"
+                android:layout_marginBottom="1dp">
+            </include>
+
+            <LinearLayout
+                android:id="@+id/proteinBoostContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selectionType"
+                android:orientation="vertical"/>
+
+            <LinearLayout
+                android:id="@+id/detailView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/proteinBoostContainer"
+                android:orientation="vertical"
+                >
+                <!--<ExpandableListView-->
+                <!--android:id="@+id/listview_boosts"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:divider="@null"-->
+                <!--android:dividerHeight="0dp"-->
+                <!--android:groupIndicator="@null"/>-->
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/detailView"
+                android:background="@color/toolbar_bg"/>
+            <LinearLayout
+                android:id="@+id/customize_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="50dp"
+                android:background="#F0F0F0"
+                android:orientation="horizontal"
+                android:layout_below="@+id/detailView">
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_weight="0.7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Not Perfect Yet?"
+                    android:textColor="#8E8E93"
+                    android:textSize="@dimen/text_size_large" />
+                <TextView
+                    android:layout_weight="0.6"
+                    android:layout_width="0dp"
+                    android:padding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:background="@drawable/round_small_corner_orange"
+                    android:textSize="@dimen/text_size_large"
+                    android:textColor="@color/text_white"
+                    android:text="Customize It"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_above="@+id/quantity_layout"
+                android:background="@color/toolbar_bg"/>
+
+            <RelativeLayout
+                android:id="@+id/quantity_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/customize_container"
+                android:background="@android:color/white"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/btn_decrease_qty"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/circle_orange"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/minus_white"
+                    android:textColor="@color/brown_color"
+                    android:textSize="25sp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center|center_vertical"
+                    android:orientation="vertical">
+
+                    <com.olo.jambajuice.Views.Generic.BoldTextView
+                        android:id="@+id/tv_quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="12dp"
+                        android:text="1"
+                        android:textColor="@color/brown_color"
+                        android:textSize="@dimen/text_size_xlarge"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="12dp"
+                        android:text="Quantity"
+                        android:textColor="@color/brown_color"
+                        android:textSize="@dimen/text_size_large"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/btn_increase_qty"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/circle_orange"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/plus_white"
+                    android:textColor="@color/brown_color"
+                    android:textSize="25sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/product_detail_container">
+
+                <ProgressBar
+                    android:id="@+id/progressBarView"
+                    android:layout_width="@dimen/progress_bar"
+                    android:layout_height="@dimen/progress_bar"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/notavaliable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Product not available for orderahead"
+                    android:textColor="@color/brown_color"
+                    android:textSize="@dimen/text_size_medium"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/chooseStoreContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/product_detail_container"
+                android:background="#F0FFFFFF"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/chooseStore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableBottom="@drawable/arrow_down"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="Choose a store to\n start your order"
+                    android:textColor="@color/darker_gray"
+                    android:textSize="@dimen/text_size_medium"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/transparentView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_above="@+id/add_to_basket_layout"-->
+    <!--android:clickable="true"/>-->
+
+    <LinearLayout
+        android:id="@+id/add_to_basket_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.olo.jambajuice.Views.Generic.SemiBoldButton
+            android:id="@+id/tv_total_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/red_color"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="$0.0"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_large"/>
+
+        <com.olo.jambajuice.Views.Generic.SemiBoldButton
+            android:id="@+id/tv_add_to_basket"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/red_color_1"
+            android:gravity="center"
+            android:text="Add to Basket"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_large"/>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/screenDisableView"
+        layout="@layout/disable_view"/>
+
+</RelativeLayout>

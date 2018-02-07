@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/deleteWallButton"
+        style="@style/text.14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/linear1"
+        android:clickable="true"
+        android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+        android:paddingTop="@dimen/feed_item_padding_top_bottom"
+        android:src="@drawable/right" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fitsSystemWindows="true"
+        android:gravity="top|start"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+        android:paddingTop="@dimen/feed_item_padding_top_bottom"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="10"
+            android:background="@drawable/topback"
+            android:gravity="top|start"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/feed_item_padding_left_right"
+            android:paddingRight="@dimen/feed_item_padding_left_right" >
+
+            <TextView
+                android:id="@+id/registration_start_countr"
+                style="@style/text.25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YOUR ORDER"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Red"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/Red" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="50"
+            android:background="@drawable/background"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/feed_item_padding_left_right"
+            android:paddingRight="@dimen/feed_item_padding_left_right" >
+
+            <ListView
+                android:id="@+id/mobile_listdf"
+                style="@style/text.20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:divider="@color/Red"
+                >
+            </ListView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/startchata11ws"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/bannerwhit" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/Red" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="10"
+            android:background="@drawable/background"
+            android:gravity="top|end"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/feed_item_padding_left_right"
+            android:paddingRight="@dimen/feed_item_padding_left_right" >
+
+            <TextView
+                android:id="@+id/registration_start_cousd"
+                style="@style/text.18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUBTOTAL"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Red"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/total_count"
+                style="@style/text.18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/feed_item_padding_left_right"
+                android:paddingRight="@dimen/feed_item_padding_left_right"
+               
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Red"
+                android:textStyle="bold" />
+            
+            
+            
+        </LinearLayout>
+        
+                <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="10"
+            android:background="@drawable/background"
+            android:gravity="top|start"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/feed_item_padding_left_right"
+            android:paddingRight="@dimen/feed_item_padding_left_right" >
+
+            <TextView
+                android:id="@+id/registration_start_csousds"
+                style="@style/text.14.prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="At particular location Prices and Items may vary and exclude tax"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/GrayBrown"
+                android:textStyle="bold" />
+
+            
+            
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/add_btn"
+        style="@style/text.14.prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="20dp"      
+        android:paddingRight="10dp"
+        android:src="@drawable/buttonwhit"
+        android:text="ADD"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/White"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/registration_start_countSrSS"
+        style="@style/text.14.prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@color/Red"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/location"
+        android:textColor="@color/White"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/registration_start_countSrS"
+        style="@style/text.14.prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="order"
+          android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:src="@drawable/continuwwhit"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/White"
+        android:textStyle="bold" />
+
+    
+</RelativeLayout>
+<ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/White"
+        android:choiceMode="singleChoice"
+       android:divider="@color/Red"             
+        android:dividerHeight="1dp" />
+</android.support.v4.widget.DrawerLayout>

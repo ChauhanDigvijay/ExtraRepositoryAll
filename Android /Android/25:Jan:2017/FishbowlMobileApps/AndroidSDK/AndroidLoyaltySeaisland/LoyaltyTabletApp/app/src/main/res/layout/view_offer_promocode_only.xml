@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/multioffer_width"
+    android:layout_height="match_parent"
+    android:id="@+id/rewardsLayer"
+    android:background="@drawable/round_cornner_stroke">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="100"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:paddingBottom="@dimen/lc_view_margin_bottom">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/Gray"
+      />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="View Offer"
+                    android:textColor="@color/orignalText"
+                    android:layout_centerInParent="true"
+                android:textSize="@dimen/contact_text" />
+
+
+                <ImageView
+                    android:id="@+id/finish"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/cross"
+                    android:visibility="gone"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/sendPrint"
+                    android:layout_toLeftOf="@+id/bt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:padding="6dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/allside_round_cornner_buttton"
+                    >
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/print"
+                        android:layout_gravity="center_vertical"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Print"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/contact_restText"
+                        android:layout_marginLeft="7dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/bt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="6dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/allside_round_cornner_buttton"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/sendemail"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Email"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/contact_restText"
+                            android:layout_marginLeft="10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="90"
+            android:orientation="vertical"
+
+            android:weightSum="10">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:padding="5dp"
+                android:background="@drawable/square_cornner_stroke"
+                android:weightSum="10"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0"
+                    android:visibility="gone">
+
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/img_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+
+                        /></RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.7"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/offer_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/header_text"
+                        android:text="EmailOffer"
+                        android:textColor="@color/orignalText"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.8"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:padding="4dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/nummber_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Offfer Tittle"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/offer_text_size"
+                        android:layout_marginBottom="3dp"
+                        />
+
+                    <TextView
+                        android:layout_below="@+id/nummber_one"
+                        android:id="@+id/nummber_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:gravity="center"
+                        android:text="Offer description"
+                        android:textColor="@color/orignalText"
+                        android:maxLines="1"
+                        android:textSize="@dimen/offer_text_size" />
+
+                    <TextView
+                        android:id="@+id/nummber_five"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Expres in 359 days"
+                        android:textColor="@color/redLoyalty"
+
+                        android:textSize="@dimen/offer_text_size"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5.5"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+                    <RelativeLayout
+                        android:id="@+id/offer_barcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="8"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        >
+
+                        <ImageView
+                            android:id="@+id/bar_image"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:focusable="false"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            />
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:id="@+id/offer_promo"
+                            android:layout_below="@+id/bar_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="promo code"
+                            android:textSize="11sp"
+                            android:textColor="@color/orignalText"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            />
+                        <TextView
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="* Terms &amp; Conditions Apply"
+                            android:textSize="8sp"
+                            android:textColor="@color/orignalText"
+
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

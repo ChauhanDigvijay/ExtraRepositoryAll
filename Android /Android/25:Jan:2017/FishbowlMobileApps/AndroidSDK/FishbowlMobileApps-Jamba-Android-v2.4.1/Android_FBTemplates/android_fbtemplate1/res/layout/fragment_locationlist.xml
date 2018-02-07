@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:components="http://schemas.android.com/apk/res/com.fishbowl.fbtemplate1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <LinearLayout
+        android:id="@+id/ll_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/timestamp"
+            style="@style/text.25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/Red"
+            android:gravity="center"
+            android:text="Store Locator"
+            android:textColor="@color/White"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@color/Red1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:weightSum="1" >
+
+            <com.fishbowl.fbtemplate1.widget.CustomEditText
+                android:id="@+id/search_view"
+                style="@style/text.14"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight=".7"
+                android:background="@drawable/two_side_round_corner_button"
+                android:ems="10"
+                android:hint="Zip,City or State"
+                android:padding="5dp"
+                android:text="California" >
+
+                <requestFocus />
+            </com.fishbowl.fbtemplate1.widget.CustomEditText>
+
+            <Button
+                android:id="@+id/find_btn"
+                style="@style/nametext"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight=".3"
+                android:background="@color/White"
+                android:gravity="center"
+                android:onClick="contiue"
+                android:text="Find"
+                android:textColor="@color/Red1"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/store_list"
+            style="@style/text.20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background"
+            android:divider="@color/fbbrown"
+            android:dividerHeight=".5px" >
+        </ListView>
+      >
+    </LinearLayout>
+
+</RelativeLayout>
