@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.androidBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:expanded="false"
+    android:fitsSystemWindows="true"
+    android:id="@+id/android_bar"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        app:contentScrim="?attr/colorPrimary"
+        app:expandedTitleMarginEnd="64dp"
+        app:expandedTitleMarginStart="48dp"
+        android:fitsSystemWindows="true"
+        android:id="@+id/collapsing_toolbar"
+        android:layout_height="match_parent"
+
+        android:layout_width="match_parent"
+        app:scrimAnimationDuration="300">
+
+        <com.donatos.phoenix.ui.customizeitem.view.CustomizeItemCardView
+            android:id="@+id/androidbar_itemcard"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+
+        <android.support.v7.widget.Toolbar
+            android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+            android:id="@+id/android_toolbar"
+
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+>
+
+            <LinearLayout
+                android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+                android:id="@+id/android_toolbar_layout"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+                    android:id="@+id/android_toolbar_title"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" />
+
+                <TextView
+                    android:drawablePadding="@dimen/appbar.sub_title_text.drawable.padding"
+                    android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+                    android:id="@+id/android_toolbar_subtitle"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/semiTransparentMed"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+    <android.support.design.widget.TabLayout
+
+        android:background="?attr/colorPrimary"
+        android:id="@+id/tab_layout"
+        android:layout_below="@+id/toolbar"
+        android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        app:tabContentStart="80dp"
+
+
+        android:visibility="gone" />
+
+    <ProgressBar
+
+        android:id="@+id/android_bar_progress"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/appbar.progress_bar.margin.bottom"
+        android:layout_marginTop="@dimen/appbar.progress_bar.margin.top"
+        android:layout_width="match_parent"
+
+        android:visibility="gone" />
+</android.support.design.widget.androidBarLayout>

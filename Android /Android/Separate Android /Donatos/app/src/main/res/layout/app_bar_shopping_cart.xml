@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+    android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:contentDescription="@string/appbar.shoppingcart.hint"
+        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:id="@+id/shoppingCartIcon"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_width="wrap_content"
+        android:padding="3dp"
+        android:src="@drawable/ic_shopping_cart" />
+
+    <TextView
+        app:fontPath="fonts/Cabin-Bold.ttf"
+        android:background="@drawable/circle_green"
+        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:id="@+id/shoppingCartBadge"
+        android:layout_alignEnd="@id/shoppingCartIcon"
+        android:layout_alignRight="@id/shoppingCartIcon"
+        android:layout_alignTop="@id/shoppingCartIcon"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingBottom="4dp"
+        android:text="0x0"
+        android:textColor="#ffffffff"
+        android:textSize="10dp" />
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end">
+
+    <TextView
+        android:id="@+id/dashboard_toppicks_guest_title"
+        fontPath="fonts/Cabin-SemiBold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="20dp"
+        android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/dashboard.header.toppicks.guest.title"
+        android:textColor="@color/gray"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/dashboard_toppicks_guest_subtitle"
+        fontPath="fonts/Cabin-SemiBold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dashboard_toppicks_guest_title"
+        android:layout_centerInParent="true"
+        android:text="@string/dashboard.header.toppicks.guest.subtitle"
+        android:textAllCaps="true"
+        android:textColor="@color/donatosRed"
+        android:textSize="12sp" />
+</RelativeLayout>

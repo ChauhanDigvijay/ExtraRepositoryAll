@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topframe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+         android:background="@color/White"
+        android:layout_weight="100" >
+
+        <FrameLayout
+            android:id="@+id/vpimageframe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"           
+           android:background="@color/White"
+            android:orientation="vertical" >
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/offerimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+               />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/offername"
+            style="@style/text.17.prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Name"
+            android:textColor="@color/Red"
+            android:layout_alignParentBottom="true"
+            android:textStyle="bold"
+            android:typeface="normal" />
+        
+          <TextView
+            android:id="@+id/offerother"
+            style="@style/text.17.prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Name"
+            android:textColor="@color/Red"
+            android:layout_alignParentTop="true"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+    </LinearLayout>

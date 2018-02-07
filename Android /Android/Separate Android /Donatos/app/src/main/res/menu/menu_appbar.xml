@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:actionLayout="@layout/app_bar_shopping_cart"
+        android:icon="@drawable/ic_shopping_cart"
+        android:id="@+id/appbarShopping"
+        android:showAsAction="always"
+        android:title="@string/appbar.shoppingcart.hint"
+        android:visible="false" />
+</menu>

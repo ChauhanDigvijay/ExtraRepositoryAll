@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cus_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1.0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:layout_weight="0.2"
+        android:background="@drawable/untitled1"
+        android:orientation="vertical"
+        android:weightSum="1.0">
+
+        <TextView
+            android:id="@+id/cus_ser_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:layout_marginTop="@dimen/button_margin"
+            android:layout_weight="0.5"
+            android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+            android:padding="@dimen/button_padding"
+
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sub_text_sz"
+            android:typeface="monospace" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:layout_weight="0.5"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleColor="@color/transparent"
+            app:mrl_rippleDimension="10dp"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true"
+            android:padding="@dimen/button_padding">
+
+            <LinearLayout
+                android:id="@+id/cus_ser_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+                    android:background="@drawable/mail_icon"
+                    android:padding="@dimen/button_padding" />
+
+                <TextView
+                    android:id="@+id/cus_ser_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+                    android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:paddingLeft="@dimen/button_padding"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sub_text_sz"
+                    android:typeface="monospace" />
+            </LinearLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/menu_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.68"
+        android:choiceMode="singleChoice"
+        android:divider="@drawable/dash_divider"
+        android:dividerHeight="2dp"
+        android:layerType="software"
+        android:listSelector="@color/ham_menu_selector"
+        android:paddingBottom="@dimen/normal_margin"
+         />
+
+    <TextView
+        android:id="@+id/version_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:layout_weight="0.07"
+        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:padding="5dp"
+        android:text=""
+        android:textColor="@color/ham_selector"
+        android:textSize="@dimen/sub_text_sz"
+        android:typeface="monospace" />
+</LinearLayout>
+<TextView
+android:textSize="@dimen/home_page_top_sz"
+android:typeface="monospace"
+android:textColor="@color/ham_burg"
+android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+android:id="@+id/no_menu_tv"
+android:background="#00000000"
+android:padding="@dimen/normal_padding"
+android:visibility="gone"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:text="No Recipes Available" />
+    </LinearLayout>

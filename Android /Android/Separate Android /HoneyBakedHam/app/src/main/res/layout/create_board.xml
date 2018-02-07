@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/user_ph_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/ham_burg_new"
+        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Create Board"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sub_text_sz"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/pin_board_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@drawable/sign_border"
+        android:cursorVisible="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+        android:hint="Enter the board name..."
+        android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone"
+        android:padding="@dimen/normal_padding"
+        android:textAllCaps="false"
+        android:textColor="@color/ham_burg_new"
+        android:textSize="@dimen/dis_text_sz"
+        android:typeface="monospace" />
+
+    <EditText
+        android:id="@+id/pin_board_des_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@drawable/sign_border"
+        android:cursorVisible="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+        android:hint="Enter the description..."
+        android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone"
+        android:padding="@dimen/normal_padding"
+        android:textAllCaps="false"
+        android:textColor="@color/ham_burg_new"
+        android:textSize="@dimen/dis_text_sz"
+        android:typeface="monospace" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:padding="@dimen/normal_padding"
+        android:weightSum="1.0">
+
+        <Button
+            android:id="@+id/pin_board_cancel_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/my_button_border"
+            android:padding="@dimen/normal_padding"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sub_text_sz"
+            android:typeface="monospace" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/pin_board_create_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/my_button_border"
+            android:padding="@dimen/normal_padding"
+            android:text="Create"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sub_text_sz"
+            android:typeface="monospace" />
+    </TableRow>
+</LinearLayout>

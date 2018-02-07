@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/cardview_light_background"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_above="@+id/bottom_linear"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Lecture Details"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Course Code"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textview_course_code"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_width="wrap_content"
+            android:text="CS101"
+
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Course Name"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textview_course_name"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_width="wrap_content"
+            android:text="Automata"
+
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Timing"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textview_timing"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_width="wrap_content"
+            android:text="10:30 to 12:30"
+
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:adjustViewBounds="true"
+            android:id="@+id/image_qr_code"
+            android:layout_centerHorizontal="true"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:src="@mipmap/ic_launcher" />
+    </FrameLayout>
+</LinearLayout><LinearLayout
+android:orientation="vertical"
+android:id="@+id/bottom_linear"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginBottom="0dp"
+android:layout_alignParentBottom="true">
+<Button
+    android:textSize="18sp"
+    android:id="@+id/start__button"
+    android:background="#d67601"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Start Lecture"
+    android:onClick="onStartMeeting"
+    android:textAllCaps="false" />
+</LinearLayout><ImageView
+android:id="@+id/image_lagre_qr_code"
+android:visibility="gone"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:src="@drawable/back"
+android:scaleType="fitXY"
+android:adjustViewBounds="true"
+android:layout_centerHorizontal="true" /></RelativeLayout>

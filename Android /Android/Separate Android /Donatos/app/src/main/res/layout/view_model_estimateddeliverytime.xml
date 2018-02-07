@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/locations.list.row.hours.padding"
+    android:layout_marginRight="@dimen/locations.list.row.hours.padding"
+    android:background="@drawable/border_bottom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/locations.list.row.hours.padding"
+    android:paddingTop="@dimen/locations.list.row.hours.padding">
+
+    <TextView
+        android:id="@+id/estimateddeliverytime_title"
+        fontPath="fonts/Cabin-SemiBold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkout.est.delivery.time.title"
+        android:textAllCaps="true"
+        android:textColor="@color/gray"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/estimateddeliverytime_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:ellipsize="none"
+        android:maxLines="1"
+        android:paddingTop="5dp"
+        android:textColor="@color/donatosRed"
+        android:textSize="19sp" />
+</LinearLayout>

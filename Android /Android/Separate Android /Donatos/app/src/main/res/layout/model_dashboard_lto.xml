@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    >
+
+    <ImageView
+        android:id="@+id/dashboard_lto_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/menu_item_overlay" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end">
+
+        <TextView
+            android:id="@+id/dashboard_lto_title"
+           fontPath="fonts/Cabin-Bold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/dashboard_lto_subtitle"
+          fontPath="fonts/Cabin-SemiBold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dashboard_lto_title"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="0dp"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+         />
+
+        <TextView
+            android:id="@+id/dashboard_lto_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dashboard_lto_subtitle"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="0dp"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+          />
+    </RelativeLayout>
+</FrameLayout>

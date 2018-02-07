@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">>
+    <item
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@drawable/ic_check"
+        android:id="@+id/menu_dialogform_save"
+        android:showAsAction="ifRoom|collapseActionView"
+        android:title="@string/appbar.action.save" />
+</menu>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="@color/white"
+    android:id="@+id/stor_loc_lay"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1.0">
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:background="#c8c8cd"
+                android:id="@+id/mapLayout"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <fragment
+                    android:id="@+id/store_map_details"
+                    android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:name="com.google.android.gms.maps.SupportMapFragment" />
+            </RelativeLayout>
+
+            <TextView
+                android:background="@color/ham_burg_new"
+                android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:id="@+id/shop_address_tv"
+                android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="@dimen/button_padding"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/home_page_top_sz"
+                android:typeface="monospace" />
+
+            <LinearLayout
+                android:background="@color/transparent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/normal_margin"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <RelativeLayout
+                    android:id="@+id/store_det_img_lay"
+                    android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:layout_width="wrap_content"
+                    android:padding="@dimen/button_padding">
+
+                    <ImageView
+                        android:id="@+id/store_det_img_vw"
+                        android:layout_centerInParent="true"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:background="@color/transparent"
+                    android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:id="@+id/store_det_function_bt_lay"
+                    android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/button_padding">
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/normal_margin"
+                        android:layout_width="match_parent"
+                        app:mrl_rippleAlpha="0.5"
+                        app:mrl_rippleColor="@color/ham_ash"
+                        app:mrl_rippleDimension="10dp"
+                        app:mrl_rippleHover="true"
+                        app:mrl_rippleOverlay="true">
+
+                        <RelativeLayout
+                            android:background="@drawable/sign_border"
+                            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                            android:id="@+id/get_drections"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="3dp">
+
+                            <ImageView
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/button_padding"
+                                android:layout_width="wrap_content"
+                                android:padding="2dp"
+                                android:src="@drawable/marker" />
+
+                            <TextView
+                                android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                                android:layout_height="match_parent"
+                                android:layout_width="match_parent"
+                                android:text="Get Directions"
+                                android:textAllCaps="false"
+                                android:textColor="@color/ham_burg_new"
+                                android:textSize="@dimen/sub_text_sz"
+                                android:typeface="monospace" />
+                        </RelativeLayout>
+                    </com.balysv.materialripple.MaterialRippleLayout>
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:id="@+id/call_phone1"
+                        android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/normal_margin"
+                        android:layout_width="match_parent"
+                        app:mrl_rippleAlpha="0.5"
+                        app:mrl_rippleColor="@color/ham_ash"
+                        app:mrl_rippleDimension="10dp"
+                        app:mrl_rippleHover="true"
+                        app:mrl_rippleOverlay="true">
+
+                        <RelativeLayout
+                            android:background="@drawable/sign_border"
+                            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                            android:id="@+id/call_phone"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="3dp">
+
+                            <ImageView
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/button_padding"
+                                android:layout_width="wrap_content"
+                                android:padding="2dp"
+                                android:src="@drawable/phone" />
+
+                            <TextView
+                                android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                                android:id="@+id/shop_phno_tv"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                                android:layout_height="match_parent"
+                                android:layout_width="match_parent"
+                                android:text=""
+                                android:textAllCaps="false"
+                                android:textColor="@color/ham_burg_new"
+                                android:textSize="@dimen/sub_text_sz"
+                                android:typeface="monospace" />
+                        </RelativeLayout>
+                    </com.balysv.materialripple.MaterialRippleLayout>
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:id="@+id/my_store1"
+                        android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        app:mrl_rippleAlpha="0.5"
+                        app:mrl_rippleColor="@color/transparent"
+                        app:mrl_rippleDimension="10dp"
+                        app:mrl_rippleHover="true"
+                        app:mrl_rippleOverlay="true">
+
+                        <RelativeLayout
+                            android:background="@color/ham_burg_new"
+                            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                            android:id="@+id/my_store"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="3dp">
+
+                            <ImageView
+                                android:id="@+id/make_my_store_image"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/button_padding"
+                                android:layout_width="wrap_content"
+                                android:padding="2dp"
+                                android:src="@drawable/star" />
+
+                            <TextView
+                                android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                                android:id="@+id/make_my_store_tv"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                                android:layout_height="match_parent"
+                                android:layout_width="match_parent"
+                                android:text="My Store"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sub_text_sz"
+                                android:typeface="monospace" />
+                        </RelativeLayout>
+                    </com.balysv.materialripple.MaterialRippleLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:background="@drawable/dotted"
+                android:layerType="software"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="@dimen/normal_padding" />
+
+            <LinearLayout
+                android:id="@+id/store_det_hours_lay"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/normal_padding"
+                    android:text="store hours"
+                    android:textAllCaps="true"
+                    android:textColor="@color/ham_burg_new"
+                    android:textSize="@dimen/home_page_top_sz"
+                    android:typeface="monospace" />
+
+                <ListView
+                    android:divider="@color/transperent"
+                    android:id="@+id/store_det_hrs_lv"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="@dimen/normal_padding"
+                    android:paddingRight="@dimen/normal_padding"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/store_ex_hours_det_lay"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:id="@+id/store_ex_hrs_head_det_tv"
+                    android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/normal_padding"
+                    android:textAllCaps="true"
+                    android:textColor="@color/ham_burg_new"
+                    android:textSize="@dimen/sub_text_sz"
+                    android:typeface="monospace" />
+
+                <TextView
+                    android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:id="@+id/store_ex_hrs_det_tv"
+                    android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_padding"
+                    android:layout_marginRight="@dimen/normal_padding"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/normal_padding"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sub_text_sz"
+                    android:typeface="monospace" />
+            </LinearLayout>
+
+            <ImageView
+                android:background="@drawable/ordernow"
+                android:id="@+id/order_now_img_vw"
+                android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:layout_width="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

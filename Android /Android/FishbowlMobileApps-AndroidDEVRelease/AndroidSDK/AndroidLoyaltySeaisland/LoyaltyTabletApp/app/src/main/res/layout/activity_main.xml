@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:background="@color/white"
+        >
+
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/toolbar_store_activity"
+            ></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                >
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:name="com.fishbowl.LoyaltyTabletApp.Fragments.FragmentLoginImage"
+                    android:id="@+id/login_image_frag"
+
+                />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="50" >
+
+                <!--  <fragment
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:name="com.fishbowl.LoyaltyTabletApp.fragment.FragmentLoginKey"
+                                   android:id="@+id/login_key_frag" />-->
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:name="com.fishbowl.LoyaltyTabletApp.Fragments.FragmentLoginEnrollment"
+                    android:id="@+id/login_key_frag" />
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:name="com.fishbowl.LoyaltyTabletApp.Fragments.FragmentLoginPasswordField"
+                    android:id="@+id/login_password_frag"
+                    android:visibility="gone"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

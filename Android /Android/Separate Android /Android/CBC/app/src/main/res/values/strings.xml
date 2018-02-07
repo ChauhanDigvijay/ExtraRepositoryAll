@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CBC</string>
+
+    <string name="toolbar_content">Menubar</string>
+    <string name="menu_back_button">Menu Back</string>
+    <string name="menu">Menu</string>
+
+    <!-- Olo Production SDK Keys -->
+
+    <string name="olo_base_url">https://ordering.api.olo.com/v1.1/</string>
+    <string name="olo_api_key">Se2xBN2XDWNTMpirtwhknrxdwf2M50lQ</string>
+    <string name="checkout_button">Checkout button</string>
+
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="bar_code_image_size">65dp</dimen>
+    <dimen name="basket_icon_top_margin">98dp</dimen>
+    <dimen name="button_margin">8dp</dimen>
+    <dimen name="cardview_compat_inset_shadow">1dp</dimen>
+    <dimen name="cardview_default_elevation">2dp</dimen>
+    <dimen name="cardview_default_radius">2dp</dimen>
+
+    <dimen name="normal_padding">5dp</dimen>
+    <dimen name="normal_margin">10dp</dimen>
+    <dimen name="dis_text_sz">13sp</dimen>
+    <dimen name="sub_text_sz">11sp</dimen>
+
+    <dimen name="button_padding">10sp</dimen>
+    <dimen name="font_size">20sp</dimen>
+    <dimen name="header_top_bottom_padding">25dp</dimen>
+
+    <dimen name="margin_10">15dp</dimen>
+    <dimen name="margin_20">30dp</dimen>
+    <dimen name="margin_5">10dp</dimen>
+    <dimen name="notification_action_icon_size">32dp</dimen>
+    <dimen name="notification_action_text_size">13sp</dimen>
+    <dimen name="notification_big_circle_margin">12dp</dimen>
+    <dimen name="notification_content_size">20sp</dimen>
+    <dimen name="notification_large_icon_height">64dp</dimen>
+    <dimen name="notification_large_icon_width">64dp</dimen>
+    <dimen name="notification_right_icon_size">16dp</dimen>
+    <dimen name="notification_small_icon_background_padding">3dp</dimen>
+    <dimen name="notification_small_icon_size_as_large">24dp</dimen>
+    <dimen name="notification_subtext_size">13sp</dimen>
+    <dimen name="notification_title_size">20sp</dimen>
+    <dimen name="notification_top_margin">16dp</dimen>
+    <dimen name="notification_top_pad">10dp</dimen>
+    <dimen name="notification_top_pad_large_text">5dp</dimen>
+    <dimen name="order_ahead_icon_height">25dp</dimen>
+    <dimen name="order_ahead_icon_width">15dp</dimen>
+    <dimen name="order_ahead_map_height">241dp</dimen>
+    <dimen name="order_ahead_map_width">451dp</dimen>
+    <dimen name="page_control_size">12dp</dimen>
+
+    <dimen name="progress_bar">60dp</dimen>
+    <dimen name="search_height">40dp</dimen>
+    <dimen name="select_store_bottom">32dp</dimen>
+    <dimen name="sign_up_map_height">250dp</dimen>
+    <dimen name="sign_up_map_width">400dp</dimen>
+    <dimen name="signed_logo_height">100dp</dimen>
+    <dimen name="signed_logo_width">250dp</dimen>
+    <dimen name="spend_go_height">24dp</dimen>
+    <dimen name="spend_go_width">168dp</dimen>
+    <dimen name="splash_blend_in_good_height">120dp</dimen>
+    <dimen name="splash_blend_in_good_width">280dp</dimen>
+    <dimen name="splash_bottom_left_height">220dp</dimen>
+    <dimen name="splash_bottom_left_width">196dp</dimen>
+    <dimen name="splash_bottom_right_height">217dp</dimen>
+    <dimen name="splash_bottom_right_width">258dp</dimen>
+    <dimen name="splash_logo_height">115dp</dimen>
+    <dimen name="splash_logo_width">158dp</dimen>
+    <dimen name="splash_top_left_height">291dp</dimen>
+    <dimen name="splash_top_left_width">258dp</dimen>
+    <dimen name="splash_top_right_height">330dp</dimen>
+    <dimen name="splash_top_right_width">371dp</dimen>
+    <dimen name="store_details_image_size">25dp</dimen>
+    <dimen name="text_size_large">25sp</dimen>
+    <dimen name="text_size_medium">20sp</dimen>
+    <dimen name="text_size_small">15sp</dimen>
+    <dimen name="text_size_welcome_font">55sp</dimen>
+    <dimen name="text_size_xlarge">30sp</dimen>
+    <dimen name="text_size_xxlarge">35sp</dimen>
+    <dimen name="text_size_xxxlarge">45sp</dimen>
+    <dimen name="text_size_xxxxlarge">70sp</dimen>
+    <dimen name="top_container_height">350dp</dimen>
+    <dimen name="view_pager_icon_height">200dp</dimen>
+    <dimen name="disclaimer_text_sz">10sp</dimen>
+    <dimen name="home_page_top_sz">10sp</dimen>
+
+
+</resources>

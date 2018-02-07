@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:minHeight="110dp"
+
+    android:orientation="vertical"
+    android:padding="@dimen/normal_margin">
+
+    <TextView
+        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:id="@+id/forgot_head_text"
+        android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+        android:textSize="@dimen/home_page_top_sz"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <TextView
+        android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:id="@+id/head_text_dialog"
+        android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:layout_height="wrap_content"
+
+        android:layout_width="match_parent"
+        android:text="Please enter your email address"
+        android:textSize="@dimen/sub_text_sz"
+        android:typeface="monospace"
+        android:visibility="gone" />
+
+    <EditText
+        android:background="@drawable/custom_edit_dialog_border"
+        android:hint=""
+        android:id="@+id/new_pw_tv"
+        android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone|time"
+        android:layout_height="wrap_content"
+
+        android:layout_width="match_parent"
+        android:padding="@dimen/normal_margin"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sub_text_sz"
+        android:typeface="monospace" />
+
+    <TableRow
+        android:background="@color/transparent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_width="match_parent"
+        android:weightSum="1.0">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleColor="@color/transparent"
+            app:mrl_rippleDimension="10dp"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true">
+
+            <Button
+                android:background="@drawable/my_button_border"
+                android:id="@+id/fpw_cancel"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/home_page_top_sz"
+                android:typeface="monospace" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleColor="@color/transparent"
+            app:mrl_rippleDimension="10dp"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true">
+
+            <Button
+                android:background="@drawable/my_button_unclickable_border"
+                android:id="@+id/fpw_ok"
+                android:layout_above="@+id/new_pw_tv"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="Ok"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/home_page_top_sz"
+                android:typeface="monospace" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </TableRow>
+</LinearLayout>

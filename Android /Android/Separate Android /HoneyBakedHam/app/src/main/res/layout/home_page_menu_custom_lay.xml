@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<LinearLayout
+android:orientation="horizontal"
+android:id="@+id/menu_ll"
+android:background="@drawable/list_selector"
+android:clickable="true"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:weightSum="1.0">
+<ImageView
+    android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+    android:id="@+id/menu_icon_img_vw"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:src="@drawable/recipe_icon" />
+
+<RelativeLayout
+    android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/normal_margin"
+    android:layout_marginBottom="@dimen/normal_margin">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:textSize="@dimen/home_page_top_sz"
+            android:typeface="monospace"
+            android:textColor="@color/ham_burg_new"
+            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+            android:id="@+id/menu_title_tv"
+            android:paddingLeft="@dimen/normal_margin"
+            android:paddingRight="@dimen/normal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:layout_marginBottom="@dimen/normal_margin"
+            android:text="Menu Title"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:textSize="@dimen/home_page_top_sz"
+            android:typeface="monospace"
+            android:textColor="@drawable/menu_text_color"
+            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:id="@+id/menu_store_tv"
+            android:paddingLeft="@dimen/normal_margin"
+            android:paddingRight="@dimen/normal_margin"
+            android:paddingBottom="@dimen/normal_margin"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Store details "
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <com.hbh.honeybaked.supportingfiles.CircularTextView
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:textColor="@drawable/offer_text_color"
+        android:textColorHint="@color/transparent"
+        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:id="@+id/circularTextView"
+        android:padding="@dimen/normal_padding"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_margin"
+
+        android:text=""
+        android:hint="000"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:id="@+id/right_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/grey_fwd_arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>
+</LinearLayout>
+<View
+android:id="@+id/view_divider"
+android:background="@drawable/dash_divider"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:choiceMode="singleChoice"
+android:layerType="software" />
+    </LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grid_rec_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ExpandableListView
+        android:id="@+id/grid_recipe_exp_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:layout_margin="@dimen/normal_margin"
+        android:background="@color/transperent"
+        android:divider="@color/white"
+        android:dividerHeight="@dimen/normal_margin"
+         />
+
+    <TextView
+        android:id="@+id/no_menu_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:background="#00000000"
+        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:padding="@dimen/normal_padding"
+        android:text="No Category Available"
+        android:textColor="@color/ham_burg_new"
+
+        android:typeface="monospace"
+        android:visibility="gone" />
+</LinearLayout>

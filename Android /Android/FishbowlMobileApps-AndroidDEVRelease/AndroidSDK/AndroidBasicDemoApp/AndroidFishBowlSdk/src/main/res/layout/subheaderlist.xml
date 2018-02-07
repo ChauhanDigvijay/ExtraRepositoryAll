@@ -1,0 +1,42 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/border_stroke"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/margin_5"
+
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/productimage"
+            android:scaleType="fitXY"
+            android:src="@drawable/bgimage"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+        <TextView
+            android:id="@+id/productCost"
+            android:layout_gravity="right"
+            android:background="@drawable/two_side_red_background"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+    </FrameLayout>
+    <TextView
+        android:id="@+id/productName"
+        android:textSize="10sp"
+        android:layout_gravity="left"
+        android:text=""
+        android:gravity="left"
+        android:padding="@dimen/margin_5"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height"
+    app:contentInsetEnd="0dp"
+
+    app:contentInsetStart="0dp">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/img_Back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="1dp"
+       />
+
+    <View
+        android:id="@+id/toolbar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+
+ />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:gravity="left">
+        <LinearLayout
+            android:id="@+id/profile_way"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/backbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/White"
+                android:layout_marginTop="7dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:gravity="left|center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/title_welcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome"
+                    android:textColor="@color/orignalText"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/welcome_text"
+                     />
+
+                <TextView
+                    android:id="@+id/title_textb"
+                    android:textSize="@dimen/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/orignalText"
+                   />
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_logout"
+            android:layout_width="@dimen/menu_item_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/custom_background_click"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/logout_button" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="SIGN OUT"
+                android:textColor="@color/orignalText"
+                android:textSize="@dimen/menu_item_text" />
+
+            <Button
+                android:id="@+id/title_textf"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@drawable/logout_button"
+                android:gravity="center"
+                android:padding="5dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/menu_item_width"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/layout_logout"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/White"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/White"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/layout_button"
+            android:layout_width="@dimen/menu_item_width"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/layout_logout"
+            android:background="@drawable/custom_background_click"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="4dp"
+            android:weightSum="1">
+
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:src="@drawable/menu_button" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MENU"
+                android:textColor="@color/orignalText"
+                android:textSize="@dimen/menu_item_text" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"
+                app:cardElevation="4dp"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.95"
+                        android:src="@drawable/menu_button" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="MENU"
+                        android:textColor="@color/orignalText"
+                        android:textSize="30dp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_loyalty"
+            android:layout_width="@dimen/menu_item_width"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/layout_button"
+            android:background="@drawable/custom_background_click"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/reward" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="MY VIP"
+                android:textColor="@color/orignalText"
+                android:textSize="@dimen/menu_item_text" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,102 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    jcenter()
+
+    flatDir {
+        dirs 'libs'
+    }
+
+}
+
+def getSourceBranch(Boolean prod) {
+    def process = "git symbolic-ref --short -q HEAD".execute()
+    def branch = process.text.trim();
+    if (prod) {
+        if (branch != "master") {
+            println("WARNING: PRODUCTION BUILD NOT BEING BUILT OFF OF MASTER");
+        }
+        branch = "";
+    }
+
+    println 'getSourceBranch: ' + branch;
+    return "\"" + branch + "\"";
+}
+
+def getVersionNameFromPropsFile(Boolean prod) {
+    def versionPropsFile = rootProject.file('app/version.properties')
+    if (versionPropsFile.canRead()) {
+        def Properties versionProps = new Properties()
+        versionProps.load(new FileInputStream(versionPropsFile))
+        def buildName = versionProps['VERSION_MAJOR'] + '.' + versionProps['VERSION_MINOR'] + '.' + versionProps['VERSION_BUILD'];
+
+//        // Get the branch this build is being done off of.
+//        if (!prod) {
+//            buildName = buildName + '.' + buildSuffix;
+//        }
+
+        println("Build string: " + buildName);
+        return buildName;
+    } else {
+        throw new GradleException("Could not read version.properties!")
+    }
+}
+
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "com.fishbowl.cbc"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+
+    }
+
+    productFlavors {
+
+        development {
+            applicationId "com.fishbowl.apps.android.cbc"
+            versionName getVersionNameFromPropsFile(false)
+            buildConfigField "String", "BUILD_BRANCH", getSourceBranch(false)
+        }
+        production {
+            versionName "1.0"
+            versionCode 1
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+
+    testCompile 'junit:junit:4.12'
+
+    compile project(':..:JMBA_Olo_Android_SDK:app')
+    compile(name: 'AndroidFishbowlBasicModule-sdkrelease', ext: 'aar')
+
+    compile 'com.google.android.gms:play-services-gcm:10.2.1'
+    compile 'com.google.android.gms:play-services-analytics:10.2.1'
+
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.parse.bolts:bolts-android:1.4.0'
+
+}

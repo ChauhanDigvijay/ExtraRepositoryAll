@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true">
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/img_Back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_gray"
+        android:scaleType="fitXY"
+        android:visibility="gone"/>
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar_progress"
+        ></include>
+
+    <fragment
+        android:layout_below="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.fishbowl.LoyaltyTabletApp.Fragments.FragmentUpdateProfileDynamicFields"
+        android:id="@+id/fragment" />
+    <include
+        android:id="@+id/screenDisableView"
+        layout="@layout/disable_view"/>
+
+</RelativeLayout>

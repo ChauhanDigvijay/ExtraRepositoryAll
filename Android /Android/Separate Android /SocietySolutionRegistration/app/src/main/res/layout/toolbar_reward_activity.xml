@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:contentInsetEnd="0dp"
+    android:padding="0dp"
+    app:contentInsetStart="0dp"
+
+    android:background="@color/white"
+    android:layout_height="70dp">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/img_Back"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_gravity="top"
+            android:scaleType="fitXY"/>
+
+        <View
+            android:id="@+id/toolbar_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@drawable/toolbar_dropshadow" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="center"
+                android:visibility="invisible" />
+            <View
+                android:id="@+id/view"
+                android:layout_centerVertical="true"
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="@color/black"
+                android:layout_toRightOf="@+id/backbutton"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/view"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:padding="4dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/title_welcome"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome"
+                    android:textAllCaps="true"
+                    android:textColor="@color/White"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/title_textb"
+                    style="@style/text.15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text=""
+
+                    android:textColor="@color/White"
+                    android:textAllCaps="true"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/title_text"
+                style="@style/text.17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="MY ORDER"
+                android:visibility="invisible"
+                android:textAllCaps="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/title_textf"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/logout_button"
+                android:layout_alignBottom="@+id/backbutton"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/backbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_alignBottom="@+id/title_text"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</android.support.v7.widget.Toolbar>

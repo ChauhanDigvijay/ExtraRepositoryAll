@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/forgot_head_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:padding="@dimen/normal_padding"
+        android:textSize="@dimen/home_page_top_sz"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        android:weightSum="9.0">
+
+        <RadioGroup
+            android:id="@+id/signup_gender_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="9.0"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/not_slected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.0"
+
+                android:checked="true"
+                android:padding="@dimen/normal_padding"
+                android:text="Not specified"
+                android:typeface="monospace" />
+
+            <RadioButton
+                android:id="@+id/male_rbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.0"
+
+                android:padding="@dimen/normal_padding"
+                android:text="Male"
+                android:typeface="monospace" />
+
+            <RadioButton
+                android:id="@+id/fmale_rbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.0"
+
+                android:padding="@dimen/normal_padding"
+                android:text="Female"
+                android:typeface="monospace" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

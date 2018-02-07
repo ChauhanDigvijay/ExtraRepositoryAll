@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+    android:background="@color/white"
+    android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/drivertip_title"
+        fontPath="fonts/Cabin-SemiBold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/drivertip.driverstip"
+        android:textAllCaps="true"
+        android:textColor="@color/gray"
+        android:textSize="10sp" />
+
+    <RadioGroup
+        android:id="@+id/drivertip_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/drivertip_ten"
+
+            android:text="@string/drivertip.ten"
+           />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/drivertip_fifteen"
+
+            android:text="@string/drivertip.fifteen"
+            />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/drivertip_twenty"
+
+            android:text="@string/drivertip.twenty"
+            />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/drivertip_other"
+
+            android:text="@string/drivertip.other"
+         />
+    </RadioGroup>
+</LinearLayout>

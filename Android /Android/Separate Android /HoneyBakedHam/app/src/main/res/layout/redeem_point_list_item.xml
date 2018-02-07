@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+>
+    <LinearLayout
+android:orientation="horizontal"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content">
+<TextView
+    android:textSize="@dimen/home_page_top_sz"
+    android:typeface="monospace"
+    android:textColor="@color/white"
+    android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+    android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+    android:id="@+id/redeem_points_textview"
+    android:background="@drawable/button_bg_round"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:text="$5" />
+
+<ImageView
+    android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+    android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+    android:id="@+id/dot_imageview"
+    android:background="@drawable/dotted"
+    android:padding="@dimen/normal_padding"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layerType="software" />
+</LinearLayout><TextView
+
+android:typeface="monospace"
+android:textColor="@color/ham_ash"
+android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+android:id="@+id/redeem_value_textview"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="@dimen/normal_margin"
+android:text="200 POINTS" /></LinearLayout>

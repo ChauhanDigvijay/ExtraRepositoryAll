@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/donatosRed"
+    android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+    android:orientation="horizontal"
+    android:paddingEnd="15sp"
+    android:paddingLeft="15sp"
+    android:paddingRight="15sp"
+    android:paddingStart="15sp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            fontPath="fonts/Cabin-SemiBold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dashboard.status.orderstatus.label"
+            android:textAllCaps="true"
+            android:textColor="@color/semiTransparentMed"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/orderstatus_orderstatus"
+         fontPath="fonts/Cabin-Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp">
+
+        <TextView
+           fontPath="fonts/Cabin-SemiBold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dashboard.status.estimatedtime.label"
+            android:textAllCaps="true"
+            android:textColor="@color/semiTransparentMed"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/orderstatus_estimated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fontPath="fonts/Cabin-Regular.ttf"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/orderstatus_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       fontPath="fonts/Cabin-SemiBold.ttf"
+        android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:paddingTop="8dp"
+        android:text="@string/dashboard.status.details.label"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+</LinearLayout>

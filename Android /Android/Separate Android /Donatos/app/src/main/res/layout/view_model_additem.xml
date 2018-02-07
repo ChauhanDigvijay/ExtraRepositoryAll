@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/additem_framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/locations.list.row.hours.padding"
+    android:layout_marginRight="@dimen/locations.list.row.hours.padding"
+    android:background="@drawable/border_bottom"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/locations.list.row.hours.padding"
+    android:paddingTop="@dimen/locations.list.row.hours.padding">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/additem_title"
+        fontPath="fonts/Cabin-SemiBold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:drawablePadding="10dp"
+        android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+        android:textAllCaps="true"
+        android:textColor="@color/donatosRed"
+        android:textSize="12sp" />
+</FrameLayout>

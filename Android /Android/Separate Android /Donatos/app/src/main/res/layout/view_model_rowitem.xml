@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+    android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/customize.row.padding"
+    android:paddingRight="@dimen/customize.row.padding">
+
+    <CheckBox
+        android:id="@+id/rowitem_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:button="@drawable/button_checkbox"
+        android:clickable="false" />
+
+    <LinearLayout
+        android:id="@+id/rowitem_textlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/rowitem_title"
+            fontPath="fonts/Cabin-Bold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          />
+
+        <TextView
+            android:id="@+id/rowitem_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <com.donatos.phoenix.ui.customizeitem.view.StepperView
+        android:id="@+id/rowitem_stepper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:id="@+id/rowitem_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="6dp"
+
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/rowitem_edit"
+     fontPath="fonts/Cabin-SemiBold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="@dimen/customize.row.padding"
+        android:text="@string/customize.row.edit"
+        android:textAllCaps="true"
+        android:textColor="@color/donatosRed"
+        android:textSize="12sp" />
+</LinearLayout>

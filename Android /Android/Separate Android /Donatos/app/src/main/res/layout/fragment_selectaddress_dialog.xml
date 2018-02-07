@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/selectaddress_title"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="30dp"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp"
+        android:text="@string/checkout.selectaddress.title" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/selectaddress_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="30dp"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/selectaddress_addaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:drawablePadding="10dp"
+        android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+        android:paddingEnd="30dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="30dp"
+        android:paddingStart="15dp"
+        android:text="@string/checkout.selectaddress.addaddress"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_top"
+        android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:orientation="horizontal"
+        android:paddingEnd="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingStart="15dp">
+
+        <TextView
+            android:id="@+id/selectaddress_cancel"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:padding="@dimen/locations.list.row.hours.padding"
+            android:text="@string/checkout.selectaddress.cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/donatosRed"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

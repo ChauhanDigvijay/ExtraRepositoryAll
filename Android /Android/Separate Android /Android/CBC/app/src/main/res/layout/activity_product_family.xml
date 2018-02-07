@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fishbowl.cbc.activities.nonGeneric.productfamily.ProductFamilyActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ImageView
+        android:id="@+id/strokeLine"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/stroke_green_line" />
+
+    <include
+        android:id="@+id/menuRecyclerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonLayout"
+        android:layout_below="@+id/strokeLine"
+        layout="@layout/default_recycler_list"/>
+
+    <RelativeLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:contentDescription=""
+        android:padding="10dp"
+        android:background="@android:color/white"
+        style="@style/hexaButton"
+        android:clickable="false"
+        >
+
+        <com.fishbowl.cbc.views.HexagonMaskView
+            android:id="@+id/hexagonView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:contentDescription="@string/checkout_button"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            >
+        <ImageView
+            android:id="@+id/basketButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/basket" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="TOTAL $0.00"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

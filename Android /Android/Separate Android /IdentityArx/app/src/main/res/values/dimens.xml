@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="bar_code_image_size">65dp</dimen>
+    <dimen name="basket_icon_top_margin">98dp</dimen>
+    <dimen name="button_margin">8dp</dimen>
+
+
+    <dimen name="normal_padding">5dp</dimen>
+    <dimen name="normal_margin">10dp</dimen>
+    <dimen name="dis_text_sz">13sp</dimen>
+    <dimen name="sub_text_sz">11sp</dimen>
+
+    <dimen name="button_padding">10sp</dimen>
+    <dimen name="font_size">20sp</dimen>
+    <dimen name="header_top_bottom_padding">25dp</dimen>
+
+    <dimen name="margin_10">15dp</dimen>
+    <dimen name="margin_20">30dp</dimen>
+    <dimen name="margin_5">10dp</dimen>
+    <dimen name="notification_action_icon_size">32dp</dimen>
+    <dimen name="notification_action_text_size">13sp</dimen>
+    <dimen name="notification_big_circle_margin">12dp</dimen>
+    <dimen name="notification_content_size">20sp</dimen>
+    <dimen name="notification_large_icon_height">64dp</dimen>
+    <dimen name="notification_large_icon_width">64dp</dimen>
+    <dimen name="notification_right_icon_size">16dp</dimen>
+    <dimen name="notification_small_icon_background_padding">3dp</dimen>
+    <dimen name="notification_small_icon_size_as_large">24dp</dimen>
+    <dimen name="notification_subtext_size">13sp</dimen>
+    <dimen name="notification_title_size">20sp</dimen>
+    <dimen name="notification_top_margin">16dp</dimen>
+    <dimen name="notification_top_pad">10dp</dimen>
+    <dimen name="notification_top_pad_large_text">5dp</dimen>
+    <dimen name="order_ahead_icon_height">25dp</dimen>
+    <dimen name="order_ahead_icon_width">15dp</dimen>
+    <dimen name="order_ahead_map_height">241dp</dimen>
+    <dimen name="order_ahead_map_width">451dp</dimen>
+    <dimen name="page_control_size">12dp</dimen>
+
+    <dimen name="progress_bar">60dp</dimen>
+    <dimen name="search_height">40dp</dimen>
+    <dimen name="select_store_bottom">32dp</dimen>
+    <dimen name="sign_up_map_height">250dp</dimen>
+    <dimen name="sign_up_map_width">400dp</dimen>
+    <dimen name="signed_logo_height">100dp</dimen>
+    <dimen name="signed_logo_width">250dp</dimen>
+    <dimen name="spend_go_height">24dp</dimen>
+    <dimen name="spend_go_width">168dp</dimen>
+    <dimen name="splash_blend_in_good_height">120dp</dimen>
+    <dimen name="splash_blend_in_good_width">280dp</dimen>
+    <dimen name="splash_bottom_left_height">220dp</dimen>
+    <dimen name="splash_bottom_left_width">196dp</dimen>
+    <dimen name="splash_bottom_right_height">217dp</dimen>
+    <dimen name="splash_bottom_right_width">258dp</dimen>
+    <dimen name="splash_logo_height">115dp</dimen>
+    <dimen name="splash_logo_width">158dp</dimen>
+    <dimen name="splash_top_left_height">291dp</dimen>
+    <dimen name="splash_top_left_width">258dp</dimen>
+    <dimen name="splash_top_right_height">330dp</dimen>
+    <dimen name="splash_top_right_width">371dp</dimen>
+    <dimen name="store_details_image_size">25dp</dimen>
+    <dimen name="text_size_large">25sp</dimen>
+    <dimen name="text_size_medium">20sp</dimen>
+    <dimen name="text_size_small">15sp</dimen>
+    <dimen name="text_size_welcome_font">55sp</dimen>
+    <dimen name="text_size_xlarge">30sp</dimen>
+    <dimen name="text_size_xxlarge">35sp</dimen>
+    <dimen name="text_size_xxxlarge">45sp</dimen>
+    <dimen name="text_size_xxxxlarge">70sp</dimen>
+    <dimen name="top_container_height">350dp</dimen>
+    <dimen name="view_pager_icon_height">200dp</dimen>
+    <dimen name="disclaimer_text_sz">10sp</dimen>
+    <dimen name="home_page_top_sz">10sp</dimen>
+    <dimen name="appbar.expanded.height">200dp</dimen>
+    <dimen name="appbar.height">48dp</dimen>
+    <dimen name="appbar.progress_bar.margin.bottom">-7dp</dimen>
+    <dimen name="appbar.progress_bar.margin.top">-7dp</dimen>
+    <dimen name="appbar.sub_title_text.drawable.height">5dp</dimen>
+    <dimen name="appbar.sub_title_text.drawable.padding">5dp</dimen>
+    <dimen name="appbar.sub_title_text.drawable.width">5dp</dimen>
+    <dimen name="cardview.elevation.low">2dp</dimen>
+    <dimen name="cardview.elevation.lowest">1dp</dimen>
+    <dimen name="cardview.full_width.margin.end">-2dp</dimen>
+    <dimen name="cardview.full_width.margin.start">-2dp</dimen>
+    <dimen name="cardview.margin.bottom">10dp</dimen>
+    <dimen name="cardview.margin.end">20dp</dimen>
+    <dimen name="cardview.margin.start">20dp</dimen>
+    <dimen name="cardview.margin.top">10dp</dimen>
+    <dimen name="cardview.padding.internal">5dp</dimen>
+    <dimen name="cardview_compat_inset_shadow">1dp</dimen>
+    <dimen name="cardview_default_elevation">2dp</dimen>
+    <dimen name="cardview_default_radius">2dp</dimen>
+    <dimen name="checkout.position.radius">3dp</dimen>
+    <dimen name="customize.row.padding">10dp</dimen>
+    <dimen name="dashboard.content.top.picks.first.row.margin.top">20dp</dimen>
+    <dimen name="dashboard.content.top.picks.icon.height">56dp</dimen>
+    <dimen name="dashboard.content.top.picks.item.margin.bottom">3dp</dimen>
+    <dimen name="dashboard.content.top.picks.item.margin.top">3dp</dimen>
+    <dimen name="dashboard.content.top.picks.last.row.margin.bottom">10dp</dimen>
+    <dimen name="dashboard.hours.no.orders.icon.height">40dp</dimen>
+    <dimen name="dashboard.hours.no.orders.icon.width">40dp</dimen>
+    <dimen name="dashboard.hours.orders.favorite.icon.height">45dp</dimen>
+    <dimen name="dashboard.hours.orders.favorite.icon.width">45dp</dimen>
+    <dimen name="dashboard.hours.orders.item.height">140dp</dimen>
+    <dimen name="dashboard.hours.orders.subtitle.margin.left">10dp</dimen>
+    <dimen name="dashboard.hours.orders.subtitle.margin.right">10dp</dimen>
+    <dimen name="dashboard.hours.top.picks.first.row.margin.top">20dp</dimen>
+    <dimen name="dashboard.hours.top.picks.icon.height">56dp</dimen>
+    <dimen name="dashboard.hours.top.picks.icon.width">56dp</dimen>
+    <dimen name="dashboard.hours.top.picks.item.margin.bottom">3dp</dimen>
+    <dimen name="dashboard.hours.top.picks.item.margin.top">3dp</dimen>
+    <dimen name="dashboard.hours.top.picks.last.row.margin.bottom">10dp</dimen>
+    <dimen name="design_appbar_elevation">4dp</dimen>
+    <dimen name="design_bottom_navigation_active_item_max_width">168dp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size">14sp</dimen>
+    <dimen name="design_bottom_navigation_elevation">8dp</dimen>
+    <dimen name="design_bottom_navigation_height">56dp</dimen>
+    <dimen name="design_bottom_navigation_item_max_width">96dp</dimen>
+    <dimen name="design_bottom_navigation_item_min_width">56dp</dimen>
+    <dimen name="design_bottom_navigation_margin">8dp</dimen>
+    <dimen name="design_bottom_navigation_shadow_height">1dp</dimen>
+    <dimen name="design_bottom_navigation_text_size">12sp</dimen>
+    <dimen name="design_bottom_sheet_modal_elevation">16dp</dimen>
+    <dimen name="design_bottom_sheet_peek_height_min">64dp</dimen>
+    <dimen name="design_fab_border_width">0.5dp</dimen>
+    <dimen name="design_fab_elevation">6dp</dimen>
+    <dimen name="design_fab_image_size">24dp</dimen>
+    <dimen name="design_fab_size_mini">40dp</dimen>
+    <dimen name="design_fab_size_normal">56dp</dimen>
+    <dimen name="design_fab_translation_z_pressed">6dp</dimen>
+    <dimen name="design_navigation_elevation">16dp</dimen>
+    <dimen name="design_navigation_icon_padding">32dp</dimen>
+    <dimen name="design_navigation_icon_size">24dp</dimen>
+    <dimen name="design_navigation_padding_bottom">8dp</dimen>
+    <dimen name="design_navigation_separator_vertical_padding">8dp</dimen>
+    <dimen name="design_snackbar_elevation">6dp</dimen>
+    <dimen name="design_snackbar_padding_horizontal">12dp</dimen>
+    <dimen name="design_snackbar_padding_vertical">14dp</dimen>
+    <dimen name="design_snackbar_text_size">14sp</dimen>
+    <dimen name="design_tab_max_width">264dp</dimen>
+    <dimen name="design_tab_text_size">14sp</dimen>
+    <dimen name="design_tab_text_size_2line">12sp</dimen>
+
+
+    <dimen name="nav_header_vertical_spacing">20dp</dimen>
+    <dimen name="activity_vertical_margin">20dp</dimen>
+    <dimen name="activity_horizontal_margin">20dp</dimen>
+    <dimen name="home.detail.sent_on.margin.bottom">15dp</dimen>
+    <dimen name="home.list.header.hours.padding">10dp</dimen>
+    <dimen name="input.description.padding.end">4dp</dimen>
+    <dimen name="input.description.padding.start">4dp</dimen>
+    <dimen name="input.edit_text.drawable_padding">15dp</dimen>
+
+
+    <dimen name="home.detail.padding">20dp</dimen>
+
+    <dimen name="input.edit_text.textSize">18sp</dimen>
+    <dimen name="input.margin.bottom">10dp</dimen>
+    <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
+    <dimen name="item_touch_helper_swipe_escape_max_velocity">800dp</dimen>
+    <dimen name="item_touch_helper_swipe_escape_velocity">120dp</dimen>
+    <dimen name="list.header.text.padding.bottom">7dp</dimen>
+    <dimen name="list.header.text.padding.end">15dp</dimen>
+    <dimen name="list.header.text.padding.start">15dp</dimen>
+    <dimen name="list.header.text.padding.top">7dp</dimen>
+    <dimen name="locations.list.row.hours.padding">15dp</dimen>
+    <dimen name="locations.list.row.hours.text.padding">5dp</dimen>
+    <dimen name="login.button.radius">2dp</dimen>
+    <dimen name="login.hours.margin.button.top">7dp</dimen>
+    <dimen name="login.hours.margin.label">10dp</dimen>
+    <dimen name="login.hours.padding.end">25dp</dimen>
+    <dimen name="login.hours.padding.start">25dp</dimen>
+    <dimen name="androidbar_padding_top">25dp</dimen>
+
+
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/week_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:orientation="vertical"
+    android:padding="@dimen/button_padding">
+
+    <LinearLayout
+        android:id="@+id/week_tr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/button_padding"
+        android:paddingRight="@dimen/button_padding"
+        android:weightSum="1.0">
+
+        <TextView
+            android:id="@+id/store_hrs_head_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:layout_weight="0.4"
+            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sub_text_sz"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/store_hrs_time_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:layout_weight="0.6"
+            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:textAllCaps="false"
+            android:textColor="@color/ham_burg_new"
+            android:textSize="@dimen/sub_text_sz"
+            android:typeface="monospace" />
+    </LinearLayout>
+
+</LinearLayout>

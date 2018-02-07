@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/two_side_round_corner_button"
+        android:padding="5dp">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backre"
+            android:layout_marginLeft="30dp"
+            android:visibility="gone"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/registxt_name"
+            style="@style/text.18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Sign up and get Loyalty rewards  "
+            android:textColor="@color/fbheadercolor"
+            />
+
+        <TextView
+            android:id="@+id/registxt1_name"
+            style="@style/text.13"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registxt_name"
+            android:layout_marginTop="4dp"
+            android:text="Become a fishbowl member today!"
+
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/one"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"></LinearLayout>
+
+        <ScrollView
+            android:id="@+id/linearregistration"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="86"
+            android:padding="5dp"
+            android:scrollbars="none"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_gravity="top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/layout_margin_top"
+                        android:background="@drawable/round_cornner_stroke"
+                        android:orientation="horizontal">
+
+
+                        <com.fishbowl.LoyaltyTabletApp.Utils.CustomEditText
+                            android:id="@+id/txt_firstname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:textSize="15sp"
+                            android:ems="15"
+                            android:maxLines="1"
+                            android:hint="First Name"
+                            android:padding="@dimen/et_padding"
+                            android:textColor="@color/black" />
+
+                        <ImageView
+                            android:id="@+id/icon1oo"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:paddingRight="@dimen/feed_item_padding_left_right2"
+                            android:src="@drawable/contact"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/layout_margin_top"
+                        android:background="@drawable/round_cornner_stroke"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <com.fishbowl.LoyaltyTabletApp.Utils.CustomEditText
+                            android:id="@+id/txt_lastname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:ems="15"
+                            android:textSize="15sp"
+
+                            android:hint="Last Name"
+                            android:maxLines="1"
+                            android:padding="@dimen/et_padding"
+                            android:textColor="@color/black" />
+
+                        <ImageView
+
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:paddingRight="@dimen/feed_item_padding_left_right2"
+                            android:src="@drawable/contact"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/layout_margin_top"
+                        android:background="@drawable/round_cornner_stroke"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <com.fishbowl.LoyaltyTabletApp.Utils.CustomEditText
+                            android:id="@+id/txt_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:ems="15"
+                            android:textSize="15sp"
+
+                            android:hint="Email Address"
+                            android:maxLines="1"
+                            android:inputType="textEmailAddress"
+                            android:padding="@dimen/et_padding"
+                            android:textColor="@color/black" />
+
+                        <ImageView
+
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:paddingRight="@dimen/feed_item_padding_left_right2"
+                            android:src="@drawable/message"
+
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/layout_margin_top"
+                        android:background="@drawable/round_cornner_stroke"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <com.fishbowl.LoyaltyTabletApp.Utils.CustomEditText
+                            android:id="@+id/txt_phoneno"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:ems="15"
+                            android:hint="Phone Number"
+                            android:textSize="15sp"
+
+                            android:maxLines="1"
+                            android:inputType="phone"
+                            android:padding="@dimen/et_padding"
+                            android:textColor="@color/black" />
+
+                        <ImageView
+
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:paddingRight="@dimen/feed_item_padding_left_right2"
+                            android:src="@drawable/call"
+
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/layout_margin_top"
+                        android:background="@drawable/round_cornner_stroke"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <com.fishbowl.LoyaltyTabletApp.Utils.CustomEditText
+                            android:id="@+id/txt_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:ems="15"
+                            android:hint="Address"
+                            android:textSize="15sp"
+
+                            android:maxLines="1"
+                            android:padding="@dimen/et_padding"
+                            android:textColor="@color/black" />
+
+                        <ImageView
+
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:paddingRight="@dimen/feed_item_padding_left_right2"
+                            android:src="@drawable/location"
+
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/layout_margin_top"
+                        android:background="@drawable/round_cornner_stroke"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <com.fishbowl.LoyaltyTabletApp.Utils.CustomEditText
+                            android:id="@+id/password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:ems="15"
+                            android:inputType="textPassword"
+                            android:hint="Password"
+                            android:maxLines="1"
+                            android:textSize="15sp"
+
+                            android:padding="@dimen/et_padding"
+                            android:textColor="@color/black" />
+
+                        <ImageView
+
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:paddingRight="@dimen/feed_item_padding_left_right2"
+                            android:src="@drawable/location"
+
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/checkbox_terms"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="I agree to the "/>
+                        <TextView
+                            android:id="@+id/terms_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" TERMS &amp; CONDITIONS"
+                            android:textSize="12sp"
+                            android:textColor="@color/redsurend"
+                            android:padding="5dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" and " />
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="15sp"
+                            android:visibility="gone"
+                            android:background="@color/Gray"/>
+                        <TextView
+                            android:id="@+id/privacy_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" PRIVACY POLICY"
+                            android:textColor="@color/redsurend"
+                            android:padding="5dp"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/layout_margin_top">
+                    <Button
+                        android:id="@+id/registration_start_okbutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/allside_round_cornner_buttton"
+                        android:gravity="center"
+                        android:onClick="createMember"
+
+                        android:textSize="20dp"
+                        android:paddingLeft="50dp"
+                        android:paddingRight="40dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Get Started!"
+                        android:textColor="@color/White" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="13dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Already have an account "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sign In"
+                        android:textColor="@color/redsurend"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"></LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/butindd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:weightSum="100"
+
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/toolbar_viewloyalty" />
+
+        <LinearLayout
+            android:id="@+id/butin"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/border"
+            android:padding="7dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="15"
+
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@color/fbheadercolor"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:padding="7dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/imageView4"
+                        android:src="@drawable/addwalet"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/loyaltyviewf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        style="@style/text.13"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Add to wallet"
+                        android:id="@+id/textView3" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@color/fbheadercolor"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/sendmail"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/loyaltyview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        style="@style/text.13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Send to my Email"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/butin"
+        android:layout_height="0dp"
+        android:layout_weight="85"
+        android:layout_margin="15dp"
+        android:background="@drawable/border"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/butin"
+            android:layout_height="0dp"
+            android:layout_weight="85"
+            android:layout_margin="15dp"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/butin1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="15"
+                android:background="@drawable/border_blue"
+
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:id="@+id/offertitle"
+                    style="@style/text.19"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_launcher"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    />
+                <TextView
+                    android:id="@+id/offerdescds"
+                    style="@style/text.20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="My Bistro Loyalty Card "
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/butin"
+                android:layout_height="0dp"
+                android:layout_weight="70"
+
+                android:background="@drawable/border_blue"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/loyaltyname"
+                    style="@style/text.25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="center"
+                    android:text="Harsh Chauhan"
+                    android:layout_margin="5dp"
+
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/memberyear"
+                    style="@style/text.19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Member Since"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:singleLine="false"
+                    android:textColor="@color/red_color"
+                    />
+                <TextView
+                    android:id="@+id/memberyeardate"
+                    style="@style/text.19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="2015"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:singleLine="false"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+
+
+
+                <ImageView
+                    android:id="@+id/bar_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/offerstore"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:src="@drawable/qrcode"
+                    android:layout_gravity="center"
+
+                    />
+                <TextView
+                    android:id="@+id/offer_promo"
+                    style="@style/text.13.prompt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text=""
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingTop="6dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    />
+
+                <TextView
+                    android:id="@+id/loyaltynanme2"
+                    style="@style/text.19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Loyalty Number"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:singleLine="false"
+                    android:textColor="@color/red_color"
+                    />
+                <TextView
+                    android:id="@+id/loyaltyno"
+                    style="@style/text.15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/offertitle"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="center"
+                    android:text=""
+
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+</LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

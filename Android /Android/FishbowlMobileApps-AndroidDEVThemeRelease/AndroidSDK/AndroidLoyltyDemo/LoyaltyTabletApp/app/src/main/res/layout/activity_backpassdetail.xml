@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/backpktop"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/toolbar_bg"
+
+
+    >
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar_passback_detail"
+        ></include>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            >
+            <TextView
+                android:id="@+id/offerdescription"
+                style="@style/text.16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginBottom="4dp"
+                android:text="Offer Description"
+                android:textColor="@color/dark_green"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/offerdescriptiondetail"
+                style="@style/text.13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/offerdate"
+                android:maxLines="2"
+                android:minLines="2"
+                android:text="Offer"
+                android:singleLine="false"
+                android:textColor="@color/darker_gray" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/darker_gray" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+
+            >
+            <TextView
+                android:id="@+id/offerpromocode"
+                style="@style/text.16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginBottom="4dp"
+                android:text="Promo Code"
+                android:textColor="@color/dark_green"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/offerpromocodedetail"
+                style="@style/text.13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/offerdate"
+                android:maxLines="4"
+                android:minLines="4"
+                android:text="Offer"
+                android:textColor="@color/darker_gray" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/darker_gray" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+
+            >
+            <TextView
+                android:id="@+id/offerstorelimit"
+                style="@style/text.16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginBottom="4dp"
+                android:text="Store Limit"
+                android:textColor="@color/dark_green"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/offerstorelimitdetail"
+                style="@style/text.13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/offerdate"
+                android:maxLines="4"
+                android:minLines="4"
+                android:text="Only One Person"
+                android:textColor="@color/darker_gray" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/darker_gray" />
+
+    </LinearLayout>
+</LinearLayout>

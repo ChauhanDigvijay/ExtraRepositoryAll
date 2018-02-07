@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativemain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/img_Back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bgimage"
+        android:scaleType="fitXY"/>
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar_order_confirmation_activity"
+        ></include>
+
+        <ScrollView
+            android:layout_below="@id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+                android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp" >
+
+                    <com.fishbowl.basicmodule.Utils.NestedListView
+                        android:id="@+id/mobile_listdf"
+                        style="@style/text.20"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_weight="1" >
+                    </com.fishbowl.basicmodule.Utils.NestedListView>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/linear_user_info_namedsdddJ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="top|start"
+                    android:orientation="horizontal"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp" >
+
+                    <TextView
+                        android:id="@+id/registration_start_coussddddJ"
+                        style="@style/text.14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingLeft="@dimen/feed_item_padding_left_right"
+                        android:paddingRight="@dimen/feed_item_padding_left_right"
+                        android:text="Items Totals:"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_count"
+                        style="@style/text.14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingLeft="@dimen/feed_item_padding_left_right"
+                        android:paddingRight="@dimen/feed_item_padding_left_right"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/linear_user_info_nameDJ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|start"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:id="@+id/registration_start_cousdDJ"
+                        style="@style/text.13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingLeft="@dimen/feed_item_padding_left_right"
+                        android:paddingRight="@dimen/feed_item_padding_left_right"
+                        android:text="Service Charge:"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_countDJ"
+                        style="@style/text.13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingLeft="@dimen/feed_item_padding_left_right"
+                        android:paddingRight="@dimen/feed_item_padding_left_right"
+                        android:text="$ 10"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/linear_user_info_nameddJ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|start"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp" >
+
+                    <TextView
+                        android:id="@+id/registration_start_cousdddJ"
+                        style="@style/text.13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingLeft="@dimen/feed_item_padding_left_right"
+                        android:paddingRight="@dimen/feed_item_padding_left_right"
+                        android:text="Subtotal:"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_subtotal"
+                        style="@style/text.13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingLeft="@dimen/feed_item_padding_left_right"
+                        android:paddingRight="@dimen/feed_item_padding_left_right"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/linear_user_info_namedddJ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|start"
+                    android:orientation="horizontal"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/registration_start_cousddddJ"
+                        style="@style/text.13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingLeft="@dimen/feed_item_padding_left_right"
+                        android:paddingRight="@dimen/feed_item_padding_left_right"
+                        android:text="Sales Tax(8.0 %):"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_salestax"
+                        style="@style/text.13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingLeft="@dimen/feed_item_padding_left_right"
+                        android:paddingRight="@dimen/feed_item_padding_left_right"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/linear_user_info_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|start"
+                    android:orientation="horizontal"
+                    android:paddingBottom="2dp"
+                    android:visibility="gone"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:id="@+id/registration_start_cousd"
+                        style="@style/text.14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingLeft="@dimen/feed_item_padding_left_right"
+                        android:paddingRight="@dimen/feed_item_padding_left_right"
+                        android:text="TOTAL:"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_taxwith"
+                        style="@style/text.14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingLeft="@dimen/feed_item_padding_left_right"
+                        android:paddingRight="@dimen/feed_item_padding_left_right"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/Gray"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/text_cancelorder"
+                    style="@style/text.14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="cancelorder"
+                    android:padding="10dp"
+                    android:text="Cancel Order"
+                    android:textColor="@color/RedOrgin"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_locationname"
+                    style="@style/text.14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Locationname"
+                    android:textColor="@color/fbbrown"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/text_location"
+                    style="@style/text.14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:textColor="@color/fbbrown"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/text_gen"
+                    style="@style/text.12.prompt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fbbrown"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/type_txt"
+                    style="@style/text.12.prompt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fbbrown"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/date_txt"
+                    style="@style/text.12.prompt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fbbrown"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/time_txt"
+                    style="@style/text.12.prompt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fbbrown"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/Gray"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/text_gen1"
+                    style="@style/text.19.prompt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Do you have a promro code ?"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/text_gen2"
+                    style="@style/text.19.prompt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Click here to enter your code."
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/Gray"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+                    android:paddingLeft="@dimen/feed_item_padding_left_right2"
+                    android:paddingRight="@dimen/feed_item_padding_left_right2"
+                    android:paddingTop="@dimen/feed_item_padding_top_bottom"
+                    android:weightSum="10" >
+
+                    <Button
+                        android:id="@+id/addmore"
+
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="3.3"
+                        android:background="@color/Red1"
+                        android:gravity="center"
+                        android:onClick="backAndAdd"
+                        android:text="ADD MORE"
+                        android:textColor="@color/White"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/confirm_btn"
+
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="3.3"
+                        android:background="@color/Red1"
+                        android:gravity="center"
+                        android:onClick="Confirm"
+                        android:text="PAYMENT ORDER"
+                        android:textColor="@color/White"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/cont_btn"
+
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="3.3"
+                        android:background="@color/Red1"
+                        android:gravity="center"
+                        android:onClick="order"
+                        android:text="CONTINUE"
+                        android:textColor="@color/White"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+
+
+        <com.BasicApp.Activites.Generic.BottomToolbarActivity
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/bottom_toolbar"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/White"
+        android:choiceMode="singleChoice"
+        android:dividerHeight="0dp"
+        android:divider="@color/white"/>
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/customizetopping_amounttitle"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="30dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="30dp"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp"
+        android:text="@string/customize.edit.amount.title" />
+
+    <RadioGroup
+        android:id="@+id/customizetopping_amount_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingEnd="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/customizetopping_amount_regular"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customize.edit.amount.regular"
+          />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/customizetopping_amount_double"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customize.edit.amount.double"
+            />
+    </RadioGroup>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp"
+        android:text="@string/customize.edit.coverage.title" />
+
+    <RadioGroup
+        android:id="@+id/customizetopping_coverage_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingEnd="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/customizetopping_coverage_left"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customize.edit.coverage.left"
+            />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/customizetopping_coverage_whole"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customize.edit.coverage.whole"
+            android:theme="@style/RadioButtonTheme" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/customizetopping_coverage_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customize.edit.coverage.right"
+            android:theme="@style/RadioButtonTheme" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_top"
+        android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:orientation="horizontal"
+        android:paddingEnd="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingStart="15dp">
+
+        <TextView
+            android:id="@+id/customizetopping_cancel"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:padding="@dimen/locations.list.row.hours.padding"
+            android:text="@string/customize.edit.dialog.action.cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/donatosRed"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/customizetopping_ok"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:padding="@dimen/locations.list.row.hours.padding"
+            android:text="@string/customize.edit.dialog.action.ok"
+            android:textAllCaps="true"
+            android:textColor="@color/donatosRed"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transperent"
+    android:orientation="vertical"
+    android:padding="@dimen/button_padding">
+
+    <ImageView
+        android:id="@+id/grid_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/grid_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:singleLine="true"
+        android:text="dsgbdfv"
+        android:textColor="@color/ham_divider"
+        android:textSize="@dimen/sub_text_sz"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/grid_text_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/normal_margin"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:lines="2"
+        android:text="dsgbdfv"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dis_text_sz"
+        android:typeface="monospace" />
+
+    <RelativeLayout
+        android:id="@+id/product_back_tr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:background="@drawable/home_page_top_left_sign_bg">
+
+        <TextView
+            android:id="@+id/view_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:lines="1"
+            android:paddingLeft="@dimen/normal_margin"
+            android:text="View Recipe"
+            android:textAllCaps="true"
+            android:textColor="@color/ham_burg"
+            android:textSize="@dimen/sub_text_sz"
+            android:typeface="monospace" />
+
+        <ImageView
+            android:id="@+id/imge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/normal_margin"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:layout_toRightOf="@+id/view_tv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/grey_fwd_arrow" />
+    </RelativeLayout>
+</LinearLayout>

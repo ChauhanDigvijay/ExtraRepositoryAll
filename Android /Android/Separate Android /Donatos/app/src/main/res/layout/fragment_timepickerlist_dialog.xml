@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:minWidth="270dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:orientation="vertical"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:id="@+id/timepickerlist_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="30dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="30dp"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            android:text="@string/checkout.when.time.title"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/timepickerlist_selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="30dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="30dp"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            android:text="10:30 am"
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/timepickerlist_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/timepickerlist_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingEnd="30dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="30dp"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_top"
+        android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:orientation="horizontal"
+        android:paddingEnd="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingStart="15dp">
+
+        <TextView
+            android:id="@+id/timepickerlist_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+
+            android:padding="@dimen/locations.list.row.hours.padding"
+            android:text="@string/checkout.when.time.cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/donatosRed"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/timepickerlist_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            fontPath="fonts/Cabin-SemiBold.ttf"
+            android:padding="@dimen/locations.list.row.hours.padding"
+            android:text="@string/checkout.when.time.ok"
+            android:textAllCaps="true"
+            android:textColor="@color/donatosRed"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

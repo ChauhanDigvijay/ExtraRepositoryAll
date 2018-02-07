@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/normal_padding"
+    android:addStatesFromChildren="true"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/recipes_layer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_selector"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_weight="0.75"
+        android:background="#00000000"
+        android:divider="@color/ham_divider"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/store_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:text="Medium Text"
+            android:textAllCaps="true"
+            android:textColor="@drawable/store_text_color"
+
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/store_address_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:text="Medium Text"
+            android:textAllCaps="false"
+            android:textColor="@drawable/store_text_color"
+            android:textSize="@dimen/sub_text_sz"
+
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/store_phone_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/normal_margin"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:text="Medium Text"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sub_text_sz"
+
+            android:typeface="monospace" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/store_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:layout_marginLeft="@dimen/normal_padding"
+        android:layout_marginRight="@dimen/normal_padding"
+        android:layout_weight="0.28"
+        android:background="@drawable/button_selector"
+        android:clickable="true"
+        android:duplicateParentState="true"
+        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:padding="@dimen/normal_padding"
+        android:text="Details"
+        android:textAllCaps="false"
+        android:textColor="@drawable/store_button_color"
+        android:textSize="@dimen/home_page_top_sz"
+        android:typeface="monospace" />
+</LinearLayout>
+<TextView
+android:background="@color/ham_divider"
+android:layout_width="match_parent"
+android:layout_height="wrap_content" />
+    </LinearLayout>

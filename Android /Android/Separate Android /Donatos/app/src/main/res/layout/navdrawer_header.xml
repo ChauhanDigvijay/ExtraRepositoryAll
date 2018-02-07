@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/navigation_header"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/navigation_header" />
+
+    <TextView
+        android:id="@+id/navigation_header_store_name"
+        fontPath="fonts/Cabin-SemiBold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/navigation.header.storename"
+
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/navigation_header_store_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:lineSpacingMultiplier="0.0"
+        android:text="@string/navigation.header.mydonatos"
+        android:textColor="@color/navDrawerHeaderSemiTransparent"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/navigation_header_change_location"
+        fontPath="fonts/Cabin-SemiBold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/navigation.header.action.change"
+        android:textColor="@color/colorPrimary"
+        android:textSize="13sp" />
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="@dimen/cardview.elevation.lowest"
+    app:cardUseCompatPadding="true"
+    android:clickable="true"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:layout_marginTop="3dp"
+    android:layout_width="match_parent">
+
+    <ImageView
+        android:contentDescription="@string/dashboard.header.toppicks"
+        android:id="@+id/dashboard_toppicks_image"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:contentDescription="@string/dashboard.header.toppicks"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/menu_item_overlay" />
+
+    <ImageView
+        android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_additem" />
+
+    <RelativeLayout
+        android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/dashboard_toppicks_title"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:textSize="18sp"
+
+            fontPath="fonts/Cabin-Bold.ttf" />
+
+        <TextView
+            android:id="@+id/dashboard_toppicks_price"
+            android:layout_below="@+id/dashboard_toppicks_title"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+        />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

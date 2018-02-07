@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/feed_item_padding_left_right"
+    android:paddingRight="@dimen/feed_item_padding_left_right"
+    android:background="@null" >
+
+    <ImageView
+        android:id="@+id/status_icon_img"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+
+        android:layout_centerVertical="true"
+
+        android:padding="4dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/btn_next"
+        style="@style/text.14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="@color/fbbrown"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_marginTop="3dp"
+        android:id="@+id/expenseType"
+        style="@style/text.17.prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="3dp"
+        android:singleLine="false"
+        android:text="TITles"
+        android:textColor="@color/Red"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/todayDate"
+        style="@style/text.14"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desc"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/btn_next"
+        android:maxLines="2"
+        android:minLines="2"
+        android:paddingTop="10dp"
+        android:text="Red Onions,Bell Paper,Button,Tomatoes,Tomato Saurce"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/newlinear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/todayDate"
+        android:layout_toRightOf="@+id/btn_next"
+        android:orientation="horizontal"
+        android:paddingTop="10dp" 
+        android:layout_marginBottom="3dp">
+
+        <TextView
+            android:id="@+id/edit_txt"
+            style="@style/text.15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="edit"
+            android:padding="5dp"
+            android:textColor="@color/Red"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text=" | "
+            android:textColor="@color/Red"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/remove_txt"
+            style="@style/text.15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="remove"
+            android:padding="5sp"
+            android:textColor="@color/Red"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/field_cross"
+        style="@style/text.13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/field_valueaas"
+        android:layout_alignBottom="@+id/field_valueaas"
+        android:layout_toLeftOf="@+id/field_valueaas"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="X"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <TextView
+        android:id="@+id/field_gradient"
+        style="@style/text.13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/field_cross"
+        android:layout_alignBottom="@+id/field_cross"
+        android:layout_toLeftOf="@+id/field_cross"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/field_valueaas"
+        style="@style/text.13"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/two_side_round_corner_button"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:maxLength="10"
+        android:textColorHint="@color/black"
+        android:layout_alignBaseline="@+id/totalDollar"
+        android:layout_alignBottom="@+id/totalDollar"
+        android:layout_toLeftOf="@+id/totalDollar"
+        android:layout_toStartOf="@+id/totalDollar" />
+
+    <TextView
+        android:id="@+id/desc"
+        style="@style/text.15"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="Djja"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_below="@+id/expenseType"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/totalDollar"
+        style="@style/text.13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ddkk"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_above="@+id/todayDate"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
