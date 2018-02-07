@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+    android:orientation="vertical"
+    android:padding="@dimen/size10">
+<LinearLayout
+android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+android:orientation="vertical"
+android:visibility="visible"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+<View
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1.0" />
+
+<TextView
+
+    android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+    android:padding="@dimen/size10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="First Name" />
+
+<EditText
+
+    android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+    android:id="@+id/etFName"
+    android:background="@drawable/edit_text"
+    android:padding="@dimen/size10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone" />
+
+<TextView
+
+    android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+    android:padding="@dimen/size10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Last Name" />
+
+<EditText
+
+    android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+    android:id="@+id/etLName"
+    android:background="@drawable/edit_text"
+    android:padding="@dimen/size10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone" />
+
+<TextView
+
+    android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+    android:padding="@dimen/size10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_10"
+    android:text="Cell phone" />
+
+<EditText
+
+    android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+    android:id="@+id/etCellphone"
+    android:background="@drawable/edit_text"
+    android:padding="@dimen/size10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|number|numberSigned|numberDecimal|numberPassword|phone" />
+
+<TextView
+
+    android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+    android:padding="@dimen/size10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_10"
+    android:text="PIN" />
+
+<EditText
+
+    android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+    android:id="@+id/etPIN"
+    android:background="@drawable/edit_text"
+    android:padding="@dimen/size10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="number|numberSigned|numberDecimal|numberPassword|phone" />
+
+<TextView
+
+    android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+    android:padding="@dimen/size10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_10"
+    android:text="Zip Code" />
+
+<EditText
+
+    android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+    android:id="@+id/etPinCode"
+    android:background="@drawable/edit_text"
+    android:padding="@dimen/size10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="number|numberSigned|numberDecimal|numberPassword|phone" />
+
+<View
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1.0" />
+
+<ImageView
+    android:id="@+id/ivSignUp"
+    android:background="@mipmap/sign_up"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+<View
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1.0" />
+</LinearLayout></LinearLayout>

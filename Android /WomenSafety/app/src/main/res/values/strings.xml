@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">WomenSafety</string>
+    <string name="google_maps_key">AIzaSyDm6dITwwd2a_QxblqeUvdf0Vk_AzxXetc</string>
+    <string name="its_on_us">It\'s on Us</string>
+    <string name="need_help">I Need Help</string>
+    <string name="on_the_way">on their way</string>
+    <string name="press_hold">Press &amp; Hold to Activate</string>
+    <string name="resouces">Resouces</string>
+    <string name="skip_now">Skip Now</string>
+    <string name="store_picture_message">Allow Ad to store image in Picture gallery?</string>
+    <string name="store_picture_title">Save image</string>
+    <string name="tagmanager_preview_dialog_button">Continue</string>
+    <string name="tagmanager_preview_dialog_message">Preview mode updated.</string>
+    <string name="tagmanager_preview_dialog_title">Preview</string>
+    <string name="wallet_buy_button_place_holder">Buy with Google</string>
+    <string name="already_pledge">I have already taken this pledge</string>
+</resources>
