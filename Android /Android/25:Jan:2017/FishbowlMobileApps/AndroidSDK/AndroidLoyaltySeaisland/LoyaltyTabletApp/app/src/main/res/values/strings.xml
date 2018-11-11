@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">LoyaltyTabletApp</string>
-    <string name="title_activity_sms_reward">SmsReward</string>
-    <string name="title_activity_mobile_add">MobileAddActivity</string>
-    <string name="title_activity_pass_send">PassSendActivity</string>
-
-</resources>

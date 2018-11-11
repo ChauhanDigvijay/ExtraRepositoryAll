@@ -1,1 +1,0 @@
-# InComm-iOS-SDK

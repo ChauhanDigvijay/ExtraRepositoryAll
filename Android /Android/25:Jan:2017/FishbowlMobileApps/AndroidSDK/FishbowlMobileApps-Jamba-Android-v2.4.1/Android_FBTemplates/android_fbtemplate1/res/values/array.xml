@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-        <string-array name="array_payment_method">
-        <item>Credit Card</item>
-        <item>Paypal</item>
-    </string-array>
-</resources>

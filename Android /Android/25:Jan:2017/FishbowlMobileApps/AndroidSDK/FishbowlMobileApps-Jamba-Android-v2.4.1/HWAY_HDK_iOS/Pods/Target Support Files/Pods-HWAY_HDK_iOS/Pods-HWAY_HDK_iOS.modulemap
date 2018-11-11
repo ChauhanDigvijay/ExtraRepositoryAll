@@ -1,6 +1,0 @@
-framework module Pods_HWAY_HDK_iOS {
-  umbrella header "Pods-HWAY_HDK_iOS-umbrella.h"
-
-  export *
-  module * { export * }
-}
