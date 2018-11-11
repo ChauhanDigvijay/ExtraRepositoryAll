@@ -1,6 +1,0 @@
-framework module HDK {
-  umbrella header "HDK-umbrella.h"
-
-  export *
-  module * { export * }
-}

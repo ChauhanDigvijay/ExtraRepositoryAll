@@ -1,6 +1,0 @@
-framework module Pods_JambaJuice {
-  umbrella header "Pods-JambaJuice-umbrella.h"
-
-  export *
-  module * { export * }
-}

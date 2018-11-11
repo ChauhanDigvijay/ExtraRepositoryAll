@@ -1,7 +1,0 @@
-disabled_rules:
-- line_length
-
-included:
-- JambaKiosk 
-- JambaKioskTests
-- JambaKioskUITests

@@ -1,6 +1,0 @@
-framework module OloSDK {
-  umbrella header "OloSDK-umbrella.h"
-
-  export *
-  module * { export * }
-}
